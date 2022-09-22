@@ -137,7 +137,7 @@ const Header: FC<Props> = ({ background }) => {
                                 <span className="sr-only">Workflow</span>
                                 <img
                                     className="h-10 w-auto sm:h-10"
-                                    src="/img/logo/logo.webp"
+                                    src="/img/logo/logo-white.svg"
                                     alt=""
                                 />
                             </a>
@@ -415,7 +415,7 @@ const Header: FC<Props> = ({ background }) => {
                                 <div>
                                     <img
                                         className="h-10 w-auto"
-                                        src="/img/logo/logo.webp"
+                                        src="/img/logo/logo-white.svg"
                                         alt="Workflow"
                                     />
                                 </div>

@@ -19,7 +19,7 @@ const Home: NextPage = () => {
                         <div className="w-5/6 lg:w-full max-w-6xl grid grid-cols-3 gap-6">
                             <div className="col-span-1 flex justify-center items-center">
                                 <Image
-                                    src="/img/logo/logo.webp"
+                                    src="/img/logo/logo-white.svg"
                                     alt="Freedom Church"
                                     height={300}
                                     width={300}
