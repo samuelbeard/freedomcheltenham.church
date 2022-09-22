@@ -1,8 +1,7 @@
 import type { NextPage } from "next"
 import Head from "next/head"
 import Image from "next/image"
-// import Header from "../components/Header"
-import Header from "../components/NewHeader"
+import Header from "../components/Header"
 import EventBanner from "../components/EventBanner"
 import Footer from "../components/Footer"
 
@@ -44,12 +43,12 @@ const Home: NextPage = () => {
                 </div>
                 <EventBanner />
             </div>
-            <div className="section">
+            {/* <div className="section">
                 <div className="container py-12">
                     <p>content</p>
                 </div>
-            </div>
-            <Footer />
+            </div> */}
+            {/* <Footer /> */}
         </div>
     )
 }
