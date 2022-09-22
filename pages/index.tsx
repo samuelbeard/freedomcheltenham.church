@@ -7,8 +7,8 @@ import Footer from "../components/Footer"
 
 const Home: NextPage = () => {
     return (
-        <div>
-            <div className="w-screen h-screen flex justify-between flex-col bg-[url('/hero.jpg')] bg-cover">
+        <div className="fixed w-screen h-screen">
+            <div className="h-full xw-screen xh-screen flex justify-between flex-col bg-[url('/hero.jpg')] bg-cover">
                 <Head>
                     <title>Freedom Church Cheltenham</title>
                 </Head>
@@ -17,20 +17,20 @@ const Home: NextPage = () => {
                 <div className="flex-grow flex items-center">
                     <section className="section">
                         <div className="w-5/6 lg:w-full max-w-6xl grid grid-cols-3 gap-6">
-                            <div className="col-span-1 flex justify-center items-center">
+                            <div className="w-36 md:w-64 mx-auto col-span-3 md:col-span-1 flex justify-center items-center">
                                 <Image
                                     src="/img/logo/logo-white.svg"
                                     alt="Freedom Church"
                                     height={300}
                                     width={300}
-                                    className="h-64 w-64 ml-32 rounded-full"
+                                    // className="h-36 w-36 md:h-64 md:w-64 ml-32 rounded-full"
                                 />
                             </div>
-                            <div className="mx-auto col-span-2 flex flex-col justify-center">
-                                <h2 className="h2 lg:text-4xl m-0 text-white">
+                            <div className="mx-auto col-span-3 md:col-span-2 flex flex-col justify-center text-center md:text-left">
+                                <h2 className="h2x font-bold text-xl md:text-2xl lg:text-4xl m-0 text-white">
                                     Welcome to
                                 </h2>
-                                <h1 className="h1 text-2xl lg:text-7xl m-0 uppercase text-white">
+                                <h1 className="h1 text-2xl md:text-4xl lg:text-7xl m-0 uppercase text-white">
                                     Freedom&nbsp;Church
                                     <br />
                                     <span className="text-brand-red">

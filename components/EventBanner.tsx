@@ -8,12 +8,12 @@ const EventBanner: NextComponentType = () => {
 
     return (
         <>
-            <div className="h-20 bg-brand-red flex justify-around items-center">
+            <div className="h-48 md:h-20 bg-brand-red flex justify-around items-center flex-wrap md:flex-nowrap">
                 <div className="flex justify-center items-center text-white">
                     <RiCalendarLine className="h-8 w-8 mr-3" />
                     <h2 className="uppercase font-bold flex">Every sunday</h2>
                 </div>
-                <div className="flex justify-center items-center text-white">
+                <div className="flex justify-center items-center text-white w-full md:w-auto">
                     <RiMapPin2Line className="h-8 w-8 mr-3" />
                     <h2 className="uppercase font-bold flex">
                         Danceworks, Cheltenham

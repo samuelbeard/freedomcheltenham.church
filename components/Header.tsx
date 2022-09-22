@@ -127,7 +127,9 @@ interface Props {
 const Header: FC<Props> = ({ background }) => {
     return (
         <Popover
-            className={`relative ${background === "red" ? `bg-brand-red` : ""}`}
+            className={`z-50 relative ${
+                background === "red" ? `bg-brand-red` : ""
+            }`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">

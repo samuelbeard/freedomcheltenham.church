@@ -4,7 +4,7 @@ import DNAData from "../lib/dna.json"
 const DNASection: FC = () => {
     return (
         <>
-            <section className="section">
+            <section className="section mt-6">
                 <div className="container mx-auto">
                     <h1 className="h1">Our DNA</h1>
                     <p className="para text-lg lg:w-8/12">
@@ -16,8 +16,8 @@ const DNASection: FC = () => {
                     </p>
                 </div>
             </section>
-            <section className="section">
-                <div className="container mx-auto pb-3 pt-7 grid grid-cols-3 gap-6">
+            <section className="section mb-12">
+                <div className="container mx-auto pb-3 pt-7 grid grid-cols-6 gap-6">
                     {DNAData.map(dna => (
                         <DNACard
                             key={dna.title}
@@ -43,10 +43,12 @@ interface DNACardProps {
 const DNACard: FC<DNACardProps> = ({ title, image, description }) => {
     return (
         <div
-            className={`col-span-1 mx-auto bg-black bg-[url('/img/dna/${image}')] bg-cover w-full h-72 rounded-lg p-5`}
+            className={`col-span-6 sm:col-span-3 lg:col-span-2 mx-auto bg-black bg-[url('/img/dna/${image}')] bg-cover w-full xh-72 rounded-lg p-5`}
         >
             <h3 className="h3 text-white mt-0">{title}</h3>
-            <p className="text-white">{description}</p>
+            <p className="para text-lg text-white leading-snug">
+                {description}
+            </p>
         </div>
     )
 }

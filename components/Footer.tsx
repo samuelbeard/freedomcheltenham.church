@@ -3,7 +3,7 @@ import { FC } from "react"
 
 const Footer: FC = () => {
     return (
-        <footer className="bg-brand-dark-gray text-white py-10">
+        <footer className="bg-brand-dark-gray text-white py-10 xmt-12">
             <div className="max-w-5xl w-5xl mx-auto grid grid-cols-3 gap-12">
                 <div className="col-span-1 text-center">
                     <Image
