@@ -43,12 +43,15 @@ interface DNACardProps {
 const DNACard: FC<DNACardProps> = ({ title, image, description }) => {
     return (
         <div
-            className={`col-span-6 sm:col-span-3 lg:col-span-2 mx-auto bg-black bg-[url('/img/dna/${image}')] bg-cover w-full xh-72 rounded-lg p-5`}
+            className={`col-span-6 sm:col-span-3 lg:col-span-2 mx-auto bg-black w-full rounded-lg p-5 flex flex-col justify-between shadow`}
         >
-            <h3 className="h3 text-white mt-0">{title}</h3>
-            <p className="para text-lg text-white leading-snug">
-                {description}
-            </p>
+            <div>
+                <h3 className="h3 text-white mt-0">{title}</h3>
+                <p className="para text-lg text-white leading-snug">
+                    {description}
+                </p>
+            </div>
+            <img src={`/img/dna/${image}`} alt="" />
         </div>
     )
 }

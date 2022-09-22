@@ -36,3 +36,5 @@ yarn-error.log*
 
 # Personal VM fix
 yarn.lock
+
+*:Zone.Identifier
