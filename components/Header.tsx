@@ -31,6 +31,18 @@ const links = [
         icon: RiBarChart2Line,
     },
     {
+        name: "Youth",
+        description: "DESCRIPTION",
+        href: "/youth",
+        icon: RiBarChart2Line,
+    },
+    {
+        name: "Kids",
+        description: "DESCRIPTION",
+        href: "/kids",
+        icon: RiBarChart2Line,
+    },
+    {
         name: "Visit",
         description: "DESCRIPTION",
         href: "/visit",
