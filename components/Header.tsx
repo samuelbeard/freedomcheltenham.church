@@ -438,10 +438,10 @@ const Header: FC<Props> = ({ background }) => {
                                     {links.map(item => (
                                         <Link href={item.href} key={item.name}>
                                             <a className="-m-3 p-3 flex items-center">
-                                                <item.icon
+                                                {/* <item.icon
                                                     className="flex-shrink-0 h-6 w-6 text-gray-800"
                                                     aria-hidden="true"
-                                                />
+                                                /> */}
                                                 <span className="ml-3 font-bold text-white">
                                                     {item.name}
                                                 </span>
