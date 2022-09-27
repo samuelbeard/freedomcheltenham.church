@@ -10,7 +10,7 @@ interface Props {
 
 const Layout: FC<Props> = ({ children, title }) => {
     return (
-        <div className="page fixed md:static">
+        <div className="page">
             <Head>
                 <title>{title} | Freedom Church Cheltenham</title>
             </Head>
