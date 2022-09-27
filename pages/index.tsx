@@ -7,8 +7,8 @@ import Footer from "../components/Footer"
 
 const Home: NextPage = () => {
     return (
-        <div className="fixed w-screen h-screen">
-            <div className="h-full xw-screen xh-screen flex justify-between flex-col bg-[url('/hero.jpg')] bg-cover">
+        <div className="w-screen h-screen">
+            <div className="h-full flex justify-between flex-col bg-[url('/hero.jpg')] bg-cover">
                 <Head>
                     <title>Freedom Church Cheltenham</title>
                 </Head>
