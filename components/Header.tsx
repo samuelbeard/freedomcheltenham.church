@@ -43,6 +43,12 @@ const links = [
         icon: RiBarChart2Line,
     },
     {
+        name: "Calendar",
+        description: "DES",
+        href: "/calendar",
+        icon: RiCalendar2Line,
+    },
+    {
         name: "Visit",
         description: "DESCRIPTION",
         href: "/visit",

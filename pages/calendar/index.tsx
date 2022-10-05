@@ -54,6 +54,21 @@ const Calendar: NextPage<Props> = ({ events }) => {
 
     return (
         <Layout title="Calendar">
+            <div className="p-2">
+                <iframe
+                    frameBorder="0"
+                    height="800"
+                    scrolling="yes"
+                    src="https://freedom.churchsuite.com/embed/calendar?preview=true&body_bgcolor=F5F6F7&categories=&show_categories=1&sites=3"
+                    style={{ borderWidth: 0 }}
+                    width="100%"
+                ></iframe>
+            </div>
+        </Layout>
+    )
+
+    return (
+        <Layout title="Calendar">
             <div className="py-12 w-11/12 xlg:w-full mx-auto mt-6 mb-6">
                 <div className="pt-2 pb-6 flex">
                     <div className="">

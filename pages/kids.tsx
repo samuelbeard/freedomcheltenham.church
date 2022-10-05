@@ -7,13 +7,13 @@ const Kids: NextPage = () => {
         <Layout title="Kids">
             <div className="w-10/12 mx-auto mb-12">
                 <h1 className="h1">KIDS</h1>
-                <p className="para w-1/2">
+                <p className="para md:w-8/12 lg:w-1/2">
                     Freedom kids is a childrens ministry designer to be safe,
                     age apropriate, fin and ngaging! We love teasching the next
                     generation about Jesus.
                 </p>
                 <h3 className="h3">Relevant content for all age groups</h3>
-                <p className="para w-1/2">
+                <p className="para md:w-8/12 lg:w-1/2">
                     We go through teaching in series bringing a topic to life
                     over several weeks. This is also taiolored to each age
                     group, making sure each session is relevant, engaging and
@@ -38,7 +38,7 @@ const Kids: NextPage = () => {
                         </h2>
                     </div>
                     <div className="flex gap-24 mt-6">
-                        <div className="text-white">
+                        <div className="text-white w-1/2">
                             <p className="para text-white">
                                 Lorem, ipsum dolor sit amet consectetur
                                 adipisicing elit. Non maiores obcaecati ipsa
@@ -56,13 +56,15 @@ const Kids: NextPage = () => {
                                 This that thtat sid
                             </p>
                         </div>
-                        <img
-                            className="rounded shadow-lg w-96"
-                            src="/img/kids/cubs-1.JPG"
-                            alt=""
-                        />
-                        Lorah to create an image with two photos over each other
-                        diagonally instead of this 1.
+                        <div className="w-1/2">
+                            <img
+                                className="rounded shadow-lg w-96"
+                                src="/img/kids/cubs-1.JPG"
+                                alt=""
+                            />
+                            Lorah to create an image with two photos over each
+                            other diagonally instead of this 1.
+                        </div>
                     </div>
                 </div>
             </div>
