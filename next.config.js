@@ -29,6 +29,11 @@ const nextConfig = {
                     "https://www.instagram.com/freedomcheltenham/?hl=en",
                 permanent: false,
             },
+            {
+                source: "/santas-grotto",
+                destination: "https://freedomchurchcheltenham.com",
+                permanent: false,
+            },
         ]
     },
 }
