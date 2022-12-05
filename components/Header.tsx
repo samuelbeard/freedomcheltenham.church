@@ -30,12 +30,12 @@ const links = [
         href: "/about",
         icon: RiBarChart2Line,
     },
-    {
-        name: "Youth",
-        description: "DESCRIPTION",
-        href: "/youth",
-        icon: RiBarChart2Line,
-    },
+    // {
+    //     name: "Youth",
+    //     description: "DESCRIPTION",
+    //     href: "/youth",
+    //     icon: RiBarChart2Line,
+    // },
     {
         name: "Kids",
         description: "DESCRIPTION",
@@ -60,12 +60,6 @@ const links = [
         href: "/messages",
         icon: RiShieldLine,
     },
-    // {
-    //     name: "Kids",
-    //     description: "DESCRIPTION",
-    //     href: "/kids",
-    //     icon: RiGridLine,
-    // },
     {
         name: "Give",
         description: "DESCRIPTION",
@@ -153,14 +147,12 @@ const Header: FC<Props> = ({ background }) => {
                 <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
                     <div className="flex justify-start lg:w-0 lg:flex-1">
                         <Link href="/">
-                            <a>
-                                <span className="sr-only">Workflow</span>
-                                <img
-                                    className="h-10 w-auto sm:h-10"
-                                    src="/img/logo/logo-white.svg"
-                                    alt=""
-                                />
-                            </a>
+                            <span className="sr-only">Workflow</span>
+                            <img
+                                className="h-10 w-auto sm:h-10"
+                                src="/img/logo/logo-white.svg"
+                                alt=""
+                            />
                         </Link>
                     </div>
                     <div className="-mr-2 -my-2 md:hidden">
@@ -263,16 +255,16 @@ const Header: FC<Props> = ({ background }) => {
                         </Popover> */}
 
                         {links.map(link => (
-                            <Link key={link.href} href={link.href}>
-                                <a
-                                    className={`text-base font-bold text-white ${
-                                        background === "red"
-                                            ? "hover:text-brand-dark-gray"
-                                            : "hover:text-brand-red"
-                                    } transition-all`}
-                                >
-                                    {link.name}
-                                </a>
+                            <Link
+                                key={link.href}
+                                href={link.href}
+                                className={`text-base font-bold text-white ${
+                                    background === "red"
+                                        ? "hover:text-brand-dark-gray"
+                                        : "hover:text-brand-red"
+                                } transition-all`}
+                            >
+                                {link.name}
                             </Link>
                         ))}
 
@@ -400,16 +392,18 @@ const Header: FC<Props> = ({ background }) => {
                             Sign up
                         </a> */}
                         {socialMedia.map(item => (
-                            <Link key={item.href} href={item.href}>
-                                <a className="mx-2">
-                                    <item.icon
-                                        className={`h-7 w-7 text-white ${
-                                            background === "red"
-                                                ? "hover:text-brand-dark-gray"
-                                                : "hover:text-brand-red"
-                                        } transition-all cursor-pointer`}
-                                    />
-                                </a>
+                            <Link
+                                key={item.href}
+                                href={item.href}
+                                className="mx-2"
+                            >
+                                <item.icon
+                                    className={`h-7 w-7 text-white ${
+                                        background === "red"
+                                            ? "hover:text-brand-dark-gray"
+                                            : "hover:text-brand-red"
+                                    } transition-all cursor-pointer`}
+                                />
                             </Link>
                         ))}
                     </div>
@@ -454,16 +448,18 @@ const Header: FC<Props> = ({ background }) => {
                             <div className="mt-6">
                                 <nav className="grid gap-y-8">
                                     {links.map(item => (
-                                        <Link href={item.href} key={item.name}>
-                                            <a className="-m-3 p-3 flex items-center">
-                                                {/* <item.icon
+                                        <Link
+                                            href={item.href}
+                                            key={item.name}
+                                            className="-m-3 p-3 flex items-center"
+                                        >
+                                            {/* <item.icon
                                                     className="flex-shrink-0 h-6 w-6 text-gray-800"
                                                     aria-hidden="true"
                                                 /> */}
-                                                <span className="ml-3 font-bold text-white">
-                                                    {item.name}
-                                                </span>
-                                            </a>
+                                            <span className="ml-3 font-bold text-white">
+                                                {item.name}
+                                            </span>
                                         </Link>
                                     ))}
                                 </nav>
@@ -472,16 +468,18 @@ const Header: FC<Props> = ({ background }) => {
                         <div className="py-6 px-5 space-y-6">
                             <div className="flex justify-around">
                                 {socialMedia.map(item => (
-                                    <Link key={item.href} href={item.href}>
-                                        <a className="mx-2">
-                                            <item.icon
-                                                className={`h-7 w-7 text-white ${
-                                                    background === "red"
-                                                        ? "hover:text-brand-dark-gray"
-                                                        : "hover:text-brand-red"
-                                                } transition-all cursor-pointer`}
-                                            />
-                                        </a>
+                                    <Link
+                                        key={item.href}
+                                        href={item.href}
+                                        className="mx-2"
+                                    >
+                                        <item.icon
+                                            className={`h-7 w-7 text-white ${
+                                                background === "red"
+                                                    ? "hover:text-brand-dark-gray"
+                                                    : "hover:text-brand-red"
+                                            } transition-all cursor-pointer`}
+                                        />
                                     </Link>
                                 ))}
                             </div>

@@ -8,6 +8,15 @@ module.exports = {
     ],
     darkMode: "media",
     theme: {
+        container: {
+            center: true,
+            padding: {
+                DEFAULT: "1rem",
+                sm: "2rem",
+                lg: "8rem",
+                xl: "10rem",
+            },
+        },
         extend: {
             fontFamily: {
                 sans: ["Poppins", ...defaultTheme.fontFamily.sans],
@@ -16,6 +25,9 @@ module.exports = {
             colors: {
                 "brand-red": "#ee2e28",
                 "brand-dark-gray": "#3f3f3f",
+                "cubs-red": "#e62d33",
+                "adventurers-yellow": "#edc019",
+                "wave-blue": "#00b1fd",
             },
         },
     },

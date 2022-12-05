@@ -54,7 +54,7 @@ const Calendar: NextPage<Props> = ({ events }) => {
 
     return (
         <Layout title="Calendar">
-            <div className="p-2">
+            <div className="container mx-auto p-2">
                 <iframe
                     frameBorder="0"
                     height="800"
