@@ -31,7 +31,7 @@ const nextConfig = {
             },
             {
                 source: "/santas-grotto",
-                destination: "https://freedomchurchcheltenham.com",
+                destination: "https://freedom.churchsuite.com/events/fmkkk9mv",
                 permanent: false,
             },
         ]
