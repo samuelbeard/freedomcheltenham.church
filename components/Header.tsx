@@ -50,7 +50,7 @@ const links = [
         description: "DES",
         href: "/calendar",
         icon: RiCalendar2Line,
-        active: true,
+        active: false,
     },
     {
         name: "Visit",
