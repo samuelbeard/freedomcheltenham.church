@@ -29,42 +29,49 @@ const links = [
         description: "DESCRIPTION",
         href: "/about",
         icon: RiBarChart2Line,
+        active: true,
     },
-    // {
-    //     name: "Youth",
-    //     description: "DESCRIPTION",
-    //     href: "/youth",
-    //     icon: RiBarChart2Line,
-    // },
+    {
+        name: "Youth",
+        description: "DESCRIPTION",
+        href: "/youth",
+        icon: RiBarChart2Line,
+        active: false,
+    },
     {
         name: "Kids",
         description: "DESCRIPTION",
         href: "/kids",
         icon: RiBarChart2Line,
+        active: false,
     },
     {
         name: "Calendar",
         description: "DES",
         href: "/calendar",
         icon: RiCalendar2Line,
+        active: true,
     },
     {
         name: "Visit",
         description: "DESCRIPTION",
         href: "/visit",
         icon: RiCursorLine,
+        active: true,
     },
     {
         name: "Messages",
         description: "DESCRIPTION",
         href: "/messages",
         icon: RiShieldLine,
+        active: true,
     },
     {
         name: "Give",
         description: "DESCRIPTION",
         href: "/give",
         icon: RiRefreshLine,
+        active: true,
     },
 ]
 
@@ -254,19 +261,23 @@ const Header: FC<Props> = ({ background }) => {
                             )}
                         </Popover> */}
 
-                        {links.map(link => (
-                            <Link
-                                key={link.href}
-                                href={link.href}
-                                className={`text-base font-bold text-white ${
-                                    background === "red"
-                                        ? "hover:text-brand-dark-gray"
-                                        : "hover:text-brand-red"
-                                } transition-all`}
-                            >
-                                {link.name}
-                            </Link>
-                        ))}
+                        {links.map(link => {
+                            return (
+                                link.active && (
+                                    <Link
+                                        key={link.href}
+                                        href={link.href}
+                                        className={`text-base font-bold text-white ${
+                                            background === "red"
+                                                ? "hover:text-brand-dark-gray"
+                                                : "hover:text-brand-red"
+                                        } transition-all`}
+                                    >
+                                        {link.name}
+                                    </Link>
+                                )
+                            )
+                        })}
 
                         {/* <Popover className="relative">
                             {({ open }) => (
@@ -447,21 +458,25 @@ const Header: FC<Props> = ({ background }) => {
                             </div>
                             <div className="mt-6">
                                 <nav className="grid gap-y-8">
-                                    {links.map(item => (
-                                        <Link
-                                            href={item.href}
-                                            key={item.name}
-                                            className="-m-3 p-3 flex items-center"
-                                        >
-                                            {/* <item.icon
+                                    {links.map(item => {
+                                        return (
+                                            item.active && (
+                                                <Link
+                                                    href={item.href}
+                                                    key={item.name}
+                                                    className="-m-3 p-3 flex items-center"
+                                                >
+                                                    {/* <item.icon
                                                     className="flex-shrink-0 h-6 w-6 text-gray-800"
                                                     aria-hidden="true"
                                                 /> */}
-                                            <span className="ml-3 font-bold text-white">
-                                                {item.name}
-                                            </span>
-                                        </Link>
-                                    ))}
+                                                    <span className="ml-3 font-bold text-white">
+                                                        {item.name}
+                                                    </span>
+                                                </Link>
+                                            )
+                                        )
+                                    })}
                                 </nav>
                             </div>
                         </div>
