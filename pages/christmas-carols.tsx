@@ -1,71 +1,29 @@
-import { useState } from "react"
+"use client"
 import Layout from "../components/Layout"
 import { Tab } from "@headlessui/react"
+import { songs } from "../lib/christmas-carols"
+import { useEffect } from "react"
 
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(" ")
 }
 
 export default function Page() {
-    const songs = [
-        {
-            name: "Angels we have Heard on High",
-            lyrics: `
-                Angels we have heard on high
-                Sweetly singing o'er the plains
-                And the mountains in reply
-                Echoing their joyous strains
-
-                Angels we have heard on high
-                Sweetly, sweetly through the night
-                And the mountains in reply
-                Echoing their brief delight
-
-                Gloria, in excelsis Deo
-                Gloria, in excelsis Deo
-
-                Shepherds, why this jubilee?
-                Why your joyous strains prolong?
-                What the gladsome tidings be
-                Which inspire your heavenly song?
-
-                Gloria, in excelsis Deo
-                Gloria, in excelsis Deo
-
-                Come to Bethlehem and see
-                Him whose birth the angels sing,
-                Come, adore on bended knee,
-                Christ the Lord, the newborn King.
-
-                Gloria, in excelsis Deo
-            `,
-        },
-        {
-            name: "Joy to the world",
-            lyrics: `
-                Lyrics
-                lyrics
-                lyrics
-            `,
-        },
-    ]
-
     return (
         <Layout title="Christmas Carols">
             <div className="container">
-                <h1>Christmas Carols</h1>
+                <h1 className="h1">Christmas Carols</h1>
                 <Tab.Group>
-                    <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
+                    <Tab.List className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 flex-wrap xspace-x-1 rounded p-1">
                         {songs.map(song => (
                             <Tab
                                 key={song.name}
                                 className={({ selected }) =>
                                     classNames(
-                                        "w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700",
-                                        "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2",
+                                        "w-full h-16 col-span-1 rounded py-3 px-2 text-sm leading-5 text-black",
                                         selected
-                                            ? "bg-white shadow"
-                                            : "text-blue-100 hover:bg-white/[0.12] hover:text-white"
+                                            ? "bg-black !text-white shadow"
+                                            : "text-blue-100 hover:text-white border-2 bg-gray-100"
                                     )
                                 }
                             >
@@ -77,11 +35,9 @@ export default function Page() {
                         {songs.map(song => (
                             <Tab.Panel
                                 key={song.name}
-                                className={classNames(
-                                    "rounded p-3",
-                                    "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
-                                )}
+                                className={classNames("rounded p-3")}
                             >
+                                <h2 className="h3 mb-0">{song.name}</h2>
                                 <p
                                     className="whitespace-pre-wrap"
                                     dangerouslySetInnerHTML={{
