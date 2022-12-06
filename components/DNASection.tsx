@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { FC } from "react"
 import DNAData from "../lib/dna.json"
 
@@ -5,7 +6,7 @@ const DNASection: FC = () => {
     return (
         <>
             <section className="section mt-6">
-                <div className="container mx-auto">
+                <div className="container">
                     <h1 className="h1">Our DNA</h1>
                     <p className="para text-lg lg:w-8/12">
                         The Freedom Church DNA are the core values of our
@@ -51,7 +52,8 @@ const DNACard: FC<DNACardProps> = ({ title, image, description }) => {
                     {description}
                 </p>
             </div>
-            <img src={`/img/dna/${image}`} alt="" />
+            {/* <img src={`/img/dna/${image}`} alt="" /> */}
+            <Image src={`/img/dna/${image}`} alt="" width="500" height="500" />
         </div>
     )
 }

@@ -11,6 +11,7 @@ const Footer: FC = () => {
                         alt="Freedom Church"
                         width={120}
                         height={175}
+                        className="mx-auto"
                     />
                     <p className="text-xs mt-3 opacity-75">
                         Registered charity in
