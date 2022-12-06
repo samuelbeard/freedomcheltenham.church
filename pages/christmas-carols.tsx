@@ -36,7 +36,7 @@ export default function Page() {
                 Him whose birth the angels sing,
                 Come, adore on bended knee,
                 Christ the Lord, the newborn King.
-                
+
                 Gloria, in excelsis Deo
             `,
         },
@@ -58,6 +58,7 @@ export default function Page() {
                     <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
                         {songs.map(song => (
                             <Tab
+                                key={song.name}
                                 className={({ selected }) =>
                                     classNames(
                                         "w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700",
@@ -75,6 +76,7 @@ export default function Page() {
                     <Tab.Panels className="mt-2">
                         {songs.map(song => (
                             <Tab.Panel
+                                key={song.name}
                                 className={classNames(
                                     "rounded p-3",
                                     "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
