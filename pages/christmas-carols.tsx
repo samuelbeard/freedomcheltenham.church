@@ -325,7 +325,7 @@ export default function Page() {
                                             "w-full h-16 col-span-1 rounded py-3 px-2 text-sm leading-5 text-black",
                                             selected
                                                 ? "bg-black !text-white shadow"
-                                                : "text-blue-100 hover:text-white border-2 bg-gray-100"
+                                                : "text-black hover:text-white border-2 bg-gray-100"
                                         )
                                     }
                                 >
