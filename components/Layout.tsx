@@ -12,7 +12,7 @@ const Layout: FC<Props> = ({ children, title }) => {
     return (
         <div className="page">
             <Head>
-                <title>{title} | Freedom Church Cheltenham</title>
+                <title>{`${title} | Freedom Church Cheltenham`}</title>
             </Head>
             <Header background="red" />
             {children}
