@@ -43,7 +43,7 @@ const links = [
         description: "DESCRIPTION",
         href: "/kids",
         icon: RiBarChart2Line,
-        active: false,
+        active: true,
     },
     {
         name: "Calendar",
