@@ -6,20 +6,39 @@ const Kids: NextPage = () => {
     return (
         <Layout title="Kids">
             <div className="container mt-12 mb-16">
-                <h1 className="h1">KIDS</h1>
-                <p className="para md:w-8/12 lg:w-1/2">
-                    Freedom kids is a childrens ministry designed to be safe,
-                    age appropriate, fun and engaging! We love teaching the next
-                    generation about Jesus.
-                </p>
-                <h3 className="h3">Relevant content for all age groups</h3>
-                <p className="para md:w-8/12 lg:w-1/2">
-                    We go through teaching in series bringing a topic to life
-                    over several weeks. This is also tailored to each age group,
-                    making sure each session is relevant, engaging and fun.
-                </p>
-                <p>How to sign up</p>
-                <p>When kids stuff happens</p>
+                <div className="md:w-8/12 lg:w-1/2">
+                    <h1 className="h1">KIDS</h1>
+                    <p className="para">
+                        Freedom kids is a childrens ministry designed to be
+                        safe, age appropriate, fun and engaging! We love
+                        teaching the next generation about Jesus.
+                    </p>
+                    <h3 className="h3">Relevant content for all age groups</h3>
+                    <p className="para">
+                        We go through teaching in series bringing a topic to
+                        life over several weeks. This is also tailored to each
+                        age group, making sure each session is relevant,
+                        engaging and fun.
+                    </p>
+                    <h3 className="h3">First Time?</h3>
+                    <p className="para">
+                        We can&apos;t wait to meet you! One of our friendly Kids
+                        volunteers will meet you and your children to welcome
+                        them!{" "}
+                    </p>
+                    <p className="para">
+                        At check-in, we will ask for the following personal
+                        information; family member&apos;s names, children&apos;s
+                        names and birthdates, address, phone number, and any
+                        special instructions such as allergies or special needs
+                        for your child.
+                    </p>
+                    <p className="para">
+                        Your child&apos;s safety is of utmost importance to us
+                        and we commit to creating an environment that is both
+                        fun and engaging as well as safe.
+                    </p>
+                </div>
             </div>
             <section className="bg-cubs-red py-16">
                 <div className="w-7/12 mx-auto">
@@ -62,8 +81,6 @@ const Kids: NextPage = () => {
                                 src="/img/kids/cubs-1.JPG"
                                 alt=""
                             />
-                            Lorah to create an image with two photos over each
-                            other diagonally instead of this 1.
                         </div>
                     </div>
                 </div>
@@ -127,7 +144,7 @@ const Kids: NextPage = () => {
                 </div>
                 <div className="container 2xl:px-56">
                     <div className="md:flex gap-5 lg:gap-24 mt-6">
-                        <div>
+                        <div className="md:w-1/2 mx-auto">
                             <p className="para text-white">
                                 Lorem, ipsum dolor sit amet consectetur
                                 adipisicing elit. Non maiores obcaecati ipsa
@@ -145,11 +162,11 @@ const Kids: NextPage = () => {
                                 This that thtat sid
                             </p>
                         </div>
-                        <img
+                        {/* <img
                             className="rounded shadow-lg w-96"
                             src="/img/kids/cubs-1.JPG"
                             alt=""
-                        />
+                        /> */}
                     </div>
                 </div>
             </section>
