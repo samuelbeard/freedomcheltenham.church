@@ -1,5 +1,6 @@
 import { NextPage } from "next"
 import Image from "next/image"
+import { FC } from "react"
 import Layout from "../components/Layout"
 import DNAData from "../lib/dna.json"
 
@@ -41,6 +42,13 @@ const DNA: NextPage = () => {
 }
 
 export default DNA
+
+interface DNACardProps {
+    title: string
+    image: string
+    description: string
+    right?: boolean
+}
 
 const DNACard: FC<DNACardProps> = ({ title, image, description, right }) => {
     return (

@@ -217,6 +217,9 @@ const Header: FC<Props> = ({ background }) => {
                                                                 l => {
                                                                     return (
                                                                         <Link
+                                                                            key={
+                                                                                l.href
+                                                                            }
                                                                             href={
                                                                                 l.href
                                                                             }
@@ -356,6 +359,7 @@ const Header: FC<Props> = ({ background }) => {
                                                     {item.links.map(l => {
                                                         return (
                                                             <Link
+                                                                key={l.href}
                                                                 href={l.href}
                                                                 className="mr-8 font-bold text-white mt-1"
                                                             >
