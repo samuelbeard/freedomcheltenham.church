@@ -5,7 +5,7 @@ const nextConfig = {
         return [
             {
                 source: "/messages",
-                destination: "https://www.freedomchurch.cc/series",
+                destination: "https://www.freedomchurch.cc/watch",
                 permanent: false,
             },
             {
@@ -30,8 +30,8 @@ const nextConfig = {
                 permanent: false,
             },
             {
-                source: "/santas-grotto",
-                destination: "https://freedom.churchsuite.com/events/fmkkk9mv",
+                source: "/tiktok",
+                destination: "https://www.tiktok.com/@freedomchurchcheltenham",
                 permanent: false,
             },
         ]

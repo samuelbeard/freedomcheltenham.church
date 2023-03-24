@@ -53,7 +53,13 @@ const DNACard: FC<DNACardProps> = ({ title, image, description }) => {
                 </p>
             </div>
             {/* <img src={`/img/dna/${image}`} alt="" /> */}
-            <Image src={`/img/dna/${image}`} alt="" width="500" height="500" />
+            <Image
+                src={`/img/dna/${image}`}
+                className="mx-auto"
+                alt=""
+                width="200"
+                height="200"
+            />
         </div>
     )
 }
