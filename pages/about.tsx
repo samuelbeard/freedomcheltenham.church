@@ -1,12 +1,6 @@
 import { NextPage } from "next"
-import DNASection from "../components/DNASection"
 import Layout from "../components/Layout"
 import Image from "next/image"
-import {
-    RiFacebookBoxLine,
-    RiTwitterLine,
-    RiWhatsappLine,
-} from "react-icons/ri"
 
 const About: NextPage = () => {
     return (
@@ -78,15 +72,6 @@ Link Senior Pastors to: www.freedomchurch.cc/leaders)
 */}
                 </div>
             </div>
-            {/* <section>
-                <div className="container lg:max-w-7xl px-5 pt-24 mx-auto">
-                    <div className="flex flex-col xtext-center w-full xmb-20">
-                        <h1 className="h1 xtext-2xl xfont-medium xtitle-font xmb-4 xtext-gray-900 xtracking-widest">
-                            Our Team
-                        </h1>
-                    </div>
-                </div>
-            </section> */}
             <section className="text-gray-600 body-font mt-24">
                 <div className="container lg:max-w-7xl mx-auto flex px-5 xpy-24 md:flex-row flex-col items-center">
                     <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
@@ -101,11 +86,6 @@ Link Senior Pastors to: www.freedomchurch.cc/leaders)
                     <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
                         <h3 className="h3 font-thin mb-0">Our Pastors</h3>
                         <h2 className="h2 mt-0">Andy &amp; Emily</h2>
-                        {/* <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-                            Our pastors
-                            <br className="hidden lg:inline-block" />
-                            Andy &amp; Emily Rattenbury
-                        </h1> */}
                         <p className="para text-lg">
                             Meet Andy and Em, our Campus Pastors! Andy,
                             originally from Hull and Em, originally from
@@ -169,7 +149,6 @@ Link Senior Pastors to: www.freedomchurch.cc/leaders)
                     </div>
                 </div>
             </section>
-            <DNASection />
         </Layout>
     )
 }
