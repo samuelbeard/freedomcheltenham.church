@@ -63,7 +63,7 @@ const Home: NextPage = () => {
                             <img
                                 alt=""
                                 src="/img/photos/outside-hover.jpg"
-                                className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity group-hover:opacity-75 rounded-lf"
+                                className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity group-hover:opacity-75 rounded-lf filter"
                             />
 
                             <div className="relative p-4 sm:p-6 lg:p-8 flex flex-col justify-between h-full">
