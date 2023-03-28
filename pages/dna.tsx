@@ -9,10 +9,10 @@ const DNA: NextPage = () => {
         <Layout title="DNA">
             <section className="section py-10 bg-black">
                 <div className="container">
-                    <h2 className="font-bold text-white text-[100px] leading-none text-center">
+                    <h2 className="font-bold text-white text-4xl md:text-[100px] leading-none text-center">
                         OUR
                     </h2>
-                    <h1 className="m-0 -mt-10 text-white font-bold text-[250px] leading-none uppercase text-center">
+                    <h1 className="m-0 md:-mt-10 text-white font-bold text-6xl md:text-[250px] leading-none uppercase text-center">
                         DNA
                     </h1>
                     <p className="para text-stone-200 text-lg lg:w-8/12 mx-auto mt-8">
@@ -53,8 +53,8 @@ interface DNACardProps {
 const DNACard: FC<DNACardProps> = ({ title, image, description, right }) => {
     return (
         <div
-            className={`mx-auto bg-black w-full rounded-lg p-5 flex items-center xflex-col ${
-                right && "flex-row-reverse"
+            className={`mx-auto bg-black w-full rounded-lg p-5 flex items-center flex-col ${
+                right ? "md:flex-row-reverse" : "md:flex-row"
             } justify-between shadow`}
         >
             <div>

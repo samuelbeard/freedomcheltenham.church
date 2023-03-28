@@ -1,4 +1,5 @@
 import { NextPage } from "next"
+import Image from "next/image"
 import Layout from "../components/Layout"
 
 const Visit: NextPage = () => {
@@ -11,11 +12,11 @@ const Visit: NextPage = () => {
             </div>
             <section className="text-gray-600 body-font relative">
                 <div className="container px-5 pt-12 mx-auto flex sm:flex-nowrap flex-wrap">
-                    <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                    <div className="w-full lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
                         <iframe
                             className="absolute inset-0"
                             style={{
-                                filter: "grayscale(0.9) contrast(1.2) opacity(0.5)",
+                                filter: "grayscale(0.8) contrast(1.2) opacity(0.7)",
                             }}
                             title="map"
                             // marginHeight="0"
@@ -26,7 +27,7 @@ const Visit: NextPage = () => {
                             height="100%"
                             frameBorder="0"
                         ></iframe>
-                        <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+                        <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md opacity-0 md:opacity-100">
                             <div className="lg:w-full px-6 pr-20">
                                 <p className="mt-1">
                                     <span className="font-bold">
@@ -43,14 +44,12 @@ const Visit: NextPage = () => {
                         </div>
                     </div>
                     <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 lg:pb-48 mt-8 md:mt-0">
-                        <h2 className="h3 text-lg my-1 xfont-medium title-font">
-                            Access and Parking
-                        </h2>
+                        <h2 className="h3 my-1">Access and Parking</h2>
                         <p className="para text-base">
                             There are a variety of parking options available
                             near to the venue, including the High Street Carpark
-                            (GL50 3HQ). Due to the venue’s close proximity to
-                            the town centre, the venue is also accessible via
+                            (GL50 3HQ). Due to the venue&apos;s close proximity
+                            to the town centre, the venue is also accessible via
                             foot, bike, bus and a 20-25 minute walk from
                             Cheltenham Spa train station.
                         </p>
@@ -63,8 +62,11 @@ const Visit: NextPage = () => {
                     </div>
                 </div>
             </section>
-            <div className="container mt-12 mb-16">
-                <div className="md:w-8/12 lg:w-1/2">
+            <div className="container md:flex gap-5 md:mt-20">
+                <div className="md:w-1/2">
+                    <Image width={600} height={400} src="" alt="" />
+                </div>
+                <div className="md:w-6/12 lg:w-1/2">
                     <h3 className="h3">What to Expect</h3>
                     <p className="para">
                         Whatever your background, beliefs or experience of
@@ -79,6 +81,10 @@ const Visit: NextPage = () => {
                         door, showing you where to go and answering any
                         questions you might have.
                     </p>
+                </div>
+            </div>
+            <div className="container mt-10 mb-16">
+                <div className="md:w-8/12 lg:w-1/2 mx-auto">
                     <h3 className="h3">Our Event</h3>
                     <p className="para">
                         Our Church event is vibrant and passionate including

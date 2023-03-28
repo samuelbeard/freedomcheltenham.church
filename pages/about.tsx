@@ -32,13 +32,13 @@ const About: NextPage = () => {
                         We are Freedom Church Cheltenham.
                     </p>
                     <p className="para text-lg lg:w-8/12 bg-brand-red rounded text-white text-center py-2">
-                        EVERY SUNDAY | 11AM | DANCEWORKS STUDIO
+                        EVERY&nbsp;SUNDAY | 11AM | DANCEWORKS&nbsp;STUDIO
                     </p>
                 </div>
             </div>
             <div className="section mt-10">
-                <div className="container flex gap-10">
-                    <div className="w-1/2">
+                <div className="container md:flex gap-10">
+                    <div className="md:w-1/2">
                         <Image
                             src="/img/fd.jpg"
                             width={400}
@@ -47,7 +47,7 @@ const About: NextPage = () => {
                             className="w-full"
                         />
                     </div>
-                    <div className="w-1/2 flex flex-col justify-center">
+                    <div className="md:w-1/2 flex flex-col justify-center mt-8 md:mt-0">
                         <h1 className="h1 mt-0">One Church, Many Locations</h1>
                         {/* TODO: Put an image here */}
                         <p className="para text-lg">
@@ -72,9 +72,9 @@ Link Senior Pastors to: www.freedomchurch.cc/leaders)
 */}
                 </div>
             </div>
-            <section className="text-gray-600 body-font mt-24">
+            <section className="text-gray-600 body-font mt-5 md:mt-24">
                 <div className="container lg:max-w-7xl mx-auto flex px-5 xpy-24 md:flex-row flex-col items-center">
-                    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 xmb-10 md:mb-0">
                         <Image
                             className="object-cover object-center rounded"
                             alt=""
