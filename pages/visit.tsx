@@ -62,11 +62,17 @@ const Visit: NextPage = () => {
                     </div>
                 </div>
             </section>
-            <div className="container md:flex gap-5 md:mt-20">
+            <div className="container md:flex gap-10 md:mt-20">
                 <div className="md:w-1/2">
-                    <Image width={600} height={400} src="" alt="" />
+                    <Image
+                        width={1080}
+                        height={1616}
+                        src="/img/photos/worship-2.jpg"
+                        alt=""
+                        className="rounded md:aspect-square md:object-cover"
+                    />
                 </div>
-                <div className="md:w-6/12 lg:w-1/2">
+                <div className="md:w-6/12 lg:w-1/2 md:flex md:justify-center md:flex-col">
                     <h3 className="h3">What to Expect</h3>
                     <p className="para">
                         Whatever your background, beliefs or experience of

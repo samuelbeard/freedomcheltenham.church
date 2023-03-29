@@ -127,24 +127,28 @@ Link Senior Pastors to: www.freedomchurch.cc/leaders)
                                         happen."
                             fact="I secretly LOVE country music,
                                         genuinely cannot get enough of it"
+                            image="charlie.jpg"
                         />
                         <TeamMember
                             name="Lorah"
                             title="Kids Pastor"
                             bio="As Kids Pastor for Freedom Church Cheltenham, Lorah looks after and oversees  our amazing Kids team. The Kids team aim to ensure that the kids access relevant and engaging content - based on their level and allowing them to connect to a life changing relationship with Jesus."
                             fact="I used to play 'Sunday School' with my little sister as a child and I would 'teach' from my kids devotional book!"
+                            image="lorah.jpg"
                         />
                         <TeamMember
                             name="John and Abi"
                             title="Zeal Pastors"
                             bio="Zeal is for the young people in our church, offering an opportunity to hang out together, talk about life, church and Jesus. Plus a cheeky bit of pizza is normally thrown into the mix too!"
                             fact="I can do an upside-down handstand    I had my hen do at Diggerland – it was amazing!"
+                            image="john-and-abi.jpg"
                         />
                         <TeamMember
                             name="Jen"
                             title="Worship Coordinator"
                             bio="Jen oversees Worship and our Worship team in Freedom Church Cheltenham. This includes organising the team, raising up new musicians and worship leaders, bringing vision, ideas and creativity, and coordinating mid-week practices and Sunday events; whilst working together with our Pastors to ensure the flow of ministry and music in our events. Being part of a global church also offers the exciting opportunity to bring in new songs and sounds from across the movement."
                             fact="My parents were in a country music band"
+                            image="jen.jpg"
                         />
                     </div>
                 </div>
@@ -160,11 +164,13 @@ const TeamMember = ({
     title,
     bio,
     fact,
+    image,
 }: {
     name: string
     title: string
     bio: string
     fact: string
+    image: string
 }) => {
     return (
         <div className="p-4 lg:w-1/2">
@@ -172,7 +178,7 @@ const TeamMember = ({
                 <img
                     alt="team"
                     className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
-                    src="https://dummyimage.com/200x200"
+                    src={`img/photos/${image}`}
                 />
                 <div className="flex-grow sm:pl-8">
                     <h4 className="h4 mb-0">{name}</h4>

@@ -87,13 +87,8 @@ const Home: NextPage = () => {
                         >
                             <img
                                 alt=""
-                                src="/img/photos/outside.jpg"
-                                className="absolute inset-0 h-full w-full object-cover opacity-75 group-hover:opacity-0 transition-opacity xgroup-hover:opacity-50 rounded-lf"
-                            />
-                            <img
-                                alt=""
-                                src="/img/photos/outside-hover.jpg"
-                                className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity group-hover:opacity-75 rounded-lf"
+                                src="/img/photos/praying.jpg"
+                                className="absolute inset-0 h-full w-full object-cover opacity-75 group-hover:opacity-50 transition-opacity rounded-lf"
                             />
 
                             <div className="relative p-4 sm:p-6 lg:p-8 flex flex-col justify-between h-full">
@@ -117,13 +112,8 @@ const Home: NextPage = () => {
                         >
                             <img
                                 alt=""
-                                src="/img/photos/outside.jpg"
-                                className="absolute inset-0 h-full w-full object-cover opacity-75 group-hover:opacity-0 transition-opacity xgroup-hover:opacity-50 rounded-lf"
-                            />
-                            <img
-                                alt=""
-                                src="/img/photos/outside-hover.jpg"
-                                className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity group-hover:opacity-75 rounded-lf"
+                                src="/img/photos/guys.jpg"
+                                className="absolute inset-0 h-full w-full object-cover opacity-75 group-hover:opacity-50 transition-opacity rounded-lf"
                             />
 
                             <div className="relative p-4 sm:p-6 lg:p-8 flex flex-col justify-between h-full">
