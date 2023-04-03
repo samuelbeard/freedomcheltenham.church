@@ -59,20 +59,18 @@ const Kids: NextPage = () => {
                     <div className="md:flex gap-24 mt-6">
                         <div className="text-white md:w-1/2">
                             <p className="para text-white">
-                                Lorem, ipsum dolor sit amet consectetur
-                                adipisicing elit. Non maiores obcaecati ipsa
-                                exercitationem quam ipsam unde provident
-                                adipisci reprehenderit eligendi sequi, laborum
-                                magni voluptates iure libero quo ratione
-                                reiciendis quis?
+                                A fun, loving environment for children aged two
+                                to four years. Children will enjoy play time,
+                                snack time, Bible stories, fun activities and
+                                exciting songs about Jesus. We love to share
+                                God's love with our cubs!
                             </p>
-                            <p className="h4 text-white">What about this?</p>
+                            <h4 className="h4 text-white">Baby Room</h4>
                             <p className="para text-white">
-                                This that thtat sid
-                            </p>
-                            <p className="h4 text-white">What about this?</p>
-                            <p className="para text-white">
-                                This that thtat sid
+                                On Sundays, we have a baby room for nursing
+                                mothers. Kitted out with a changing station and
+                                nap station. There are also soft toys, tea and
+                                coffee and a screen to watch the preach.
                             </p>
                         </div>
                         <div className="w-1/2">
@@ -109,12 +107,10 @@ const Kids: NextPage = () => {
                         </div>
                         <div className="lg:w-1/2 2xl:w-1/3">
                             <p className="para text-brand-dark-gray">
-                                Lorem, ipsum dolor sit amet consectetur
-                                adipisicing elit. Non maiores obcaecati ipsa
-                                exercitationem quam ipsam unde provident
-                                adipisci reprehenderit eligendi sequi, laborum
-                                magni voluptates iure libero quo ratione
-                                reiciendis quis?
+                                For children aged four to seven years. Your
+                                children will begin to learn about their
+                                relationship with God in ways that are simple,
+                                creative and lots of fun!
                             </p>
                         </div>
                         <div className="lg:hidden 2xl:inline 2xl:w-1/3">
@@ -146,32 +142,21 @@ const Kids: NextPage = () => {
                     <div className="md:flex gap-5 lg:gap-24 mt-6">
                         <div className="md:w-1/2 mx-auto">
                             <p className="para text-white">
-                                Lorem, ipsum dolor sit amet consectetur
-                                adipisicing elit. Non maiores obcaecati ipsa
-                                exercitationem quam ipsam unde provident
-                                adipisci reprehenderit eligendi sequi, laborum
-                                magni voluptates iure libero quo ratione
-                                reiciendis quis?
-                            </p>
-                            <p className="h4 text-white">What about this?</p>
-                            <p className="para text-white">
-                                This that thtat sid
-                            </p>
-                            <p className="h4 text-white">What about this?</p>
-                            <p className="para text-white">
-                                This that thtat sid
+                                For children aged seven to eleven years. The
+                                Wave currently joins The Adventurers for fun and
+                                games with an opportunity to dive deeper into
+                                the teaching and their personal relationship
+                                with God.
                             </p>
                         </div>
-                        {/* <img
-                            className="rounded shadow-lg w-96"
-                            src="/img/kids/cubs-1.JPG"
-                            alt=""
-                        /> */}
                     </div>
                 </div>
             </section>
             <div className="container py-10">
-                <p className="para">DBS and other safeguarding info</p>
+                <p className="para">
+                    All our kids vonunteers are DBS checked and meet regularly
+                    for safeguarding training.
+                </p>
             </div>
         </Layout>
     )

@@ -40,11 +40,11 @@ const About: NextPage = () => {
                 <div className="container md:flex gap-10">
                     <div className="md:w-1/2">
                         <Image
-                            src="/img/fd.jpg"
-                            width={400}
-                            height={250}
+                            src="/img/photos/lrb-ij.jpg"
+                            width={1616}
+                            height={1080}
                             alt=""
-                            className="w-full"
+                            className="w-full rounded"
                         />
                     </div>
                     <div className="md:w-1/2 flex flex-col justify-center mt-8 md:mt-0">

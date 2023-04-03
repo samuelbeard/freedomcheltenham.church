@@ -7,6 +7,8 @@ import {
     RiInstagramLine,
     RiFacebookBoxFill,
     RiYoutubeFill,
+    RiBarChart2Line,
+    RiSuperscript,
 } from "react-icons/ri"
 import { FaTiktok } from "react-icons/fa"
 import Link from "next/link"
@@ -28,6 +30,7 @@ interface ILinkAction {
     name: string
     icon: any
     href: string
+    description?: string
 }
 
 const links: ILink[] = [
@@ -64,18 +67,20 @@ const links: ILink[] = [
                 description: "2 - 11 Years",
                 href: "/kids",
             },
-            {
-                name: "Zeal",
-                description: "xxx Years",
-                href: "/zeal",
-            },
+            // {
+            //     name: "Zeal",
+            //     description: "xxx Years",
+            //     href: "/zeal",
+            // },
         ],
         actions: [
-            // {
-            //     name: "Video",
-            //     icon: RiBarChart2Line,
-            //     href: "/video",
-            // },
+            {
+                name: "Sign your Child Up",
+                icon: RiBarChart2Line,
+                href: "/kids-registration",
+                description:
+                    "Joining us for the first time? Pre-register your kids here.",
+            },
             // {
             //     name: "Safeguarding",
             //     icon: RiSuperscript,
@@ -257,13 +262,20 @@ const Header: FC<Props> = ({ background }) => {
                                                                                 href={
                                                                                     item.href
                                                                                 }
-                                                                                className="-m-3 p-3 flex items-center rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
+                                                                                className="-m-3 p-3 flex items-center flex-col rounded-md text-base font-medium text-gray-900 hover:bg-gray-100"
                                                                             >
-                                                                                <span className="ml-3">
+                                                                                <span className="ml-3 w-full">
                                                                                     {
                                                                                         item.name
                                                                                     }
                                                                                 </span>
+                                                                                {item.description && (
+                                                                                    <span className="w-full ml-3 text-sm">
+                                                                                        {
+                                                                                            item.description
+                                                                                        }
+                                                                                    </span>
+                                                                                )}
                                                                             </a>
                                                                         </div>
                                                                     )

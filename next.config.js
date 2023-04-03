@@ -34,6 +34,13 @@ const nextConfig = {
                 destination: "https://www.tiktok.com/@freedomchurchcheltenham",
                 permanent: false,
             },
+
+            {
+                source: "/kids-registration",
+                destination:
+                    "https://docs.google.com/forms/d/e/1FAIpQLSe12agi_7q1hwPl3jTXKPlaGitgUM9i0MjTvStg4gY3mi6UtA/viewform",
+                permanent: false,
+            },
         ]
     },
 }
