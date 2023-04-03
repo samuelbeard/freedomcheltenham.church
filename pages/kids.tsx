@@ -171,7 +171,7 @@ const Kids: NextPage = () => {
                 </div>
             </section>
             <div className="container py-10">
-                <p>DBS and other safeguarding info</p>
+                <p className="para">DBS and other safeguarding info</p>
             </div>
         </Layout>
     )

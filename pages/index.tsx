@@ -9,7 +9,7 @@ import Link from "next/link"
 const Home: NextPage = () => {
     return (
         <div className="w-screen h-screen">
-            <div className="h-full flex justify-between flex-col bg-[url('/hero.jpg')] bg-cover">
+            <div className="h-full flex justify-between flex-col bg-[url('/hero.webp')] bg-cover">
                 <Head>
                     <title>Freedom Church Cheltenham</title>
                 </Head>

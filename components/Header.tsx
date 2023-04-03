@@ -186,7 +186,7 @@ const Header: FC<Props> = ({ background }) => {
                                                     open
                                                         ? "text-gray-900"
                                                         : "text-white",
-                                                    "group rounded-md inline-flex items-center text-base font-bold hover:text-gray-900"
+                                                    "group rounded-md inline-flex items-center text-base font-bold hover:text-gray-900 focus-visible:outline-none"
                                                 )}
                                             >
                                                 <span>{link.name}</span>
