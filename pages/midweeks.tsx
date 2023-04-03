@@ -44,12 +44,12 @@ const Midweeks: NextPage = () => {
                     </h2>
                     <p className="para">
                         We are made in the image of the ultimate creator, and in
-                        our Saltwinds stream we'll be looking at the ways that
-                        we can activate the vision God has given us for new
+                        our Saltwinds stream we&apos;ll be looking at the ways
+                        that we can activate the vision God has given us for new
                         levels of expression and creativity in our church. We
-                        will spend the year learning about God's desire for our
-                        creative skills to be used for him, and finding ways to
-                        serve our Sunday events and social media impact using
+                        will spend the year learning about God&apos;s desire for
+                        our creative skills to be used for him, and finding ways
+                        to serve our Sunday events and social media impact using
                         those skills. So whether you are a poet, a video editor,
                         a TikTok genius or a song-writing novice, why not jump
                         into this stream of people committed to using what is in
@@ -72,10 +72,10 @@ const Midweeks: NextPage = () => {
                     </p>
                     <p className="para">
                         In the first half of the year we will be looking at
-                        God's plan for marriage. It doesn't matter how long
-                        you've been married, there is always more to learn, and
-                        this stream is for those who want to invest in what they
-                        have.
+                        God&apos;s plan for marriage. It doesn&apos;t matter how
+                        long you&apos;ve been married, there is always more to
+                        learn, and this stream is for those who want to invest
+                        in what they have.
                     </p>
                     <p className="para">
                         For the second part of the year the focus will be on

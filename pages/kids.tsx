@@ -63,7 +63,7 @@ const Kids: NextPage = () => {
                                 to four years. Children will enjoy play time,
                                 snack time, Bible stories, fun activities and
                                 exciting songs about Jesus. We love to share
-                                God's love with our cubs!
+                                God&apos;s love with our cubs!
                             </p>
                             <h4 className="h4 text-white">Baby Room</h4>
                             <p className="para text-white">
