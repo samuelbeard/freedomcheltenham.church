@@ -24,7 +24,7 @@ const Kids: NextPage = () => {
                     <p className="para">
                         We can&apos;t wait to meet you! One of our friendly Kids
                         volunteers will meet you and your children to welcome
-                        them!{" "}
+                        them!
                     </p>
                     <p className="para">
                         At check-in, we will ask for the following personal

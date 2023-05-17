@@ -9,13 +9,25 @@ import Link from "next/link"
 const Home: NextPage = () => {
     return (
         <div className="w-screen h-screen">
-            <div className="h-full flex justify-between flex-col bg-[url('/hero.webp')] bg-cover">
+            <div className="bg-brand-red">
+                <Header />
+            </div>
+            <div className="h-full flex justify-between flex-col xbg-[url('/hero.webp')] bg-cover">
+                <video
+                    autoPlay
+                    loop
+                    muted
+                    className="absolute z-10 w-auto min-w-full min-h-full max-w-screen"
+                >
+                    <source src="/video/bg-video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
                 <Head>
                     <title>Freedom Church Cheltenham</title>
                 </Head>
                 {/* <Header /> */}
-                <Header />
-                <div className="flex-grow flex items-center">
+                {/* <Header /> */}
+                <div className="flex-grow flex items-center z-20 bg-black bg-opacity-60">
                     <section className="section">
                         <div className="w-5/6 lg:w-full max-w-7xl grid grid-cols-3 gap-0">
                             <div className="w-36 md:w-96 mx-auto col-span-3 md:col-span-1 flex justify-center items-center">
@@ -37,19 +49,21 @@ const Home: NextPage = () => {
                                         Cheltenham
                                     </span>
                                 </h1>
-                                <h3 className="italic text-white opacity-60 mt-6 text-xl">
-                                    Connecting Anyone Anywhere to a Life
-                                    <br />
-                                    Changing Relationship with Jesus
-                                </h3>
                             </div>
                         </div>
                     </section>
                 </div>
                 <EventBanner />
             </div>
-            <div className="section">
-                <div className="container py-12">
+            <div className="section z-30 bg-white">
+                <h3 className="xitalic xtext-white xopacity-60 mt-6 text-xl">
+                    Connecting Anyone Anywhere to a Life
+                    <br />
+                    Changing Relationship with Jesus
+                </h3>
+            </div>
+            <div className="section z-30 bg-white">
+                <div className="container py-12 z-30 bg-white">
                     <div className="grid grid-cols-3 gap-6">
                         <Link
                             href="/visit"
