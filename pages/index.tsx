@@ -9,24 +9,23 @@ import Link from "next/link"
 const Home: NextPage = () => {
     return (
         <div className="w-screen h-screen">
-            <div className="bg-brand-red">
+            <div className="z-30 absolute top-0 left-0 w-screen bg-brand-red">
                 <Header />
             </div>
-            <div className="h-full flex justify-between flex-col xbg-[url('/hero.webp')] bg-cover">
-                <video
-                    autoPlay
-                    loop
-                    muted
-                    className="absolute z-10 w-auto min-w-full min-h-full max-w-screen"
-                >
-                    <source src="/video/bg-video.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
+            <div className="h-full flex justify-between flex-col bg-black">
+                <div className="absolute top-0 bottom-0 w-full h-full overflow-hidden">
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        className="object-cover z-10 min-w-full min-h-full w-auto h-auto absolute"
+                    >
+                        <source src="/video/bg-video.mp4" type="video/mp4" />
+                    </video>
+                </div>
                 <Head>
                     <title>Freedom Church Cheltenham</title>
                 </Head>
-                {/* <Header /> */}
-                {/* <Header /> */}
                 <div className="flex-grow flex items-center z-20 bg-black bg-opacity-60">
                     <section className="section">
                         <div className="w-5/6 lg:w-full max-w-7xl grid grid-cols-3 gap-0">
