@@ -5,71 +5,66 @@ import Image from "next/image"
 const About: NextPage = () => {
     return (
         <Layout title="About">
+            <section className="section mt-5">
+                <h1 className="h1 text-6xl">Welcome!</h1>
+            </section>
             <div className="section">
                 <div className="container mt-10">
-                    <h1 className="h1">Welcome!</h1>
-                    <p className="para text-lg lg:w-8/12">
-                        Everyone is welcome at Freedom Church Cheltenham. We are
-                        an inclusive, diverse family and community that loves
-                        people. We are passionate about seeing people thrive and
-                        find their purpose through a personal, life transforming
-                        relationship with Jesus. Young or mature, believer or
-                        undecided, there&apos;s something for everyone.
+                    <p className="para text-lg lg:w-8/12 mx-auto">
+                        Welcome to Freedom Church Cheltenham! We embrace all,
+                        forming a diverse, loving family. Our passion is to help
+                        people thrive through a personal, transformative
+                        relationship with Jesus. Whether young or old, believer
+                        or unsure, there&apos;s something for everyone.
                     </p>
-                    <p className="para text-lg lg:w-8/12">
-                        We believe that the gospel is alive, relevant, exciting
-                        and life giving. That as followers of Jesus we are
-                        called to a life of growth, adventure and fruitfulness
-                        &ndash; rooted in loving God and loving others. We
-                        believe that community is intrinsic to who we are and
-                        that we are not called to do life alone. We choose to
-                        pursue &quot;Live Full, Die Empty&quot; lives &ndash;
-                        activating audacious faith, trusting in who God says he
-                        is, honouring those around us, expressing gratitude, and
-                        mirroring Jesus to the world around us.
+                    <p className="para text-lg lg:w-8/12 mx-auto">
+                        We believe the gospel is alive and relevant, bringing
+                        excitement and abundant life. As followers of Jesus,
+                        we&apos;re called to grow, explore, and bear fruit by
+                        loving God and others. Community is vital to us;
+                        we&apos;re not meant to walk alone. Our pursuit is to
+                        live fully, leaving a lasting impact by having audacious
+                        faith, trusting God&apos;s character, honoring others,
+                        expressing gratitude, and reflecting Jesus to the world.
                     </p>
-                    <p className="para text-lg lg:w-8/12">
+                    <p className="para text-lg lg:w-8/12 mx-auto">
                         We are Freedom Church Cheltenham.
                     </p>
-                    <p className="para text-lg lg:w-8/12 bg-brand-red rounded text-white text-center py-2">
+                    <p className="para text-lg lg:w-8/12 mx-auto bg-brand-red rounded text-white text-center py-2">
                         EVERY&nbsp;SUNDAY | 11AM | DANCEWORKS&nbsp;STUDIO
                     </p>
                 </div>
             </div>
-            <div className="section mt-10">
-                <div className="container md:flex gap-10">
-                    <div className="md:w-1/2">
-                        <Image
-                            src="/img/photos/lrb-ij.jpg"
-                            width={1616}
-                            height={1080}
-                            alt=""
-                            className="w-full rounded"
-                        />
+            <div className="section mt-10 bg-[url('/img/photos/cave-2023.jpg')] bg-cover mt-10">
+                <div className="bg-black py-10 lg:py-24 bg-opacity-50 w-full">
+                    <div className="container md:flex gap-10">
+                        <div className="md:w-1/2 flex items-center">
+                            <h1 className="h1 mt-0 text-white text-6xl">
+                                One
+                                <br />
+                                Church,
+                                <br />
+                                Many
+                                <br />
+                                Locations
+                            </h1>
+                        </div>
+                        <div className="md:w-1/2 flex flex-col justify-center mt-8 md:mt-0">
+                            <p className="para text-lg text-white">
+                                Freedom Church Cheltenham is one of many
+                                locations within the Freedom Church movement.
+                                Freedom Church is a non-denominational Church
+                                that teaches the truth of the Bible and shares
+                                the power of the gospel in relevant, accessible
+                                forms. Our vision is Connecting Anyone Anywhere,
+                                to a Life Changing Relationship with Jesus.
+                                Freedom Church is led by our Senior Pastors,
+                                Gary and Heather Snowzell and our Directional
+                                Leadership Team, with each Campus or Firestarter
+                                being led by a Campus or Location leader.
+                            </p>
+                        </div>
                     </div>
-                    <div className="md:w-1/2 flex flex-col justify-center mt-8 md:mt-0">
-                        <h1 className="h1 mt-0">One Church, Many Locations</h1>
-                        {/* TODO: Put an image here */}
-                        <p className="para text-lg">
-                            Freedom Church Cheltenham is one of many locations
-                            within the Freedom Church movement. Freedom Church
-                            is a non-denominational Church that teaches the
-                            truth of the Bible and shares the power of the
-                            gospel in relevant, accessible forms. Our vision is
-                            Connecting Anyone Anywhere, to a Life Changing
-                            Relationship with Jesus. Freedom Church is led by
-                            our Senior Pastors, Gary and Heather Snowzell and
-                            our Directional Leadership Team, with each Campus or
-                            Firestarter being led by a Campus or Location
-                            leader.
-                        </p>
-                    </div>
-                    {/* TODO Buttons  - Find out more about Freedom Church Here (ADD BUTTON) 
-
-(Link Freedom Church to: www.freedomchurch.cc 
-Link Many Locations to: www.freedomchurch.cc/locations 
-Link Senior Pastors to: www.freedomchurch.cc/leaders) 
-*/}
                 </div>
             </div>
             <section className="text-gray-600 body-font mt-5 md:mt-24">
