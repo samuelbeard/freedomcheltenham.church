@@ -117,13 +117,13 @@ const links: ILink[] = [
         links: [],
         actions: [],
     },
-    // {
-    //     name: "Contact Us",
-    //     href: "/contact",
-    //     active: true,
-    //     links: [],
-    //     actions: [],
-    // },
+    {
+        name: "Contact Us",
+        href: "/contact",
+        active: true,
+        links: [],
+        actions: [],
+    },
 ]
 
 const socialMedia = [

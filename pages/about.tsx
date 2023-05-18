@@ -35,7 +35,7 @@ const About: NextPage = () => {
                     </p>
                 </div>
             </div>
-            <div className="section mt-10 bg-[url('/img/photos/cave-2023.jpg')] bg-cover mt-10">
+            <div className="section mt-10 bg-[url('/img/photos/cave-2023.jpg')] bg-cover">
                 <div className="bg-black py-10 lg:py-24 bg-opacity-50 w-full">
                     <div className="container md:flex gap-10">
                         <div className="md:w-1/2 flex items-center">
