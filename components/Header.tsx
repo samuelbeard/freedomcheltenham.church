@@ -51,15 +51,22 @@ const links: ILink[] = [
         actions: [],
     },
     {
-        name: "Calendar",
-        href: "/calendar",
+        name: "Visit",
+        href: "/visit",
         active: true,
         links: [],
         actions: [],
     },
+    // {
+    //     name: "Calendar",
+    //     href: "/calendar",
+    //     active: true,
+    //     links: [],
+    //     actions: [],
+    // },
     {
-        name: "Youth",
-        href: "/youth",
+        name: "Families",
+        href: "/families",
         active: false,
         links: [
             {
@@ -88,13 +95,7 @@ const links: ILink[] = [
             // },
         ],
     },
-    {
-        name: "Visit",
-        href: "/visit",
-        active: true,
-        links: [],
-        actions: [],
-    },
+
     {
         name: "Midweeks",
         href: "/midweeks",
@@ -116,6 +117,13 @@ const links: ILink[] = [
         links: [],
         actions: [],
     },
+    // {
+    //     name: "Contact Us",
+    //     href: "/contact",
+    //     active: true,
+    //     links: [],
+    //     actions: [],
+    // },
 ]
 
 const socialMedia = [
