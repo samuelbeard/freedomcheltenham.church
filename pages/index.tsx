@@ -54,19 +54,21 @@ const Home: NextPage = () => {
                 </div>
                 <EventBanner />
             </div>
-            <div className="section z-30 bg-white">
-                <h3 className="xitalic xtext-white xopacity-60 mt-6 text-xl">
-                    Connecting Anyone Anywhere to a Life
-                    <br />
-                    Changing Relationship with Jesus
-                </h3>
+            <div className="section z-30 bg-white py-5">
+                <div className="container text-center">
+                    <h3 className="italic mt-6 text-3xl">
+                        Connecting Anyone Anywhere to a Life
+                        <br />
+                        Changing Relationship with&nbsp;Jesus
+                    </h3>
+                </div>
             </div>
             <div className="section z-30 bg-white">
                 <div className="container py-12 z-30 bg-white">
                     <div className="grid grid-cols-3 gap-6">
                         <Link
                             href="/visit"
-                            className="w-full group relative block bg-black rounded shadow-lg hover:shadow transition-all overflow-hidden"
+                            className="w-full group relative block bg-black rounded shadow-lg hover:shadow transition-all overflow-hidden col-span-3 md:col-span-1"
                         >
                             <img
                                 alt=""
@@ -96,7 +98,7 @@ const Home: NextPage = () => {
                         </Link>
                         <Link
                             href="/about"
-                            className="w-full group relative block bg-black rounded shadow-lg hover:shadow transition-all overflow-hidden"
+                            className="w-full group relative block bg-black rounded shadow-lg hover:shadow transition-all overflow-hidden col-span-3 md:col-span-1"
                         >
                             <img
                                 alt=""
@@ -121,7 +123,7 @@ const Home: NextPage = () => {
                         </Link>
                         <Link
                             href="/midweeks"
-                            className="w-full group relative block bg-black rounded shadow-lg hover:shadow transition-all overflow-hidden"
+                            className="w-full group relative block bg-black rounded shadow-lg hover:shadow transition-all overflow-hidden col-span-3 md:col-span-1"
                         >
                             <img
                                 alt=""
