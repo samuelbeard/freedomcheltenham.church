@@ -5,7 +5,7 @@ const nextConfig = {
         return [
             {
                 source: "/messages",
-                destination: "https://www.freedomchurch.cc/series",
+                destination: "https://www.freedomchurch.cc/watch",
                 permanent: false,
             },
             {
@@ -30,8 +30,15 @@ const nextConfig = {
                 permanent: false,
             },
             {
-                source: "/santas-grotto",
-                destination: "https://freedom.churchsuite.com/events/fmkkk9mv",
+                source: "/tiktok",
+                destination: "https://www.tiktok.com/@freedomchurchcheltenham",
+                permanent: false,
+            },
+
+            {
+                source: "/kids-registration",
+                destination:
+                    "https://docs.google.com/forms/d/e/1FAIpQLSe12agi_7q1hwPl3jTXKPlaGitgUM9i0MjTvStg4gY3mi6UtA/viewform",
                 permanent: false,
             },
         ]

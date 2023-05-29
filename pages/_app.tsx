@@ -10,6 +10,10 @@ function MyApp({ Component, pageProps }: AppProps) {
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"
                 ></meta>
+                <meta
+                    property="description"
+                    content="Connecting Anyone Anywhere to a Life Changing Relationship with Jesus"
+                />
             </Head>
             <Component {...pageProps} />
         </>

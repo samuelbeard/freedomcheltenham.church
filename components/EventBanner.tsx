@@ -1,6 +1,11 @@
 import { useState, Fragment, useMemo } from "react"
 import { NextComponentType } from "next"
-import { RiAtLine, RiCalendarLine, RiMapPin2Line } from "react-icons/ri"
+import {
+    RiAtLine,
+    RiCalendarLine,
+    RiMapPin2Line,
+    RiTimeLine,
+} from "react-icons/ri"
 import { Dialog, Transition } from "@headlessui/react"
 
 const EventBanner: NextComponentType = () => {
@@ -8,7 +13,7 @@ const EventBanner: NextComponentType = () => {
 
     return (
         <>
-            <div className="h-48 md:h-20 bg-brand-red flex justify-around items-center flex-wrap md:flex-nowrap">
+            <div className="h-48 md:h-20 bg-brand-red flex justify-around items-center flex-wrap md:flex-nowrap z-20">
                 <div className="flex justify-center items-center text-white">
                     <RiCalendarLine className="h-8 w-8 mr-3" />
                     <h2 className="uppercase font-bold flex">Every sunday</h2>
@@ -20,7 +25,7 @@ const EventBanner: NextComponentType = () => {
                     </h2>
                 </div>
                 <div className="flex justify-center items-center text-white">
-                    <RiAtLine className="h-8 w-8 mr-3" />
+                    <RiTimeLine className="h-8 w-8 mr-3" />
                     <h2 className="uppercase font-bold flex">11AM</h2>
                 </div>
                 <div className="flex justify-center items-center text-white">
