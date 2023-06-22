@@ -66,7 +66,7 @@ const About: NextPage = () => {
                         <div className="relative rounded-xl h-fit overflow-hidden">
                             <img
                                 className="mx-auto h-fu"
-                                src="img/photos/charlie.jpg"
+                                src="img/photos/charlie-img.jpg"
                                 alt=""
                                 loading="lazy"
                             />
@@ -87,7 +87,7 @@ const About: NextPage = () => {
                         <div className="relative rounded-xl h-fit overflow-hidden">
                             <img
                                 className="mx-auto h-fu"
-                                src="img/photos/john-and-abi.jpg"
+                                src="img/photos/john-and-abi-img.jpg"
                                 alt=""
                                 loading="lazy"
                             />

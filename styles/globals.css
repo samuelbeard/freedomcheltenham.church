@@ -44,4 +44,8 @@
     .section {
         @apply flex justify-center w-full;
     }
+
+    footer a {
+        @apply block hover:underline;
+    }
 }

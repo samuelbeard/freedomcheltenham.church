@@ -26,7 +26,7 @@ const Home: NextPage = () => {
                 <Head>
                     <title>Freedom Church Cheltenham</title>
                 </Head>
-                <div className="flex-grow flex items-center z-20 bg-black bg-opacity-60">
+                <div className="flex-grow flex items-center z-10 bg-black bg-opacity-60">
                     <section className="section">
                         <div className="w-5/6 lg:w-full max-w-7xl grid grid-cols-3 gap-0">
                             <div className="w-36 md:w-96 mx-auto col-span-3 md:col-span-1 flex justify-center items-center">
