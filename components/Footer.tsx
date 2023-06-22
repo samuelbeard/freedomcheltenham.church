@@ -39,13 +39,21 @@ const Footer: FC = () => {
                 <div className="col-span-3 sm:col-span-1">
                     <h4 className="h4 text-white">Links</h4>
                     {links.map(link => {
-                        return <Link href={link[1]}>{link[0]}</Link>
+                        return (
+                            <Link key={link[0]} href={link[1]}>
+                                {link[0]}
+                            </Link>
+                        )
                     })}
                 </div>
                 <div className="col-span-3 sm:col-span-1">
                     <h4 className="h4 text-white hidden sm:block">&nbsp;</h4>
                     {links2.map(link => {
-                        return <Link href={link[1]}>{link[0]}</Link>
+                        return (
+                            <Link key={link[0]} href={link[1]}>
+                                {link[0]}
+                            </Link>
+                        )
                     })}
                 </div>
             </div>
