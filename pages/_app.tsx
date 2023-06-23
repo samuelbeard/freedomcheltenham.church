@@ -11,9 +11,10 @@ function MyApp({ Component, pageProps }: AppProps) {
                     content="width=device-width, initial-scale=1.0"
                 ></meta>
                 <meta
-                    property="description"
+                    name="description"
                     content="Connecting Anyone Anywhere to a Life Changing Relationship with Jesus"
                 />
+                <meta property="og:image" content="/img/logo/og-image.png" />
             </Head>
             <Component {...pageProps} />
         </>
