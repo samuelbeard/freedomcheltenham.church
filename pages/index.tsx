@@ -161,14 +161,11 @@ const Home: NextPage = () => {
                     </div>
                 </div>
             </div>
-            <section className="section bg-black py-10">
+            {/* <section className="section bg-black py-10">
                 <div className="container">
                     <InstagramFeed />
                 </div>
-            </section>
-            {/* <div className="section">
-                <div className="container py-12">instagram stuff</div>
-            </div> */}
+            </section> */}
             <Footer />
         </div>
     )

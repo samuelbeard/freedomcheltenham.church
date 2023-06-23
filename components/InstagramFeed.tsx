@@ -59,7 +59,10 @@ const InstagramFeed = () => {
                                 <video
                                     key={item.permalink}
                                     className="w-44 xh-44"
-                                    controls
+                                    // controls
+                                    muted
+                                    autoPlay
+                                    loop
                                 >
                                     <source
                                         src={item.media_url}
