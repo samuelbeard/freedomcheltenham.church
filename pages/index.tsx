@@ -5,6 +5,7 @@ import Header from "../components/Header"
 import EventBanner from "../components/EventBanner"
 import Footer from "../components/Footer"
 import Link from "next/link"
+import InstagramFeed from "../components/InstagramFeed"
 
 const Home: NextPage = () => {
     return (
@@ -54,6 +55,7 @@ const Home: NextPage = () => {
                 </div>
                 <EventBanner />
             </div>
+
             <div className="section z-30 bg-black text-white xpy-10 bg-[url('/img/photos/worshiping.jpg')] bg-cover bg-center bg-no-repeat">
                 <div className="w-full py-24 text-center bg-black bg-opacity-80">
                     <h3 className="italicx uppercase font-extrabold xmt-6 text-6xl">
@@ -159,6 +161,11 @@ const Home: NextPage = () => {
                     </div>
                 </div>
             </div>
+            <section className="section bg-black py-10">
+                <div className="container">
+                    <InstagramFeed />
+                </div>
+            </section>
             {/* <div className="section">
                 <div className="container py-12">instagram stuff</div>
             </div> */}
