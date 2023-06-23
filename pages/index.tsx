@@ -54,17 +54,28 @@ const Home: NextPage = () => {
                 </div>
                 <EventBanner />
             </div>
-            <div className="section z-30 bg-white py-5">
-                <div className="container text-center">
-                    <h3 className="italic mt-6 text-3xl">
-                        Connecting Anyone Anywhere to a Life
+            <div className="section z-30 bg-black text-white xpy-10 bg-[url('/img/photos/worshiping.jpg')] bg-cover bg-center bg-no-repeat">
+                <div className="w-full py-24 text-center bg-black bg-opacity-80">
+                    <h3 className="italicx uppercase font-extrabold xmt-6 text-6xl">
+                        Connecting
                         <br />
-                        Changing Relationship with&nbsp;Jesus
+                        <span className="text-7xl text-brand-red">
+                            Anyone&nbsp;Anywhere
+                        </span>
+                        <br />
+                        <span className="">to a</span>{" "}
+                        <span className="italic">Life Changing</span>
+                        <br />
+                        Relationship with
+                        <br />
+                        <span className="text-9xl drop-shadow-[0_0_50px_rgba(255,0,0,1)]">
+                            Jesus
+                        </span>
                     </h3>
                 </div>
             </div>
-            <div className="section z-30 bg-white">
-                <div className="container py-12 z-30 bg-white">
+            <div className="section z-30 bg-black py-10">
+                <div className="container py-12 z-30">
                     <div className="grid grid-cols-3 gap-6">
                         <Link
                             href="/visit"

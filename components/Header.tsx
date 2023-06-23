@@ -154,7 +154,7 @@ function classNames(...classes: string[]) {
 }
 
 interface Props {
-    background?: null | "red"
+    background?: null | "red" | "black"
 }
 
 const Header: FC<Props> = ({ background }) => {
