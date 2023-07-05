@@ -25,7 +25,7 @@ const DNA: NextPage = () => {
                 </div>
             </section>
             <section className="section pb-12 bg-black">
-                <div className="container lg:w-2/3 mx-auto pb-3 pt-7">
+                <div className="container lg:w-5/6 2xl:w-4/5 mx-auto pb-3 pt-7">
                     {DNAData.map((dna, i) => (
                         <DNACard
                             key={dna.title}

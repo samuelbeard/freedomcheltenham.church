@@ -12,7 +12,7 @@ const Visit: NextPage = () => {
             </div>
             <section className="text-gray-600 body-font relative">
                 <div className="container px-5 pt-12 mx-auto flex sm:flex-nowrap flex-wrap">
-                    <div className="w-full lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                    <div className="w-full lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative shadow">
                         <iframe
                             className="absolute inset-0"
                             style={{
@@ -69,7 +69,7 @@ const Visit: NextPage = () => {
                         height={1616}
                         src="/img/photos/worship-2.jpg"
                         alt=""
-                        className="rounded md:aspect-square md:object-cover"
+                        className="rounded md:aspect-square md:object-cover shadow"
                     />
                 </div>
                 <div className="md:w-6/12 lg:w-1/2 md:flex md:justify-center md:flex-col">

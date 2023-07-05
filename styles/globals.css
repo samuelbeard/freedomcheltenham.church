@@ -45,6 +45,10 @@
         @apply flex justify-center w-full;
     }
 
+    .social-media-bubble {
+        @apply text-white bg-black rounded-full h-14 w-14 flex justify-center items-center transition-all border-2 border-black hover:border-white;
+    }
+
     footer a {
         @apply block hover:underline;
     }

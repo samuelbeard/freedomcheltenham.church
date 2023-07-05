@@ -91,7 +91,7 @@ const Midweeks: NextPage = () => {
                     </p>
                 </div>
             </div>
-            <section className="bg-brand-dark-gray">
+            <section className="h-[200px] flex flex-col justify-center bg-black bg-[url('/img/elements/she-banner.png')] lg:bg-contain bg-right bg-no-repeat">
                 <div className="container py-10">
                     <h1 className="h1 text-white my-0">SHE</h1>
                     <p className="lg:w-1/2 text-white">
@@ -115,7 +115,7 @@ const Midweeks: NextPage = () => {
                     </p>
                 </div>
             </div>
-            <section className="bg-brand-dark-gray">
+            <section className="h-[200px] flex flex-col justify-center bg-black bg-[url('/img/elements/barbarians-banner.png')] lg:bg-contain bg-right bg-no-repeat">
                 <div className="container py-10">
                     <h1 className="h1 text-white my-0">BARBARIANS</h1>
                     <p className="lg:w-1/2 text-white">
@@ -123,6 +123,13 @@ const Midweeks: NextPage = () => {
                     </p>
                 </div>
             </section>
+            {/* <section className="bg-black">
+                <img
+                    className="xmx-auto"
+                    src="/img/elements/barbarians-banner.png"
+                    alt=""
+                />
+            </section> */}
             <div className="container mt-12 mb-16">
                 <div className="md:w-8/12 lg:w-1/2">
                     <p className="para">

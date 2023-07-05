@@ -5,12 +5,14 @@ import Header from "../components/Header"
 import EventBanner from "../components/EventBanner"
 import Footer from "../components/Footer"
 import Link from "next/link"
+import InstagramFeed from "../components/InstagramFeed"
+import KeepConnectedSection from "../components/KeepConnectedSection"
 
 const Home: NextPage = () => {
     return (
         <div className="w-screen h-screen">
-            <div className="z-30 absolute top-0 left-0 w-screen bg-brand-red">
-                <Header />
+            <div className="z-30 absolute top-0 left-0 w-screen">
+                <Header background="black" />
             </div>
             <div className="h-full flex justify-between flex-col bg-black">
                 <div className="absolute top-0 bottom-0 w-full h-full overflow-hidden">
@@ -28,20 +30,20 @@ const Home: NextPage = () => {
                 </Head>
                 <div className="flex-grow flex items-center z-10 bg-black bg-opacity-60">
                     <section className="section">
-                        <div className="w-5/6 lg:w-full max-w-7xl grid grid-cols-3 gap-0">
-                            <div className="w-36 md:w-96 mx-auto col-span-3 md:col-span-1 flex justify-center items-center">
+                        <div className="w-5/6 max-w-7xl grid grid-cols-3 gap-0">
+                            {/* <div className="w-36 md:w-96 mx-auto col-span-3 md:col-span-1 flex justify-center items-center">
                                 <Image
                                     src="/img/logo/logo-white.svg"
                                     alt="Freedom Church"
                                     height={400}
                                     width={400}
                                 />
-                            </div>
+                            </div> */}
                             <div className="mx-auto col-span-3 md:col-span-2 flex flex-col justify-center text-center md:text-left">
-                                <h2 className="h2x font-bold text-xl md:text-2xl lg:text-4xl m-0 text-white">
+                                <h2 className="font-bold text-xl md:text-2xl lg:text-4xl m-0 text-white">
                                     Welcome to
                                 </h2>
-                                <h1 className="h1 text-2xl md:text-4xl lg:text-7xl m-0 uppercase text-white">
+                                <h1 className="h1 text-2xl md:text-4xl lg:text-8xl m-0 uppercase text-white">
                                     Freedom&nbsp;Church
                                     <br />
                                     <span className="text-brand-red">
@@ -54,17 +56,29 @@ const Home: NextPage = () => {
                 </div>
                 <EventBanner />
             </div>
-            <div className="section z-30 bg-white py-5">
-                <div className="container text-center">
-                    <h3 className="italic mt-6 text-3xl">
-                        Connecting Anyone Anywhere to a Life
+
+            <div className="section z-30 bg-black text-white bg-[url('/img/photos/worshiping.jpg')] bg-cover bg-center bg-no-repeat">
+                <div className="w-full py-24 text-center bg-black bg-opacity-80">
+                    <h3 className="uppercase font-extrabold text-2xl md:text-6xl">
+                        Connecting
                         <br />
-                        Changing Relationship with&nbsp;Jesus
+                        <span className="text-3xl md:text-7xl text-brand-red">
+                            Anyone&nbsp;Anywhere
+                        </span>
+                        <br />
+                        <span className="">to a</span>{" "}
+                        <span className="italic">Life Changing</span>
+                        <br />
+                        Relationship with
+                        <br />
+                        <span className="text-5xl md:text-9xl drop-shadow-[0_0_50px_rgba(255,0,0,1)]">
+                            Jesus
+                        </span>
                     </h3>
                 </div>
             </div>
-            <div className="section z-30 bg-white">
-                <div className="container py-12 z-30 bg-white">
+            <div className="section z-30 bg-black py-10">
+                <div className="container py-12 z-30">
                     <div className="grid grid-cols-3 gap-6">
                         <Link
                             href="/visit"
@@ -148,9 +162,11 @@ const Home: NextPage = () => {
                     </div>
                 </div>
             </div>
-            {/* <div className="section">
-                <div className="container py-12">instagram stuff</div>
-            </div> */}
+            {/* <section className="section bg-black py-10">
+                <div className="container">
+                    <InstagramFeed />
+                </div>
+            </section> */}
             <Footer />
         </div>
     )

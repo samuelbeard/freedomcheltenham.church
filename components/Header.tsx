@@ -154,15 +154,15 @@ function classNames(...classes: string[]) {
 }
 
 interface Props {
-    background?: null | "red"
+    background?: null | "red" | "black"
 }
 
 const Header: FC<Props> = ({ background }) => {
     return (
         <Popover
-            className={`z-50 relative ${
+            className={`z-50 relative shadow-lg ${
                 background === "red" ? `bg-brand-red` : ""
-            }`}
+            } ${background === "black" ? `bg-black` : ""}`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
@@ -199,7 +199,7 @@ const Header: FC<Props> = ({ background }) => {
                                                     open
                                                         ? "text-gray-900"
                                                         : "text-white",
-                                                    "group rounded-md inline-flex items-center text-base font-bold hover:text-gray-900 focus-visible:outline-none"
+                                                    "group rounded-md inline-flex items-center text-base font-bold hover:text-brand-red focus-visible:outline-none"
                                                 )}
                                             >
                                                 <span>{link.name}</span>
