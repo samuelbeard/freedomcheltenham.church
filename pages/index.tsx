@@ -6,6 +6,7 @@ import EventBanner from "../components/EventBanner"
 import Footer from "../components/Footer"
 import Link from "next/link"
 import InstagramFeed from "../components/InstagramFeed"
+import KeepConnectedSection from "../components/KeepConnectedSection"
 
 const Home: NextPage = () => {
     return (
