@@ -59,10 +59,10 @@ const Home: NextPage = () => {
 
             <div className="section z-30 bg-black text-white bg-[url('/img/photos/worshiping.jpg')] bg-cover bg-center bg-no-repeat">
                 <div className="w-full py-24 text-center bg-black bg-opacity-80">
-                    <h3 className="italicx uppercase font-extrabold xmt-6 text-6xl">
+                    <h3 className="uppercase font-extrabold text-2xl md:text-6xl">
                         Connecting
                         <br />
-                        <span className="text-7xl text-brand-red">
+                        <span className="text-3xl md:text-7xl text-brand-red">
                             Anyone&nbsp;Anywhere
                         </span>
                         <br />
@@ -71,7 +71,7 @@ const Home: NextPage = () => {
                         <br />
                         Relationship with
                         <br />
-                        <span className="text-9xl drop-shadow-[0_0_50px_rgba(255,0,0,1)]">
+                        <span className="text-5xl md:text-9xl drop-shadow-[0_0_50px_rgba(255,0,0,1)]">
                             Jesus
                         </span>
                     </h3>

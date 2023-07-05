@@ -91,7 +91,7 @@ const Midweeks: NextPage = () => {
                     </p>
                 </div>
             </div>
-            <section className="h-[200px] flex flex-col justify-center bg-black bg-[url('/img/elements/she-banner.png')] bg-contain bg-right bg-no-repeat">
+            <section className="h-[200px] flex flex-col justify-center bg-black bg-[url('/img/elements/she-banner.png')] lg:bg-contain bg-right bg-no-repeat">
                 <div className="container py-10">
                     <h1 className="h1 text-white my-0">SHE</h1>
                     <p className="lg:w-1/2 text-white">
@@ -115,7 +115,7 @@ const Midweeks: NextPage = () => {
                     </p>
                 </div>
             </div>
-            <section className="h-[200px] flex flex-col justify-center bg-black bg-[url('/img/elements/barbarians-banner.png')] bg-contain bg-right bg-no-repeat">
+            <section className="h-[200px] flex flex-col justify-center bg-black bg-[url('/img/elements/barbarians-banner.png')] lg:bg-contain bg-right bg-no-repeat">
                 <div className="container py-10">
                     <h1 className="h1 text-white my-0">BARBARIANS</h1>
                     <p className="lg:w-1/2 text-white">
