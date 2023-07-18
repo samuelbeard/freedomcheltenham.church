@@ -122,7 +122,7 @@ const About: NextPage = () => {
                                         happen."
                             fact="I secretly LOVE country music,
                                         genuinely cannot get enough of it"
-                            image="charlie.jpg"
+                            image="charlie-img.jpg"
                         />
                         <TeamMember
                             name="Lorah"
@@ -136,14 +136,14 @@ const About: NextPage = () => {
                             title="Zeal Pastors"
                             bio="Zeal is for the young people in our church, offering an opportunity to hang out together, talk about life, church and Jesus. Plus a cheeky bit of pizza is normally thrown into the mix too!"
                             fact="I can do an upside-down handstand    I had my hen do at Diggerland – it was amazing!"
-                            image="john-and-abi.jpg"
+                            image="john-and-abi-img.jpg"
                         />
                         <TeamMember
                             name="Jen"
                             title="Worship Coordinator"
                             bio="Jen oversees Worship and our Worship team in Freedom Church Cheltenham. This includes organising the team, raising up new musicians and worship leaders, bringing vision, ideas and creativity, and coordinating mid-week practices and Sunday events; whilst working together with our Pastors to ensure the flow of ministry and music in our events. Being part of a global church also offers the exciting opportunity to bring in new songs and sounds from across the movement."
                             fact="My parents were in a country music band"
-                            image="jen.jpg"
+                            image="jen-img.jpg"
                         />
                     </div>
                 </div>
