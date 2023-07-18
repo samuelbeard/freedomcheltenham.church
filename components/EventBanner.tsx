@@ -92,9 +92,16 @@ const EventBanner: NextComponentType = () => {
                                             </h3>
                                         </div>
                                     </div>
-
-                                    {/* <Map /> */}
-
+                                    <div className="relative inset-0 container px-2 pt-4 mx-auto flex sm:flex-nowrap flex-wrap">
+                                        <iframe 
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.63359743659!2d-2.0801020230815594!3d51.904150381641884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48711b9a13dcef19%3A0x7f32b943a245ff21!2sDanceworks!5e0!3m2!1sen!2suk!4v1688589294345!5m2!1sen!2suk" 
+                                            width="400" 
+                                            height="300" 
+                                            data-style="border:0" 
+                                            loading="lazy" 
+                                            title="A google maps location of Freedom Church Cheltenham">
+                                        </iframe>
+                                    </div>
                                     <div className="mt-8 w-full">
                                         <button
                                             type="button"
