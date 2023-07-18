@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { useEffect, useState } from "react"
 
 interface IInstagramFeed {
@@ -34,22 +35,24 @@ const InstagramFeed = () => {
                     data.slice(0, 5).map(item => {
                         if (item.media_type === "IMAGE") {
                             return (
-                                <img
+                                <Image
                                     key={item.permalink}
-                                    className="w-44 xh-44"
+                                    className="w-44"
                                     src={item.media_url}
                                     alt=""
+                                    fill
                                 />
                             )
                         }
 
                         if (item.media_type === "CAROUSEL_ALBUM") {
                             return (
-                                <img
+                                <Image
                                     key={item.permalink}
-                                    className="w-44 xh-44"
+                                    className="w-44"
                                     src={item.media_url}
                                     alt=""
+                                    fill
                                 />
                             )
                         }
@@ -58,7 +61,7 @@ const InstagramFeed = () => {
                             return (
                                 <video
                                     key={item.permalink}
-                                    className="w-44 xh-44"
+                                    className="w-44"
                                     // controls
                                     muted
                                     autoPlay

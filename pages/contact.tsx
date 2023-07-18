@@ -22,11 +22,13 @@ const About: NextPage = () => {
                     </div>
                     <div className="grid gap-6 px-4 sm:px-0 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                         <div className="relative rounded-xl h-fit overflow-hidden">
-                            <img
+                            <Image
                                 className="mx-auto w-full object-cover object-top ransition duration-500 group-hover:scale-105 group-hover:grayscale-0"
-                                src="img/photos/pastors.jpg"
-                                alt="woman"
+                                src="/img/photos/pastors.jpg"
+                                alt="Pastors Any and Emily Rattenbury"
                                 loading="lazy"
+                                width={558}
+                                height={815}
                             />
                             <div className="absolute bottom-0 inset-x-0 h-max mt-auto px-6 py-6 bg-black transition duration-300 ease-in-out text-white">
                                 <div>
@@ -43,11 +45,13 @@ const About: NextPage = () => {
                             </div>
                         </div>
                         <div className="relative rounded-xl h-fit overflow-hidden">
-                            <img
+                            <Image
                                 className="mx-auto h-fu"
-                                src="img/photos/lorah.jpg"
+                                src="/img/photos/lorah.jpg"
                                 alt=""
                                 loading="lazy"
+                                width={558}
+                                height={815}
                             />
                             <div className="px-6 py-6 bg-black text-white">
                                 <div>
@@ -64,11 +68,13 @@ const About: NextPage = () => {
                             </div>
                         </div>
                         <div className="relative rounded-xl h-fit overflow-hidden">
-                            <img
+                            <Image
                                 className="mx-auto h-fu"
-                                src="img/photos/charlie-img.jpg"
+                                src="/img/photos/charlie-img.jpg"
                                 alt=""
                                 loading="lazy"
+                                width={558}
+                                height={815}
                             />
                             <div className="px-6 py-6 bg-black text-white">
                                 <div>
@@ -85,11 +91,13 @@ const About: NextPage = () => {
                             </div>
                         </div>
                         <div className="relative rounded-xl h-fit overflow-hidden">
-                            <img
+                            <Image
                                 className="mx-auto h-fu"
-                                src="img/photos/john-and-abi-img.jpg"
+                                src="/img/photos/john-and-abi-img.jpg"
                                 alt=""
                                 loading="lazy"
+                                width={558}
+                                height={815}
                             />
                             <div className="px-6 py-6 bg-black text-white">
                                 <div>

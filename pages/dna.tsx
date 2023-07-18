@@ -7,15 +7,15 @@ import DNAData from "../lib/dna.json"
 const DNA: NextPage = () => {
     return (
         <Layout title="DNA">
-            <section className="section py-10 bg-black">
+            <section className="section bg-black py-10">
                 <div className="container">
-                    <h2 className="font-bold text-white text-4xl md:text-[100px] leading-none text-center">
+                    <h2 className="text-center text-4xl font-bold leading-none text-white md:text-[100px]">
                         OUR
                     </h2>
-                    <h1 className="m-0 md:-mt-10 text-white font-bold text-6xl md:text-[250px] leading-none uppercase text-center">
+                    <h1 className="m-0 text-center text-6xl font-bold uppercase leading-none text-white md:-mt-10 md:text-[250px]">
                         DNA
                     </h1>
-                    <p className="para text-stone-200 text-lg lg:w-8/12 mx-auto mt-8">
+                    <p className="para mx-auto mt-8 text-lg text-stone-200 lg:w-8/12">
                         The Freedom Church DNA are the core values of our
                         community. Like a compass they point us towards our
                         identity. We are committed to wholeheartedly practicing
@@ -24,8 +24,8 @@ const DNA: NextPage = () => {
                     </p>
                 </div>
             </section>
-            <section className="section pb-12 bg-black">
-                <div className="container lg:w-5/6 2xl:w-4/5 mx-auto pb-3 pt-7">
+            <section className="section bg-black pb-12">
+                <div className="container mx-auto pb-3 pt-7 lg:w-5/6 2xl:w-4/5">
                     {DNAData.map((dna, i) => (
                         <DNACard
                             key={dna.title}
@@ -53,19 +53,19 @@ interface DNACardProps {
 const DNACard: FC<DNACardProps> = ({ title, image, description, right }) => {
     return (
         <div
-            className={`mx-auto bg-black w-full rounded-lg p-5 flex items-center flex-col ${
+            className={`mx-auto flex w-full flex-col items-center rounded-lg bg-black p-5 ${
                 right ? "md:flex-row-reverse" : "md:flex-row"
             } justify-between shadow`}
         >
             <div>
-                <h3 className="h2 text-brand-red mt-0 uppercase">{title}</h3>
-                <p className="para text-lg text-white leading-snug">
+                <h3 className="h2 mt-0 uppercase text-brand-red">{title}</h3>
+                <p className="para text-lg leading-snug text-white">
                     {description}
                 </p>
             </div>
             <Image
                 src={`/img/dna/${image}`}
-                className="mx-auto px-5 rounded-full"
+                className="mx-auto rounded-full px-5"
                 alt=""
                 width="400"
                 height="400"

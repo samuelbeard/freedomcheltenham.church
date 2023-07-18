@@ -17,7 +17,7 @@ const dayNames = [
 const DayHeader: FC<DayProps> = ({ day }) => {
     return (
         <div
-            className={`bg-stone-500 rounded-sm h-8 lg:h-12 text-xs lg:text-base flex justify-center items-center text-white`}
+            className={`flex h-8 items-center justify-center rounded-sm bg-stone-500 text-xs text-white lg:h-12 lg:text-base`}
         >
             <span className="hidden md:inline">{dayNames[day]}</span>
             <span className="inline md:hidden">{dayNames[day][0]}</span>

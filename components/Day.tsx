@@ -18,7 +18,7 @@ const Day: FC<Props> = ({ day, events }) => {
                     return (
                         <div
                             key={event.id}
-                            className="px-1 md:px-2 py-1 my-1 font-thin md:font-bold uppercase overflow-hidden whitespace-nowrap bg-blue-500 text-white rounded-sm text-xs"
+                            className="my-1 overflow-hidden whitespace-nowrap rounded-sm bg-blue-500 px-1 py-1 text-xs font-thin uppercase text-white md:px-2 md:font-bold"
                         >
                             {event.title}
                         </div>
@@ -42,7 +42,7 @@ const Day: FC<Props> = ({ day, events }) => {
 
     return (
         <div
-            className={`overflow-scroll text-center md:text-left h-20 lg:h-32 md:p-2 rounded-sm ${style()}`}
+            className={`h-20 overflow-scroll rounded-sm text-center md:p-2 md:text-left lg:h-32 ${style()}`}
         >
             <div>{format(day, "d")}</div>
             <div>{todaysEvents()}</div>
