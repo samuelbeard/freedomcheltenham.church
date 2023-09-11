@@ -41,6 +41,12 @@ const nextConfig = {
                     "https://docs.google.com/forms/d/e/1FAIpQLSe12agi_7q1hwPl3jTXKPlaGitgUM9i0MjTvStg4gY3mi6UtA/viewform",
                 permanent: false,
             },
+            {
+                source: "/volunteer-signup",
+                destination:
+                    "https://docs.google.com/forms/d/e/1FAIpQLSePDjQaIL9uQyJdTkDDsYCWPUk-wyj4Yg7gnfSCDHnfapqR_A/viewform",
+                permanent: false,
+            },
         ]
     },
 }
