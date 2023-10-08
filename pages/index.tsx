@@ -6,7 +6,7 @@ import EventBanner from "../components/EventBanner"
 import Footer from "../components/Footer"
 import Link from "next/link"
 import InstagramFeed from "../components/InstagramFeed"
-import KeepConnectedSection from "../components/KeepConnectedSection"
+import Carousel from "../components/Carousel"
 
 const Home: NextPage = () => {
     return (
@@ -77,6 +77,25 @@ const Home: NextPage = () => {
                     </h3>
                 </div>
             </div>
+
+            <div className="section xbg-pink-500 z-30 bg-black bg-none py-10 text-white">
+                <Carousel
+                    direction="right"
+                    speed={70}
+                    carouselNumber={1}
+                    totalImages={10}
+                />
+            </div>
+
+            <div className="section xbg-pink-500 z-30 bg-black bg-none pb-10 text-white">
+                <Carousel
+                    direction="left"
+                    speed={70}
+                    carouselNumber={2}
+                    totalImages={5}
+                />
+            </div>
+
             <div className="section bg-black pt-24">
                 <div className="container lg:w-2/3">
                     <p className="text-white">

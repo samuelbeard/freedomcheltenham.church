@@ -7,49 +7,107 @@
 @layer components {
     /* Paragraph Styling */
     .para {
-        @apply font-sans text-xl mb-3 leading-relaxed text-stone-500;
+        @apply mb-3 font-sans text-xl leading-relaxed text-stone-500;
     }
 
     .h1 {
-        @apply text-4xl font-bold mt-5 mb-3 text-stone-600;
+        @apply mt-5 mb-3 text-4xl font-bold text-stone-600;
     }
 
     .h2 {
-        @apply text-3xl font-semibold mt-5 mb-3 text-stone-600;
+        @apply mt-5 mb-3 text-3xl font-semibold text-stone-600;
     }
 
     .h3 {
-        @apply text-2xl font-bold mt-5 mb-3 text-stone-600;
+        @apply mt-5 mb-3 text-2xl font-bold text-stone-600;
     }
 
     .h4 {
-        @apply text-xl font-bold mt-5 mb-3 text-stone-600;
+        @apply mt-5 mb-3 text-xl font-bold text-stone-600;
     }
 
     .card {
-        @apply bg-stone-300 border-2 border-stone-400 dark:bg-stone-700 dark:border-stone-600;
+        @apply border-2 border-stone-400 bg-stone-300 dark:border-stone-600 dark:bg-stone-700;
     }
 
     .card-hover {
-        @apply hover:bg-stone-400 hover:border-stone-500;
+        @apply hover:border-stone-500 hover:bg-stone-400;
     }
 
     /* Full width container that wraps the entire content of a page (Including the header and footer.) */
     .page {
-        @apply min-h-screen flex flex-col justify-between;
+        @apply flex min-h-screen flex-col justify-between;
     }
 
     /* Full width of the page to encapsulate a section of content. */
     /* Add padding and a background to this. */
     .section {
-        @apply flex justify-center w-full;
+        @apply flex w-full justify-center;
     }
 
     .social-media-bubble {
-        @apply text-white bg-black rounded-full h-14 w-14 flex justify-center items-center transition-all border-2 border-black hover:border-white;
+        @apply flex h-14 w-14 items-center justify-center rounded-full border-2 border-black bg-black text-white transition-all hover:border-white;
     }
 
     footer a {
         @apply block hover:underline;
     }
+}
+
+/*
+.scroll-across-screen {
+    animation: righttoleftmove 4s ease 1s both;
+}
+
+@keyframes righttoleftmove {
+    from {
+        opacity: 1;
+        left: 110vw;
+    }
+    to {
+        opacity: 1;
+        left: -10vw;
+    }
+}
+*/
+.animate-in {
+    animation: animateIn 0.3s ease 0.15s both;
+}
+
+@keyframes animateIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideAnimation {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.looper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.looper__innerList {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+}
+
+.looper__listInstance {
+    display: flex;
+    width: max-content;
+
+    animation: slideAnimation linear infinite;
 }
