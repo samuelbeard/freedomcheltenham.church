@@ -10,6 +10,7 @@ interface Props {
 const Carousel = ({ direction, speed, totalImages, carouselNumber }: Props) => {
     const children = [...Array(totalImages)].map((el, i) => (
         <img
+            key={i}
             src={`/img/carousel-${carouselNumber}/img-${i + 1}.jpg`}
             className="mx-5 h-80 rounded shadow"
             alt=""
