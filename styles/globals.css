@@ -53,3 +53,61 @@
         @apply block hover:underline;
     }
 }
+
+/*
+.scroll-across-screen {
+    animation: righttoleftmove 4s ease 1s both;
+}
+
+@keyframes righttoleftmove {
+    from {
+        opacity: 1;
+        left: 110vw;
+    }
+    to {
+        opacity: 1;
+        left: -10vw;
+    }
+}
+*/
+.animate-in {
+    animation: animateIn 0.3s ease 0.15s both;
+}
+
+@keyframes animateIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideAnimation {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.looper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.looper__innerList {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+}
+
+.looper__listInstance {
+    display: flex;
+    width: max-content;
+
+    animation: slideAnimation linear infinite;
+}

@@ -10,14 +10,14 @@ const About: NextPage = () => {
             </section>
             <div className="section">
                 <div className="container mt-10">
-                    <p className="para text-lg lg:w-8/12 mx-auto">
+                    <p className="para mx-auto text-lg lg:w-8/12">
                         Welcome to Freedom Church Cheltenham! We embrace all,
                         forming a diverse, loving family. Our passion is to help
                         people thrive through a personal, transformative
                         relationship with Jesus. Whether young or old, believer
                         or unsure, there&apos;s something for everyone.
                     </p>
-                    <p className="para text-lg lg:w-8/12 mx-auto">
+                    <p className="para mx-auto text-lg lg:w-8/12">
                         We believe the gospel is alive and relevant, bringing
                         excitement and abundant life. As followers of Jesus,
                         we&apos;re called to grow, explore, and bear fruit by
@@ -27,19 +27,19 @@ const About: NextPage = () => {
                         faith, trusting God&apos;s character, honoring others,
                         expressing gratitude, and reflecting Jesus to the world.
                     </p>
-                    <p className="para text-lg lg:w-8/12 mx-auto">
+                    <p className="para mx-auto text-lg lg:w-8/12">
                         We are Freedom Church Cheltenham.
                     </p>
-                    <p className="para text-lg lg:w-8/12 mx-auto bg-brand-red rounded text-white text-center py-2">
+                    <p className="para mx-auto rounded bg-brand-red py-2 text-center text-lg text-white lg:w-8/12">
                         EVERY&nbsp;SUNDAY | 11AM | DANCEWORKS&nbsp;STUDIO
                     </p>
                 </div>
             </div>
             <div className="section mt-10 bg-[url('/img/photos/cave-2023.jpg')] bg-cover">
-                <div className="bg-black py-10 lg:py-24 bg-opacity-50 w-full">
-                    <div className="container md:flex gap-10">
-                        <div className="md:w-1/2 flex items-center">
-                            <h1 className="h1 mt-0 text-white text-6xl">
+                <div className="w-full bg-black bg-opacity-50 py-10 lg:py-24">
+                    <div className="container gap-10 md:flex">
+                        <div className="flex items-center md:w-1/2">
+                            <h1 className="h1 mt-0 text-6xl text-white">
                                 One
                                 <br />
                                 Church,
@@ -49,7 +49,7 @@ const About: NextPage = () => {
                                 Locations
                             </h1>
                         </div>
-                        <div className="md:w-1/2 flex flex-col justify-center mt-8 md:mt-0">
+                        <div className="mt-8 flex flex-col justify-center md:mt-0 md:w-1/2">
                             <p className="para text-lg text-white">
                                 Freedom Church Cheltenham is one of many
                                 locations within the Freedom Church movement.
@@ -67,19 +67,19 @@ const About: NextPage = () => {
                     </div>
                 </div>
             </div>
-            <section className="text-gray-600 body-font mt-5 md:mt-24">
-                <div className="container lg:max-w-7xl mx-auto flex px-5 xpy-24 md:flex-row flex-col items-center">
-                    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 xmb-10 md:mb-0">
+            <section className="body-font mt-5 text-gray-600 md:mt-24">
+                <div className="xpy-24 container mx-auto flex flex-col items-center px-5 md:flex-row lg:max-w-7xl">
+                    <div className="xmb-10 w-5/6 md:mb-0 md:w-1/2 lg:w-full lg:max-w-lg">
                         <Image
-                            className="object-cover object-center rounded"
+                            className="rounded object-cover object-center"
                             alt=""
                             src="/img/photos/pastors.jpg"
                             width={1035}
                             height={1511}
                         />
                     </div>
-                    <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                        <h3 className="h3 font-thin mb-0">Our Pastors</h3>
+                    <div className="flex flex-col items-center text-center md:w-1/2 md:items-start md:pl-16 md:text-left lg:flex-grow lg:pl-24">
+                        <h3 className="h3 mb-0 font-thin">Our Pastors</h3>
                         <h2 className="h2 mt-0">Andy &amp; Emily</h2>
                         <p className="para text-lg">
                             Meet Andy and Em, our Campus Pastors! Andy,
@@ -106,9 +106,9 @@ const About: NextPage = () => {
                     </div>
                 </div>
             </section>
-            <section className="text-gray-600 body-font">
-                <div className="container px-5 py-24 mx-auto">
-                    <div className="flex flex-wrap -m-4">
+            <section className="body-font text-gray-600">
+                <div className="container mx-auto px-5 py-24">
+                    <div className="-m-4 flex flex-wrap">
                         <TeamMember
                             name="Charlie"
                             title="Volunteer Coordinator"
@@ -179,7 +179,7 @@ const TeamMember = ({
                 />
                 <div className="flex-grow sm:pl-8">
                     <h4 className="h4 mb-0">{name}</h4>
-                    <h5 className="h5 text-gray-500 mb-3">{title}</h5>
+                    <h5 className="h5 mb-3 text-gray-500">{title}</h5>
                     <p
                         className="mb-4 whitespace-pre-wrap"
                         dangerouslySetInnerHTML={{ __html: bio }}
