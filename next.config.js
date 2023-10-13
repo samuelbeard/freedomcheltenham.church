@@ -34,7 +34,6 @@ const nextConfig = {
                 destination: "https://www.tiktok.com/@freedomchurchcheltenham",
                 permanent: false,
             },
-
             {
                 source: "/kids-registration",
                 destination:
@@ -45,6 +44,11 @@ const nextConfig = {
                 source: "/volunteer-signup",
                 destination:
                     "https://docs.google.com/forms/d/e/1FAIpQLSePDjQaIL9uQyJdTkDDsYCWPUk-wyj4Yg7gnfSCDHnfapqR_A/viewform",
+                permanent: false,
+            },
+            {
+                source: "/light-party",
+                destination: "http://freedom.churchsuite.com/events/xvfkgsyt",
                 permanent: false,
             },
         ]
