@@ -316,16 +316,16 @@ export default function Page() {
                 <div className="container">
                     <h1 className="h1">Christmas Carols</h1>
                     <Tab.Group>
-                        <Tab.List className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 flex-wrap xspace-x-1 rounded p-1">
+                        <Tab.List className="xspace-x-1 grid grid-cols-2 flex-wrap gap-1 rounded p-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                             {songs.map(song => (
                                 <Tab
                                     key={song.name}
                                     className={({ selected }) =>
                                         classNames(
-                                            "w-full h-16 col-span-1 rounded py-3 px-2 text-sm leading-5 text-black",
+                                            "col-span-1 h-16 w-full rounded py-3 px-2 text-sm leading-5 text-black",
                                             selected
                                                 ? "bg-black !text-white shadow"
-                                                : "text-black hover:text-white border-2 bg-gray-100"
+                                                : "border-2 bg-gray-100 text-black hover:text-white"
                                         )
                                     }
                                 >

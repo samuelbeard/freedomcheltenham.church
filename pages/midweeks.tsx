@@ -5,13 +5,13 @@ import Layout from "../components/Layout"
 const Midweeks: NextPage = () => {
     return (
         <Layout title="Midweeks">
-            <div className="flex bg-brand-red text-white text-4xl md:text-[5rem] justify-around font-bold py-12">
+            <div className="flex justify-around bg-brand-red py-12 text-4xl font-bold text-white md:text-[5rem]">
                 <h1>MIDWEEKS</h1>
             </div>
             <section className="bg-brand-dark-gray">
                 <div className="container py-10">
-                    <h1 className="h1 text-white my-0">STREAMS</h1>
-                    <p className="lg:w-1/2 text-white">
+                    <h1 className="h1 my-0 text-white">STREAMS</h1>
+                    <p className="text-white lg:w-1/2">
                         Streams are our Mid-Week groups that happen every other
                         week across Cheltenham, either on a Wednesday or
                         Thursday night. Depending on your preference, there are
@@ -23,7 +23,7 @@ const Midweeks: NextPage = () => {
                 <div className="md:w-8/12 lg:w-1/2">
                     <h2 className="h1">
                         Core Truths{" "}
-                        <span className="h3 bg-brand-red text-white rounded px-3">
+                        <span className="h3 rounded bg-brand-red px-3 text-white">
                             Wednesdays
                         </span>
                     </h2>
@@ -38,7 +38,7 @@ const Midweeks: NextPage = () => {
 
                     <h2 className="h1 mt-10">
                         Saltwinds{" "}
-                        <span className="h3 bg-brand-red text-white rounded px-3">
+                        <span className="h3 rounded bg-brand-red px-3 text-white">
                             Wednesdays
                         </span>
                     </h2>
@@ -59,7 +59,7 @@ const Midweeks: NextPage = () => {
 
                     <h2 className="h1 mt-10">
                         Marriage and Parenting{" "}
-                        <span className="h3 bg-brand-red text-white rounded px-3">
+                        <span className="h3 rounded bg-brand-red px-3 text-white">
                             Thursdays
                         </span>
                     </h2>
@@ -91,10 +91,10 @@ const Midweeks: NextPage = () => {
                     </p>
                 </div>
             </div>
-            <section className="h-[200px] flex flex-col justify-center bg-black bg-[url('/img/elements/she-banner.png')] lg:bg-contain bg-right bg-no-repeat">
+            <section className="flex h-[200px] flex-col justify-center bg-black bg-[url('/img/elements/she-banner.png')] bg-right bg-no-repeat lg:bg-contain">
                 <div className="container py-10">
-                    <h1 className="h1 text-white my-0">SHE</h1>
-                    <p className="lg:w-1/2 text-white">
+                    <h1 className="h1 my-0 text-white">SHE</h1>
+                    <p className="text-white lg:w-1/2">
                         Sisters | Daughters | Warriors
                     </p>
                 </div>
@@ -115,10 +115,10 @@ const Midweeks: NextPage = () => {
                     </p>
                 </div>
             </div>
-            <section className="h-[200px] flex flex-col justify-center bg-black bg-[url('/img/elements/barbarians-banner.png')] lg:bg-contain bg-right bg-no-repeat">
+            <section className="flex h-[200px] flex-col justify-center bg-black bg-[url('/img/elements/barbarians-banner.png')] bg-right bg-no-repeat lg:bg-contain">
                 <div className="container py-10">
-                    <h1 className="h1 text-white my-0">BARBARIANS</h1>
-                    <p className="lg:w-1/2 text-white">
+                    <h1 className="h1 my-0 text-white">BARBARIANS</h1>
+                    <p className="text-white lg:w-1/2">
                         Sons | Brothers | Warriors
                     </p>
                 </div>

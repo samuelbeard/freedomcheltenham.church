@@ -22,9 +22,9 @@ const Footer: FC = () => {
     return (
         <>
             <KeepConnectedSection />
-            <footer className="bg-brand-dark-gray text-white py-10 xmt-12 footer">
-                <div className="max-w-5xl w-5xl mx-auto grid grid-cols-3 sm:grid-cols-4 sm:gap-12 px-5">
-                    <div className="col-span-3 sm:col-span-1 text-center">
+            <footer className="footer bg-brand-dark-gray py-10 text-white">
+                <div className="w-5xl mx-auto grid max-w-5xl grid-cols-3 px-5 sm:grid-cols-4 sm:gap-12">
+                    <div className="col-span-3 text-center sm:col-span-1">
                         <Image
                             src="/img/logo/logo-footer.png"
                             alt="Freedom Church"
@@ -32,13 +32,13 @@ const Footer: FC = () => {
                             height={175}
                             className="mx-auto"
                         />
-                        <p className="text-xs mt-3 opacity-75">
+                        <p className="mt-3 text-xs opacity-75">
                             Registered charity in
                             <br />
                             England and Wales (1161926)
                         </p>
                     </div>
-                    <div className="hidden sm:inline sm:col-span-1"></div>
+                    <div className="hidden sm:col-span-1 sm:inline"></div>
                     <div className="col-span-3 sm:col-span-1">
                         <h4 className="h4 text-white">Links</h4>
                         {links.map(link => {
@@ -50,7 +50,7 @@ const Footer: FC = () => {
                         })}
                     </div>
                     <div className="col-span-3 sm:col-span-1">
-                        <h4 className="h4 text-white hidden sm:block">
+                        <h4 className="h4 hidden text-white sm:block">
                             &nbsp;
                         </h4>
                         {links2.map(link => {

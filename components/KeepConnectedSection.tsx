@@ -6,8 +6,8 @@ const KeepConnectedSection = () => {
     return (
         <section className="section bg-brand-red py-16">
             <div className="container text-center">
-                <h1 className="h1 text-white m-0">Keep Connected</h1>
-                <div className="flex gap-6 mt-10 justify-center">
+                <h1 className="h1 m-0 text-white">Keep Connected</h1>
+                <div className="mt-10 flex justify-center gap-6">
                     <Link href="/instagram">
                         <div className="social-media-bubble">
                             <RiInstagramLine className="h-8 w-8" />
@@ -25,7 +25,7 @@ const KeepConnectedSection = () => {
                     </Link>
                 </div>
                 <div>
-                    <div className="bg-white text-black py-1 px-2 mt-10 rounded w-fit mx-auto">
+                    <div className="mx-auto mt-10 w-fit rounded bg-white py-1 px-2 text-black">
                         cheltenham@freedomchurch.cc
                     </div>
                 </div>

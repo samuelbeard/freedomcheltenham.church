@@ -10,9 +10,9 @@ const Visit: NextPage = () => {
                     <h1 className="h1">WE&apos;D LOVE FOR YOU TO JOIN US</h1>
                 </div>
             </div>
-            <section className="text-gray-600 body-font relative">
-                <div className="container px-5 pt-12 mx-auto flex sm:flex-nowrap flex-wrap">
-                    <div className="w-full lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative shadow">
+            <section className="body-font relative text-gray-600">
+                <div className="container mx-auto flex flex-wrap px-5 pt-12 sm:flex-nowrap">
+                    <div className="relative flex w-full items-end justify-start overflow-hidden rounded-lg bg-gray-300 p-10 shadow sm:mr-10 md:w-1/2 lg:w-2/3">
                         <iframe
                             className="absolute inset-0"
                             style={{
@@ -27,8 +27,8 @@ const Visit: NextPage = () => {
                             height="100%"
                             frameBorder="0"
                         ></iframe>
-                        <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md opacity-0 md:opacity-100">
-                            <div className="lg:w-full px-6 pr-20">
+                        <div className="relative flex flex-wrap rounded bg-white py-6 opacity-0 shadow-md md:opacity-100">
+                            <div className="px-6 pr-20 lg:w-full">
                                 <p className="mt-1">
                                     <span className="font-bold">
                                         Danceworks Studio
@@ -43,7 +43,7 @@ const Visit: NextPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 lg:pb-48 mt-8 md:mt-0">
+                    <div className="mt-8 flex w-full flex-col bg-white md:ml-auto md:mt-0 md:w-1/2 md:py-8 lg:w-1/3 lg:pb-48">
                         <h2 className="h3 my-1">Access and Parking</h2>
                         <p className="para text-base">
                             There are a variety of parking options available
@@ -62,17 +62,17 @@ const Visit: NextPage = () => {
                     </div>
                 </div>
             </section>
-            <div className="container md:flex gap-10 md:mt-20">
+            <div className="container gap-10 md:mt-20 md:flex">
                 <div className="md:w-1/2">
                     <Image
                         width={1080}
                         height={1616}
                         src="/img/photos/worship-2.jpg"
                         alt=""
-                        className="rounded md:aspect-square md:object-cover shadow"
+                        className="rounded shadow md:aspect-square md:object-cover"
                     />
                 </div>
-                <div className="md:w-6/12 lg:w-1/2 md:flex md:justify-center md:flex-col">
+                <div className="md:flex md:w-6/12 md:flex-col md:justify-center lg:w-1/2">
                     <h3 className="h3">What to Expect</h3>
                     <p className="para">
                         Whatever your background, beliefs or experience of
@@ -90,7 +90,7 @@ const Visit: NextPage = () => {
                 </div>
             </div>
             <div className="container mt-10 mb-16">
-                <div className="md:w-8/12 lg:w-1/2 mx-auto">
+                <div className="mx-auto md:w-8/12 lg:w-1/2">
                     <h3 className="h3">Our Event</h3>
                     <p className="para">
                         Our Church event is vibrant and passionate including

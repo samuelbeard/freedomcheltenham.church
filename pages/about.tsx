@@ -169,11 +169,13 @@ const TeamMember = ({
 }) => {
     return (
         <div className="p-4 lg:w-1/2">
-            <div className="flex h-full flex-col items-center justify-center text-center sm:flex-row sm:justify-start sm:text-left">
-                <img
+            <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <Image
                     alt="team"
-                    className="mb-4 h-48 w-48 flex-shrink-0 rounded-lg object-cover object-center sm:mb-0"
-                    src={`img/photos/${image}`}
+                    className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+                    src={`/img/photos/${image}`}
+                    width={192}
+                    height={192}
                 />
                 <div className="flex-grow sm:pl-8">
                     <h4 className="h4 mb-0">{name}</h4>

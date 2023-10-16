@@ -120,15 +120,19 @@ const Home: NextPage = () => {
                             href="/visit"
                             className="group relative col-span-3 block w-full overflow-hidden rounded bg-black shadow-lg transition-all hover:shadow md:col-span-1"
                         >
-                            <img
+                            <Image
                                 alt=""
                                 src="/img/photos/outside.jpg"
-                                className="xgroup-hover:opacity-50 rounded-lf absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-0"
+                                className="absolute inset-0 h-full w-full object-cover opacity-75 group-hover:opacity-0 transition-opacity xgroup-hover:opacity-50 rounded-lf"
+                                // width={304}
+                                // height={392}
+                                fill
                             />
-                            <img
+                            <Image
                                 alt=""
                                 src="/img/photos/outside-hover.jpg"
-                                className="rounded-lf absolute inset-0 h-full w-full object-cover opacity-0 filter transition-opacity group-hover:opacity-75"
+                                className="absolute inset-0 h-full w-full object-cover opacity-0 transition-opacity group-hover:opacity-75 rounded-lf filter"
+                                fill
                             />
 
                             <div className="relative flex h-full flex-col justify-between p-4 sm:p-6 lg:p-8">
@@ -150,10 +154,11 @@ const Home: NextPage = () => {
                             href="/about"
                             className="group relative col-span-3 block w-full overflow-hidden rounded bg-black shadow-lg transition-all hover:shadow md:col-span-1"
                         >
-                            <img
+                            <Image
                                 alt=""
                                 src="/img/photos/praying.jpg"
-                                className="rounded-lf absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                                className="absolute inset-0 h-full w-full object-cover opacity-75 group-hover:opacity-50 transition-opacity rounded-lf"
+                                fill
                             />
 
                             <div className="relative flex h-full flex-col justify-between p-4 sm:p-6 lg:p-8">
@@ -175,10 +180,11 @@ const Home: NextPage = () => {
                             href="/midweeks"
                             className="group relative col-span-3 block w-full overflow-hidden rounded bg-black shadow-lg transition-all hover:shadow md:col-span-1"
                         >
-                            <img
+                            <Image
                                 alt=""
                                 src="/img/photos/guys.jpg"
-                                className="rounded-lf absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                                className="absolute inset-0 h-full w-full object-cover opacity-75 group-hover:opacity-50 transition-opacity rounded-lf"
+                                fill
                             />
 
                             <div className="relative flex h-full flex-col justify-between p-4 sm:p-6 lg:p-8">

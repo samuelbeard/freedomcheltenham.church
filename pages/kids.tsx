@@ -74,10 +74,12 @@ const Kids: NextPage = () => {
                             </p>
                         </div>
                         <div className="w-1/2">
-                            <img
+                            <Image
                                 className="rounded shadow-lg w-96"
                                 src="/img/kids/cubs-1.JPG"
                                 alt=""
+                                width={336}
+                                height={336}
                             />
                         </div>
                     </div>
@@ -99,10 +101,12 @@ const Kids: NextPage = () => {
                 <div className="container 2xl:px-56">
                     <div className="lg:flex gap-6 mt-6">
                         <div className="lg:w-1/2 2xl:w-1/3">
-                            <img
+                            <Image
                                 className="rounded shadow-lg mb-3"
                                 src="/img/kids/adv-1.jpeg"
                                 alt=""
+                                width={372}
+                                height={279}
                             />
                         </div>
                         <div className="lg:w-1/2 2xl:w-1/3">
@@ -114,10 +118,12 @@ const Kids: NextPage = () => {
                             </p>
                         </div>
                         <div className="lg:hidden 2xl:inline 2xl:w-1/3">
-                            <img
+                            <Image
                                 className="rounded shadow-lg"
                                 src="/img/kids/adv-2.jpeg"
                                 alt=""
+                                width={372}
+                                height={279}
                             />
                         </div>
                     </div>

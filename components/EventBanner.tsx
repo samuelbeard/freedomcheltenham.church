@@ -13,24 +13,24 @@ const EventBanner: NextComponentType = () => {
 
     return (
         <>
-            <div className="h-48 md:h-20 bg-black flex justify-around items-center flex-wrap md:flex-nowrap z-10">
-                <div className="flex justify-center items-center text-white">
-                    <RiCalendarLine className="h-8 w-8 mr-3" />
-                    <h2 className="uppercase font-bold flex">Every sunday</h2>
+            <div className="z-10 flex h-48 flex-wrap items-center justify-around bg-black md:h-20 md:flex-nowrap">
+                <div className="flex items-center justify-center text-white">
+                    <RiCalendarLine className="mr-3 h-8 w-8" />
+                    <h2 className="flex font-bold uppercase">Every sunday</h2>
                 </div>
-                <div className="flex justify-center items-center text-white w-full md:w-auto">
-                    <RiMapPin2Line className="h-8 w-8 mr-3" />
-                    <h2 className="uppercase font-bold flex">
+                <div className="flex w-full items-center justify-center text-white md:w-auto">
+                    <RiMapPin2Line className="mr-3 h-8 w-8" />
+                    <h2 className="flex font-bold uppercase">
                         Danceworks, Cheltenham
                     </h2>
                 </div>
-                <div className="flex justify-center items-center text-white">
-                    <RiTimeLine className="h-8 w-8 mr-3" />
-                    <h2 className="uppercase font-bold flex">11AM</h2>
+                <div className="flex items-center justify-center text-white">
+                    <RiTimeLine className="mr-3 h-8 w-8" />
+                    <h2 className="flex font-bold uppercase">11AM</h2>
                 </div>
-                <div className="flex justify-center items-center text-white">
+                <div className="flex items-center justify-center text-white">
                     <h2
-                        className="underline flex cursor-pointer"
+                        className="flex cursor-pointer underline"
                         onClick={() => setIsOpen(true)}
                     >
                         More Details
@@ -92,20 +92,20 @@ const EventBanner: NextComponentType = () => {
                                             </h3>
                                         </div>
                                     </div>
-                                    <div className="relative inset-0 container px-2 pt-4 mx-auto flex sm:flex-nowrap flex-wrap">
-                                        <iframe 
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.63359743659!2d-2.0801020230815594!3d51.904150381641884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48711b9a13dcef19%3A0x7f32b943a245ff21!2sDanceworks!5e0!3m2!1sen!2suk!4v1688589294345!5m2!1sen!2suk" 
-                                            width="400" 
-                                            height="300" 
-                                            data-style="border:0" 
-                                            loading="lazy" 
-                                            title="A google maps location of Freedom Church Cheltenham">
-                                        </iframe>
+                                    <div className="container relative inset-0 mx-auto flex flex-wrap px-2 pt-4 sm:flex-nowrap">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.63359743659!2d-2.0801020230815594!3d51.904150381641884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48711b9a13dcef19%3A0x7f32b943a245ff21!2sDanceworks!5e0!3m2!1sen!2suk!4v1688589294345!5m2!1sen!2suk"
+                                            width="400"
+                                            height="300"
+                                            data-style="border:0"
+                                            loading="lazy"
+                                            title="A google maps location of Freedom Church Cheltenham"
+                                        ></iframe>
                                     </div>
                                     <div className="mt-8 w-full">
                                         <button
                                             type="button"
-                                            className="block ml-auto rounded border border-transparent bg-stone-100 px-4 py-2 text-sm text-stone-900 hover:bg-stone-300"
+                                            className="ml-auto block rounded border border-transparent bg-stone-100 px-4 py-2 text-sm text-stone-900 hover:bg-stone-300"
                                             onClick={() => setIsOpen(false)}
                                         >
                                             Close

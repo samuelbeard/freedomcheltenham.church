@@ -12,6 +12,7 @@ import {
 } from "react-icons/ri"
 import { FaTiktok } from "react-icons/fa"
 import Link from "next/link"
+import Image from "next/image"
 
 interface ILink {
     name: string
@@ -169,10 +170,12 @@ const Header: FC<Props> = ({ background }) => {
                     <div className="flex justify-start lg:w-0 lg:flex-1">
                         <Link href="/">
                             <span className="sr-only">Workflow</span>
-                            <img
+                            <Image
                                 className="h-10 w-auto sm:h-10"
                                 src="/img/logo/logo-white.svg"
                                 alt=""
+                                width={40}
+                                height={40}
                             />
                         </Link>
                     </div>
@@ -348,10 +351,12 @@ const Header: FC<Props> = ({ background }) => {
                         <div className="pt-5 pb-6 px-5">
                             <div className="flex items-center justify-between">
                                 <div>
-                                    <img
+                                    <Image
                                         className="h-10 w-auto"
                                         src="/img/logo/logo-white.svg"
                                         alt="Workflow"
+                                        width={40}
+                                        height={40}
                                     />
                                 </div>
                                 <div className="-mr-2">
