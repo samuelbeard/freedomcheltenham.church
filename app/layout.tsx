@@ -1,6 +1,6 @@
 import { Metadata } from "next"
 import "styles/globals.css"
-import Footer from "components/Footer"
+import Script from "next/script"
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://freedomchurchcheltenham.com"),
@@ -27,8 +27,12 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body>
+                <Script
+                    async
+                    src="https://umami.samuelbeard.xyz/script.js"
+                    data-website-id={process.env.NEXT_PUBLIC_UMAMI_ANALYTICS_ID}
+                ></Script>
                 {children}
-                {/* <Footer /> */}
             </body>
         </html>
     )
