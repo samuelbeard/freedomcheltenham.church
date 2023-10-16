@@ -1,3 +1,5 @@
+"use client"
+
 import { FC, Fragment } from "react"
 import { Popover, Transition } from "@headlessui/react"
 import {
@@ -202,7 +204,7 @@ const Header: FC<Props> = ({ background }) => {
                                                     open
                                                         ? "text-gray-900"
                                                         : "text-white",
-                                                    "group rounded-md inline-flex items-center text-base font-bold hover:text-brand-red focus-visible:outline-none"
+                                                    "group rounded-md inline-flex items-center text-base font-bold hover:text-brand-red focus-visible:outline-none",
                                                 )}
                                             >
                                                 <span>{link.name}</span>
@@ -211,7 +213,7 @@ const Header: FC<Props> = ({ background }) => {
                                                         open
                                                             ? "text-gray-600"
                                                             : "text-white",
-                                                        "ml-2 -mr-3 h-5 w-5 group-hover:text-gray-500"
+                                                        "ml-2 -mr-3 h-5 w-5 group-hover:text-gray-500",
                                                     )}
                                                     aria-hidden="true"
                                                 />
@@ -255,7 +257,7 @@ const Header: FC<Props> = ({ background }) => {
                                                                             </div>
                                                                         </Link>
                                                                     )
-                                                                }
+                                                                },
                                                             )}
                                                         </div>
                                                         {link.actions.length >
@@ -289,7 +291,7 @@ const Header: FC<Props> = ({ background }) => {
                                                                                 )}
                                                                             </a>
                                                                         </div>
-                                                                    )
+                                                                    ),
                                                                 )}
                                                             </div>
                                                         )}
@@ -375,7 +377,10 @@ const Header: FC<Props> = ({ background }) => {
                                 <nav className="grid gap-y-8">
                                     {links.map(item => {
                                         return item.links.length > 0 ? (
-                                            <div className="-m-3 p-3 xflex items-center" key={item.name}>
+                                            <div
+                                                className="-m-3 p-3 xflex items-center"
+                                                key={item.name}
+                                            >
                                                 <span className="ml-3 text-sm font-bxold text-white">
                                                     {item.name}
                                                 </span>

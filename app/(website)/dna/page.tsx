@@ -1,12 +1,13 @@
-import { NextPage } from "next"
 import Image from "next/image"
-import { FC } from "react"
-import Layout from "../components/Layout"
-import DNAData from "../lib/dna.json"
+import DNAData from "lib/dna.json"
 
-const DNA: NextPage = () => {
+export const metadata = {
+    title: "Our DNA | Freedom Church Cheltenham",
+}
+
+export default function Page() {
     return (
-        <Layout title="DNA">
+        <>
             <section className="section bg-black py-10">
                 <div className="container">
                     <h2 className="text-center text-4xl font-bold leading-none text-white md:text-[100px]">
@@ -37,11 +38,9 @@ const DNA: NextPage = () => {
                     ))}
                 </div>
             </section>
-        </Layout>
+        </>
     )
 }
-
-export default DNA
 
 interface DNACardProps {
     title: string
@@ -50,7 +49,7 @@ interface DNACardProps {
     right?: boolean
 }
 
-const DNACard: FC<DNACardProps> = ({ title, image, description, right }) => {
+const DNACard = ({ title, image, description, right }: DNACardProps) => {
     return (
         <div
             className={`mx-auto flex w-full flex-col items-center rounded-lg bg-black p-5 ${

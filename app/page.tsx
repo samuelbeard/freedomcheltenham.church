@@ -1,14 +1,11 @@
-import type { NextPage } from "next"
-import Head from "next/head"
-import Image from "next/image"
-import Header from "../components/Header"
-import EventBanner from "../components/EventBanner"
-import Footer from "../components/Footer"
 import Link from "next/link"
-import InstagramFeed from "../components/InstagramFeed"
-import Carousel from "../components/Carousel"
+import Image from "next/image"
+import Header from "components/Header"
+import EventBanner from "components/EventBanner"
+import Carousel from "components/Carousel"
+import Footer from "components/Footer"
 
-const Home: NextPage = () => {
+export default function Page() {
     return (
         <div className="h-screen w-screen">
             <div className="absolute top-0 left-0 z-30 w-screen">
@@ -20,30 +17,28 @@ const Home: NextPage = () => {
                         autoPlay
                         loop
                         muted
+                        playsInline
                         className="absolute z-10 h-auto min-h-full w-auto min-w-full object-cover"
                     >
                         <source src="/video/bg-video.mp4" type="video/mp4" />
                     </video>
                 </div>
-                <Head>
-                    <title>Freedom Church Cheltenham</title>
-                </Head>
                 <div className="z-10 flex flex-grow items-center bg-black bg-opacity-60">
                     <section className="section">
                         <div className="grid w-5/6 max-w-7xl grid-cols-3 gap-0">
-                            {/* <div className="w-36 md:w-96 mx-auto col-span-3 md:col-span-1 flex justify-center items-center">
+                            <div className="w-36 md:w-56 xl:w-96 pb-5 lg:pb-0 mx-auto col-span-3 md:col-span-1 flex justify-center items-center">
                                 <Image
                                     src="/img/logo/logo-white.svg"
                                     alt="Freedom Church"
                                     height={400}
                                     width={400}
                                 />
-                            </div> */}
+                            </div>
                             <div className="col-span-3 mx-auto flex flex-col justify-center text-center md:col-span-2 md:text-left">
                                 <h2 className="m-0 text-xl font-bold text-white md:text-2xl lg:text-4xl">
                                     Welcome to
                                 </h2>
-                                <h1 className="h1 m-0 text-2xl uppercase text-white md:text-4xl lg:text-8xl">
+                                <h1 className="h1 m-0 text-2xl uppercase text-white md:text-4xl lg:text-6xl">
                                     Freedom&nbsp;Church
                                     <br />
                                     <span className="text-brand-red">
@@ -213,5 +208,3 @@ const Home: NextPage = () => {
         </div>
     )
 }
-
-export default Home

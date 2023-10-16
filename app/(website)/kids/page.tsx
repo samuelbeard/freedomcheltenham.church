@@ -1,10 +1,12 @@
-import { NextPage } from "next"
 import Image from "next/image"
-import Layout from "../components/Layout"
 
-const Kids: NextPage = () => {
+export const metadata = {
+    title: "Kids | Freedom Church Cheltenham",
+}
+
+export default function Page() {
     return (
-        <Layout title="Kids">
+        <>
             <div className="container mt-12 mb-16">
                 <div className="md:w-8/12 lg:w-1/2">
                     <h1 className="h1">KIDS</h1>
@@ -164,8 +166,6 @@ const Kids: NextPage = () => {
                     for safeguarding training.
                 </p>
             </div>
-        </Layout>
+        </>
     )
 }
-
-export default Kids

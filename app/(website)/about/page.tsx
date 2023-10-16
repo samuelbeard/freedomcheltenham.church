@@ -1,10 +1,12 @@
-import { NextPage } from "next"
-import Layout from "../components/Layout"
 import Image from "next/image"
 
-const About: NextPage = () => {
+export const metadata = {
+    title: "About | Freedom Church Cheltenham",
+}
+
+export default function Page() {
     return (
-        <Layout title="About">
+        <>
             <section className="section mt-5">
                 <h1 className="h1 text-6xl">Welcome!</h1>
             </section>
@@ -148,11 +150,9 @@ const About: NextPage = () => {
                     </div>
                 </div>
             </section>
-        </Layout>
+        </>
     )
 }
-
-export default About
 
 const TeamMember = ({
     name,
@@ -184,12 +184,6 @@ const TeamMember = ({
                         className="mb-4 whitespace-pre-wrap"
                         dangerouslySetInnerHTML={{ __html: bio }}
                     />
-                    {/* <p>
-                        <span className="font-bold">
-                            Fun Fact about {name}:
-                        </span>{" "}
-                        “{fact}”
-                    </p> */}
                 </div>
             </div>
         </div>

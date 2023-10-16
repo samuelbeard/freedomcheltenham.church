@@ -1,10 +1,7 @@
 "use client"
-import Layout from "../components/Layout"
+
 import { Tab } from "@headlessui/react"
 import { Suspense } from "react"
-// import { songs } from "../lib/christmas-carols"
-// import { useEffect } from "react"
-
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(" ")
 }
@@ -308,10 +305,9 @@ That's the jingle bell rock.
         `,
     },
 ]
-
 export default function Page() {
     return (
-        <Layout title="Christmas Carols">
+        <>
             <Suspense>
                 <div className="container">
                     <h1 className="h1">Christmas Carols</h1>
@@ -325,7 +321,7 @@ export default function Page() {
                                             "col-span-1 h-16 w-full rounded py-3 px-2 text-sm leading-5 text-black",
                                             selected
                                                 ? "bg-black !text-white shadow"
-                                                : "border-2 bg-gray-100 text-black hover:text-white"
+                                                : "border-2 bg-gray-100 text-black hover:text-white",
                                         )
                                     }
                                 >
@@ -352,6 +348,6 @@ export default function Page() {
                     </Tab.Group>
                 </div>
             </Suspense>
-        </Layout>
+        </>
     )
 }

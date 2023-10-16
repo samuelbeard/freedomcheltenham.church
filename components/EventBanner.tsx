@@ -1,3 +1,5 @@
+"use client"
+
 import { useState, Fragment, useMemo } from "react"
 import { NextComponentType } from "next"
 import {
