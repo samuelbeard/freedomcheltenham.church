@@ -194,7 +194,7 @@ const Header: FC<Props> = ({ background }) => {
                     >
                         {links.map(link => {
                             return link.links.length > 0 ? (
-                                <Popover className="relative">
+                                <Popover className="relative" key={link.href}>
                                     {({ open }) => (
                                         <>
                                             <Popover.Button
@@ -375,7 +375,7 @@ const Header: FC<Props> = ({ background }) => {
                                 <nav className="grid gap-y-8">
                                     {links.map(item => {
                                         return item.links.length > 0 ? (
-                                            <div className="-m-3 p-3 xflex items-center">
+                                            <div className="-m-3 p-3 xflex items-center" key={item.name}>
                                                 <span className="ml-3 text-sm font-bxold text-white">
                                                     {item.name}
                                                 </span>
