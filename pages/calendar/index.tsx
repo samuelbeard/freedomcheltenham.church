@@ -1,6 +1,7 @@
 import { NextPage } from "next"
 // import { FC, useEffect, useState } from "react"
 import Layout from "../../components/Layout"
+import Link from "next/link"
 // import Day from "../../components/Day"
 // import { generateDates, goMonthBack, goMonthForward } from "../../util/date"
 // import format from "date-fns/format"
@@ -64,6 +65,11 @@ const Calendar: NextPage<Props> = ({ events }) => {
                     width="100%"
                     className="focus:outline-none"
                 ></iframe>
+            </div>
+            <div className="container mx-auto text-center py-10">
+                <Link href="/calendar-subscribe" className="bg-brand-red text-white px-5 py-3 rounded-lg hover:bg-black transition-all">
+                    Subscribe to the Calendar
+                </Link>
             </div>
         </Layout>
     )
