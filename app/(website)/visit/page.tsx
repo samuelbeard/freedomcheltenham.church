@@ -1,10 +1,12 @@
-import { NextPage } from "next"
 import Image from "next/image"
-import Layout from "../components/Layout"
 
-const Visit: NextPage = () => {
+export const metadata = {
+    title: "Visit Us | Freedom Church Cheltenham",
+}
+
+export default function Page() {
     return (
-        <Layout title="Visit">
+        <>
             <div className="section pt-12">
                 <div className="container">
                     <h1 className="h1">WE&apos;D LOVE FOR YOU TO JOIN US</h1>
@@ -19,9 +21,6 @@ const Visit: NextPage = () => {
                                 filter: "grayscale(0.8) contrast(1.2) opacity(0.7)",
                             }}
                             title="map"
-                            // marginHeight="0"
-                            // marginwidth="0"
-                            scrolling="no"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4923.379817736884!2d-2.0784703225860617!3d51.903122825411856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7f32b943a245ff21!2sDanceworks!5e0!3m2!1sen!2suk!4v1652795920370!5m2!1sen!2suk"
                             width="100%"
                             height="100%"
@@ -108,8 +107,6 @@ const Visit: NextPage = () => {
                     </p>
                 </div>
             </div>
-        </Layout>
+        </>
     )
 }
-
-export default Visit

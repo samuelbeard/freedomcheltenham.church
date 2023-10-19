@@ -1,10 +1,12 @@
-import { NextPage } from "next"
-import Layout from "../components/Layout"
 import Image from "next/image"
 
-const About: NextPage = () => {
+export const metadata = {
+    title: "Contact Us | Freedom Church Cheltenham",
+}
+
+export default function Page() {
     return (
-        <Layout title="Contact Us">
+        <>
             <section className="section bg-[url('/img/photos/smiling.jpg')] md:bg-[url('/img/photos/smiling-cropped.jpg')] bg-cover md:bg-center">
                 <div className="bg-black w-full py-24 bg-opacity-50">
                     <h1 className="h1 text-6xl text-white text-center">
@@ -12,7 +14,6 @@ const About: NextPage = () => {
                     </h1>
                 </div>
             </section>
-
             <div className="section py-20">
                 <div className="xl:container mx-auto px-6 md:px-12">
                     <div className="mb-16 md:w-2/3 lg:w-1/2">
@@ -116,8 +117,6 @@ const About: NextPage = () => {
                     </div>
                 </div>
             </div>
-        </Layout>
+        </>
     )
 }
-
-export default About

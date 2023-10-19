@@ -1,10 +1,10 @@
-import { NextPage } from "next"
-import Image from "next/image"
-import Layout from "../components/Layout"
+export const metadata = {
+    title: "Midweek Events | Freedom Church Cheltenham",
+}
 
-const Midweeks: NextPage = () => {
+export default function Page() {
     return (
-        <Layout title="Midweeks">
+        <>
             <div className="flex justify-around bg-brand-red py-12 text-4xl font-bold text-white md:text-[5rem]">
                 <h1>MIDWEEKS</h1>
             </div>
@@ -144,8 +144,6 @@ const Midweeks: NextPage = () => {
                     </p>
                 </div>
             </div>
-        </Layout>
+        </>
     )
 }
-
-export default Midweeks
