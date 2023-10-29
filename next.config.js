@@ -58,7 +58,7 @@ const nextConfig = {
             },
             {
                 source: "/christingle",
-                destination: "https://freedomchurchcheltenham.com",
+                destination: "https://freedom.churchsuite.com/events/883stjme",
                 permanent: false
             },
             {
