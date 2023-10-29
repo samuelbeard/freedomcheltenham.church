@@ -63,7 +63,7 @@ const nextConfig = {
             },
             {
                 source: "/carols",
-                destination: "https://freedomchurchcheltenham.com",
+                destination: "https://freedom.churchsuite.com/events/6zumsu72",
                 permanent: false
             },
         ]
