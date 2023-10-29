@@ -56,6 +56,16 @@ const nextConfig = {
                 destination: "https://fdom.ch/ctm-cal",
                 permanent: false
             },
+            {
+                source: "/christingle",
+                destination: "https://freedomchurchcheltenham.com",
+                permanent: false
+            },
+            {
+                source: "/carols",
+                destination: "https://freedomchurchcheltenham.com",
+                permanent: false
+            },
         ]
     },
 }
