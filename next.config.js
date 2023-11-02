@@ -54,17 +54,7 @@ const nextConfig = {
             {
                 source: "/calendar-subscribe",
                 destination: "https://fdom.ch/ctm-cal",
-                permanent: false
-            },
-            {
-                source: "/christingle",
-                destination: "https://freedom.churchsuite.com/events/883stjme",
-                permanent: false
-            },
-            {
-                source: "/carols",
-                destination: "https://freedom.churchsuite.com/events/6zumsu72",
-                permanent: false
+                permanent: false,
             },
         ]
     },
