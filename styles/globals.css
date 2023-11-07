@@ -55,6 +55,10 @@
     footer a {
         @apply block hover:underline;
     }
+
+    .center {
+        @apply flex justify-center items-center;
+    }
 }
 
 /*
