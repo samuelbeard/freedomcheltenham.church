@@ -165,7 +165,15 @@ export default function Page() {
                     </div>
                 </div>
             </div>
-            <div className="h-screenx mt-32">
+            <div className="mt-24 text-center">
+                <Link
+                    href="https://freedom.churchsuite.com/events/6zumsu72"
+                    className="bg-[#dec87f] text-[#171717] px-6 py-3 text-4xl rounded-lg"
+                >
+                    Sign up here!
+                </Link>
+            </div>
+            <div className="mt-32">
                 <Image
                     src="/img/carols/welcome.png"
                     className="mx-auto px-10"
