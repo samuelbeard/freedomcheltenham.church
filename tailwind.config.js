@@ -21,7 +21,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 sans: ["Poppins", ...defaultTheme.fontFamily.sans],
-                serif: ["Newsreader", ...defaultTheme.fontFamily.serif],
+                serif: ["Cormorant Garamond", ...defaultTheme.fontFamily.serif],
             },
             colors: {
                 "brand-red": "#ee2e28",
