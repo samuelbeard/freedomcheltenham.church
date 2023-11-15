@@ -4,6 +4,7 @@ import Image from "next/image"
 
 export const metadata = {
     title: "Carols | 17th December | Freedom Church Cheltenham",
+    description: "Join us for a festive celebration of carols and creativity.",
 }
 
 export default function Page() {

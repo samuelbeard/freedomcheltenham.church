@@ -4,6 +4,8 @@ import Carousel from "../../../components/Carousel"
 
 export const metadata = {
     title: "Christingle | 10th December | Freedom Church Cheltenham",
+    description:
+        "Join us for a spirited Christingle event that beautifully combines cherished traditions with a lashing of modern magic.",
 }
 
 export default function Page() {
