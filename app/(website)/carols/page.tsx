@@ -24,14 +24,19 @@ export default function Page() {
             />
             <div className="flex justify-center mt-12 md:mt-0">
                 <div className="flex mx-auto flex-col md:flex-row gap-12 md:gap-0">
-                    <div className=" w-60 xh-24 center">
-                        <h2 className="text-[32px]">SUNDAY</h2>
+                    <div className="w-60 xh-24 center">
+                        <h2 className="text-[32px]">
+                            SUNDAY <span className="md:hidden">17 DEC</span>
+                        </h2>
                     </div>
-                    <div className="w-60 center flex-col md:border-x border-[#dec87f]">
+                    <div className="hidden md:flex w-60 center flex-col md:border-x border-[#dec87f]">
                         <h1 className="text-[100px] mb-3 mt-0">17</h1>
                         <h2 className="text-[32px] mt-12">DEC</h2>
                     </div>
-                    <div className="w-60 center text-[32px]">
+                    <div className="md:hidden text-center -mt-7">
+                        <h2 className="text-2xl">AT 11am & 6pm</h2>
+                    </div>
+                    <div className="hidden md:flex w-60 center text-[32px]">
                         <div className="mr-4">
                             <h2 className="">AT</h2>
                         </div>
@@ -44,7 +49,7 @@ export default function Page() {
             </div>
             <div className="container lg:w-2/3 text-center mt-24 text-[32px] leading-10">
                 <p className="uppercase">
-                    Join us for an enchanting evening
+                    Join us for an enchanting celebration
                     <br />
                     of traditional carols amidst the soft
                     <br />
@@ -76,7 +81,7 @@ export default function Page() {
                 </Link>
             </div>
             <div className="flex mt-32 w-8/12 mx-auto text-center gap-10 flex-col md:flex-row">
-                <div>
+                <div className="w-full md:w-1/3">
                     <Image
                         width={1080}
                         height={1080}
@@ -88,11 +93,12 @@ export default function Page() {
                         Kids provision
                     </h3>
                     <p>
-                        Fantastic kids events will be avaliable at both morning
-                        and evening events.
+                        Fantastic kids events will be available separately from
+                        the main events for 2-11 year olds with dedicated DBS
+                        checked volunteers!
                     </p>
                 </div>
-                <div>
+                <div className="w-full md:w-1/3">
                     <Image
                         width={1080}
                         height={1080}
@@ -105,7 +111,7 @@ export default function Page() {
                     </h3>
                     <p>Complimentary mulled wine and mince pies on arrival.</p>
                 </div>
-                <div>
+                <div className="w-full md:w-1/3">
                     <Image
                         width={1080}
                         height={1080}
@@ -118,7 +124,8 @@ export default function Page() {
                     </h3>
                     <p>
                         Join us either in the morning or evening for an
-                        unforgettable celebration.
+                        unforgettable celebration. A candlelight setting will be
+                        presented at both events!
                     </p>
                 </div>
             </div>

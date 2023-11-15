@@ -19,7 +19,7 @@ export default function Page() {
                 width={1080}
                 height={1080}
                 src="/img/christingle/christingle-logo.png"
-                className="mx-auto md:w-[600px] relative md:-top-20 px-10"
+                className="mx-auto md:w-[700px] relative md:-top-20 px-10"
                 alt=""
             />
             <Image
@@ -36,41 +36,6 @@ export default function Page() {
                 height={819}
                 className="md:hidden w-screen mt-20"
             />
-            {/* <div className="md:hidden px-10 mt-20">
-                <Image
-                    src="/img/christingle/christopher.png"
-                    alt=""
-                    width={1080}
-                    height={1080}
-                />
-                <Image
-                    src="/img/christingle/signpost.png"
-                    alt="10th Dec at 11AM and 3PM"
-                    width={1080}
-                    height={1080}
-                    className="mt-10"
-                />
-            </div> */}
-            {/* <div className="flex justify-center mt-12 md:mt-0">
-                <div className="flex mx-auto flex-col md:flex-row gap-12 md:gap-0">
-                    <div className=" w-60 xh-24 center">
-                        <h2 className="text-[32px]">SUNDAY</h2>
-                    </div>
-                    <div className="w-60 center flex-col md:border-x border-[#dec87f]">
-                        <h1 className="text-[100px] mb-3 mt-0">17</h1>
-                        <h2 className="text-[32px] mt-12">DEC</h2>
-                    </div>
-                    <div className="w-60 center text-[32px]">
-                        <div className="mr-4">
-                            <h2 className="">AT</h2>
-                        </div>
-                        <div>
-                            <h2 className="mb-3">11:00 AM</h2>
-                            <h2>6:00 PM</h2>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
             <div className="mt-20">
                 <Image
                     src="/img/christingle/border.png"
@@ -82,14 +47,19 @@ export default function Page() {
             </div>
             <div className="flex justify-center mt-12 md:mt-20">
                 <div className="flex mx-auto flex-col md:flex-row gap-12 md:gap-0">
-                    <div className=" w-60 xh-24 center">
-                        <h2 className="text-[32px]">SUNDAY</h2>
+                    <div className="w-60 xh-24 center">
+                        <h2 className="text-[32px]">
+                            SUNDAY <span className="md:hidden">10 DEC</span>
+                        </h2>
                     </div>
-                    <div className="w-60 center flex-col md:border-x border-[#dec87f]">
+                    <div className="hidden md:flex w-60 center flex-col md:border-x border-[#dec87f]">
                         <h1 className="text-[100px] mb-3 mt-0">10</h1>
                         <h2 className="text-[32px] mt-12">DEC</h2>
                     </div>
-                    <div className="w-60 center text-[32px]">
+                    <div className="md:hidden text-center -mt-7">
+                        <h2 className="text-2xl">AT 11am & 3pm</h2>
+                    </div>
+                    <div className="hidden md:flex w-60 center text-[32px]">
                         <div className="mr-4">
                             <h2 className="">AT</h2>
                         </div>
@@ -107,12 +77,12 @@ export default function Page() {
                     MAGIC.
                 </p>
                 <p className="mt-24">
-                    Embark on an exciting interactive adventure with Chris
-                    topher Tingle, a spirited orange who leads us through a
-                    whirlwind journey uncovering the true es sence of the Chris
-                    tingle. He&apos;ll al so be joined live by other lovable
-                    character s such as Claus Funkeld Von Heidleberg, profes sor
-                    of light &amp; his loyal assistant&nbsp;Otto.
+                    Embark on an exciting interactive adventure with Christopher
+                    Tingle, a spirited orange who leads us through a whirlwind
+                    journey uncovering the true essence of the Christingle.
+                    He&apos;ll also be joined live by other lovable characters
+                    such as Claus Funkeld Von Heidleberg, professor of light
+                    &amp; his loyal assistant&nbsp;Otto.
                 </p>
                 <p className="mt-24 uppercase">
                     RESERVE YOUR SEAT TODAY AND JOIN US IN CELEBRATING LOVE,
@@ -128,7 +98,7 @@ export default function Page() {
                 </Link>
             </div>
             <div className="flex mt-32 w-8/12 mx-auto text-center gap-10 flex-col md:flex-row">
-                <div>
+                <div className="w-full md:w-1/3">
                     <Image
                         width={1080}
                         height={1080}
@@ -148,7 +118,7 @@ export default function Page() {
                         matters.
                     </p>
                 </div>
-                <div>
+                <div className="w-full md:w-1/3">
                     <Image
                         width={1080}
                         height={1080}
@@ -157,7 +127,9 @@ export default function Page() {
                         alt=""
                     />
                     <h3 className="uppercase text-3xl font-bold mt-10">
-                        Your own christingle
+                        Your own
+                        <br />
+                        christingle
                     </h3>
                     <p>
                         Go on a whole family journey with fun characters and
@@ -165,7 +137,7 @@ export default function Page() {
                         hope and light.
                     </p>
                 </div>
-                <div>
+                <div className="w-full md:w-1/3">
                     <Image
                         width={1080}
                         height={1080}
@@ -180,8 +152,7 @@ export default function Page() {
                     </h3>
                     <p>
                         Join us either in the morning or afternoon for an
-                        unforgettable celebration. A candlelight setting will be
-                        presented at both events!
+                        unforgettable celebration.
                     </p>
                 </div>
             </div>
