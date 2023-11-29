@@ -3,7 +3,7 @@ import "styles/globals.css"
 import Script from "next/script"
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://freedomchurchcheltenham.com"),
+    metadataBase: new URL("https://freedomcheltenham.church"),
     title: "Freedom Church Cheltenham",
     description:
         "Connecting Anyone Anywhere to a Life Changing Relationship with Jesus",
