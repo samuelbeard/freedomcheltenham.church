@@ -56,6 +56,11 @@ const nextConfig = {
                 destination: "https://fdom.ch/ctm-cal",
                 permanent: false,
             },
+            {
+                source: "/calendar",
+                destination: "/",
+                permanent: false,
+            },
         ]
     },
 }
