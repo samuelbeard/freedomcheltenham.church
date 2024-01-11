@@ -6,7 +6,7 @@ import KeepConnectedSection from "./KeepConnectedSection"
 const links = [
     ["About Us", "/about"],
     ["Our DNA", "/dna"],
-    ["Calendar", "/calendar"],
+    // ["Calendar", "/calendar"],
     ["Visit", "/visit"],
     ["Kids", "/kids"],
 ]
