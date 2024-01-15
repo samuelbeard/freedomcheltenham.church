@@ -35,7 +35,7 @@ const Footer: FC = () => {
                         <p className="mt-3 text-xs opacity-75">
                             Registered charity in
                             <br />
-                            England and Wales (1161926)
+                            England and Wales (1206262)
                         </p>
                     </div>
                     <div className="hidden sm:col-span-1 sm:inline"></div>
