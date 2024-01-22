@@ -14,7 +14,7 @@ const links = [
 const links2 = [
     ["Midweeks", "/midweeks"],
     ["Messages", "/messages"],
-    ["Give", "/give"],
+    ["Giving", "/giving"],
     ["Contact Us", "/contact"],
 ]
 

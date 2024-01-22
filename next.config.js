@@ -9,11 +9,6 @@ const nextConfig = {
                 permanent: false,
             },
             {
-                source: "/give",
-                destination: "https://www.freedomchurch.cc/give",
-                permanent: false,
-            },
-            {
                 source: "/youtube",
                 destination: "https://www.youtube.com/c/freedomchurchcc",
                 permanent: false,
