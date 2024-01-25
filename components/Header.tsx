@@ -114,8 +114,8 @@ const links: ILink[] = [
         actions: [],
     },
     {
-        name: "Give",
-        href: "/give",
+        name: "Giving",
+        href: "/giving",
         active: true,
         links: [],
         actions: [],
