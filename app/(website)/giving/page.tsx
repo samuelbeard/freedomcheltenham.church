@@ -20,6 +20,7 @@ export default function Page() {
                         <span className="font-bold">
                             Freedom Church Cheltenham
                         </span>
+                        <br />
                         Sort code:{" "}
                         <span className="font-bold">
                             {process.env.NEXT_PUBLIC_BANK_SORT_CODE}
