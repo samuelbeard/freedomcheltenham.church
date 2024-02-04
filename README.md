@@ -1,4 +1,4 @@
-# freedomchurchcheltenham.com
+# freedomcheltenham.church
 
 ## Setup
 ```bash

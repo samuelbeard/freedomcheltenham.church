@@ -43,3 +43,4 @@ yarn.lock
 _static
 
 .env
+.vscode
