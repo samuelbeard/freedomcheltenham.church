@@ -8,13 +8,46 @@ export default function Page() {
     return (
         <>
             <div className="container mt-12 mb-16">
-                <div className="md:w-8/12 lg:w-1/2">
-                    <h1 className="h1">KIDS</h1>
-                    <p className="para">
-                        Freedom kids is a childrens ministry designed to be
-                        safe, age appropriate, fun and engaging! We love
-                        teaching the next generation about Jesus.
-                    </p>
+                <section className="mx-auto max-w-screen-2xl px-4 md:px-8">
+                    <div className="mb-8 flex flex-wrap justify-between md:mb-16">
+                        <div className="mb-6 flex w-full flex-col justify-center sm:mb-12 lg:mb-0 lg:w-1/3 lg:pb-24 lg:pt-48">
+                            <h1 className="mb-4 text-4xl font-bold text-black sm:text-5xl md:mb-8 md:text-6xl">
+                                KIDS
+                            </h1>
+                            <p className="max-w-md leading-relaxed xl:text-xl">
+                                Freedom kids is a children&apos;s ministry
+                                designed to be safe, age appropriate, fun and
+                                engaging! We love teaching the next generation
+                                about Jesus.
+                            </p>
+                        </div>
+
+                        <div className="mb-12 flex w-full md:mb-16 lg:w-2/3">
+                            <div className="relative left-12 top-12 z-10 -ml-12 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:left-16 md:top-16 lg:ml-0">
+                                <Image
+                                    loading="lazy"
+                                    alt=""
+                                    className="h-full w-full object-cover object-center"
+                                    width="500"
+                                    height="500"
+                                    src="/img/kids/cubs-2.jpg"
+                                />
+                            </div>
+
+                            <div className="overflow-hidden rounded-lg bg-gray-100 shadow-lg">
+                                <Image
+                                    loading="lazy"
+                                    alt=""
+                                    className="h-full w-full object-cover object-center"
+                                    width="500"
+                                    height="500"
+                                    src="/img/kids/adv-2.jpeg"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div className="md:w-8/12 lg:w-2/3 mx-auto">
                     <h3 className="h3">Relevant content for all age groups</h3>
                     <p className="para">
                         We go through teaching in series bringing a topic to
@@ -111,7 +144,7 @@ export default function Page() {
                                 height={279}
                             />
                         </div>
-                        <div className="lg:w-1/2 2xl:w-1/3">
+                        <div className="lg:w-1/2 2xl:w-1/3  flex items-center">
                             <p className="para text-brand-dark-gray">
                                 For children aged four to seven years. Your
                                 children will begin to learn about their
@@ -148,7 +181,7 @@ export default function Page() {
                 </div>
                 <div className="container 2xl:px-56">
                     <div className="md:flex gap-5 lg:gap-24 mt-6">
-                        <div className="md:w-1/2 mx-auto">
+                        <div className="md:w-1/2 mx-auto flex items-center">
                             <p className="para text-white">
                                 For children aged seven to eleven years. The
                                 Wave currently joins The Adventurers for fun and
@@ -156,6 +189,15 @@ export default function Page() {
                                 the teaching and their personal relationship
                                 with God.
                             </p>
+                        </div>
+                        <div>
+                            <Image
+                                className="rounded shadow-lg"
+                                src="/img/kids/wave-1.jpg"
+                                alt=""
+                                width={372}
+                                height={279}
+                            />
                         </div>
                     </div>
                 </div>
