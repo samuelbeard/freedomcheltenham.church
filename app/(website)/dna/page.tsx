@@ -8,7 +8,7 @@ export const metadata = {
 export default function Page() {
     return (
         <>
-            <section className="section bg-black py-10">
+            <section className="section bg-brand-black py-10">
                 <div className="container">
                     <h2 className="text-center text-4xl font-bold leading-none text-white md:text-[100px]">
                         OUR
@@ -25,7 +25,7 @@ export default function Page() {
                     </p>
                 </div>
             </section>
-            <section className="section bg-black pb-12">
+            <section className="section bg-brand-black pb-12">
                 <div className="container mx-auto pb-3 pt-7 lg:w-5/6 2xl:w-4/5">
                     {DNAData.map((dna, i) => (
                         <DNACard
@@ -52,7 +52,7 @@ interface DNACardProps {
 const DNACard = ({ title, image, description, right }: DNACardProps) => {
     return (
         <div
-            className={`mx-auto flex w-full flex-col items-center rounded-lg bg-black p-5 ${
+            className={`mx-auto flex w-full flex-col items-center rounded-lg bg-brand-black p-5 ${
                 right ? "md:flex-row-reverse" : "md:flex-row"
             } justify-between shadow`}
         >

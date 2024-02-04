@@ -49,7 +49,7 @@
     }
 
     .social-media-bubble {
-        @apply flex h-14 w-14 items-center justify-center rounded-full border-2 border-black bg-black text-white transition-all hover:border-white;
+        @apply flex h-14 w-14 items-center justify-center rounded-full border-2 border-brand-black bg-brand-black text-white transition-all hover:border-white;
     }
 
     footer a {

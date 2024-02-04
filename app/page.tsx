@@ -11,7 +11,7 @@ export default function Page() {
             <div className="absolute top-0 left-0 z-30 w-screen">
                 <Header background="black" />
             </div>
-            <div className="flex h-full flex-col justify-between bg-black">
+            <div className="flex h-full flex-col justify-between bg-brand-black">
                 <div className="absolute top-0 bottom-0 h-full w-full overflow-hidden">
                     <video
                         autoPlay
@@ -23,7 +23,7 @@ export default function Page() {
                         <source src="/video/bg-video.mp4" type="video/mp4" />
                     </video>
                 </div>
-                <div className="z-10 flex flex-grow items-center bg-black bg-opacity-60">
+                <div className="z-10 flex flex-grow items-center bg-brand-black bg-opacity-60">
                     <section className="section">
                         <div className="grid w-5/6 max-w-7xl grid-cols-3 gap-0">
                             <div className="w-36 md:w-56 xl:w-96 pb-5 lg:pb-0 mx-auto col-span-3 md:col-span-1 flex justify-center items-center">
@@ -52,8 +52,8 @@ export default function Page() {
                 <EventBanner />
             </div>
 
-            <div className="section z-30 bg-black bg-[url('/img/photos/worshiping.jpg')] bg-cover bg-center bg-no-repeat text-white">
-                <div className="w-full bg-black bg-opacity-80 py-24 text-center">
+            <div className="section z-30 bg-brand-black bg-[url('/img/photos/worshiping.jpg')] bg-cover bg-center bg-no-repeat text-white">
+                <div className="w-full bg-brand-black bg-opacity-80 py-24 text-center">
                     <h3 className="text-2xl font-extrabold uppercase md:text-6xl">
                         Connecting
                         <br />
@@ -73,7 +73,7 @@ export default function Page() {
                 </div>
             </div>
 
-            <div className="section xbg-pink-500 z-30 bg-black bg-none py-10 text-white">
+            <div className="section z-30 bg-brand-black bg-none py-10 text-white">
                 <Carousel
                     direction="right"
                     speed={70}
@@ -82,7 +82,7 @@ export default function Page() {
                 />
             </div>
 
-            <div className="section xbg-pink-500 z-30 bg-black bg-none pb-10 text-white">
+            <div className="section z-30 bg-brand-black bg-none pb-10 text-white">
                 <Carousel
                     direction="left"
                     speed={70}
@@ -91,7 +91,7 @@ export default function Page() {
                 />
             </div>
 
-            <div className="section bg-black pt-24">
+            <div className="section bg-brand-black pt-24">
                 <div className="container lg:w-2/3">
                     <p className="text-white">
                         Welcome to Freedom Church Cheltenham! We&apos;re a
@@ -108,7 +108,7 @@ export default function Page() {
                     </p>
                 </div>
             </div>
-            <div className="section z-30 bg-black py-10">
+            <div className="section z-30 bg-brand-black py-10">
                 <div className="container z-30 py-12">
                     <div className="grid grid-cols-3 gap-6">
                         <Link
@@ -118,9 +118,7 @@ export default function Page() {
                             <Image
                                 alt=""
                                 src="/img/photos/outside.jpg"
-                                className="absolute inset-0 h-full w-full object-cover opacity-75 group-hover:opacity-0 transition-opacity xgroup-hover:opacity-50 rounded-lf"
-                                // width={304}
-                                // height={392}
+                                className="absolute inset-0 h-full w-full object-cover opacity-75 group-hover:opacity-0 transition-opacity rounded-lf"
                                 fill
                             />
                             <Image

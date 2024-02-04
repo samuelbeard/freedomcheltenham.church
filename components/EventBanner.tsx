@@ -15,7 +15,7 @@ const EventBanner: NextComponentType = () => {
 
     return (
         <>
-            <div className="z-10 flex h-48 flex-wrap items-center justify-around bg-black md:h-20 md:flex-nowrap">
+            <div className="z-10 flex h-48 flex-wrap items-center justify-around bg-brand-black md:h-20 md:flex-nowrap">
                 <div className="flex items-center justify-center text-white">
                     <RiCalendarLine className="mr-3 h-8 w-8" />
                     <h2 className="flex font-bold uppercase">Every sunday</h2>

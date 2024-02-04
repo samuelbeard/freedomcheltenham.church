@@ -24,8 +24,9 @@ module.exports = {
                 serif: ["Cormorant Garamond", ...defaultTheme.fontFamily.serif],
             },
             colors: {
-                "brand-red": "#ee2e28",
+                "brand-red": "#e74242",
                 "brand-dark-gray": "#3f3f3f",
+                "brand-black": "#30343a",
                 "cubs-red": "#e62d33",
                 "adventurers-yellow": "#edc019",
                 "wave-blue": "#00b1fd",

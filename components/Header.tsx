@@ -165,7 +165,7 @@ const Header: FC<Props> = ({ background }) => {
         <Popover
             className={`z-50 relative shadow-lg ${
                 background === "red" ? `bg-brand-red` : ""
-            } ${background === "black" ? `bg-black` : ""}`}
+            } ${background === "black" ? `bg-brand-black` : ""}`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">

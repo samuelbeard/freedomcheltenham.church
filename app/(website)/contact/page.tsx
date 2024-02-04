@@ -31,7 +31,7 @@ export default function Page() {
                                 width={558}
                                 height={815}
                             />
-                            <div className="absolute bottom-0 inset-x-0 h-max mt-auto px-6 py-6 bg-black transition duration-300 ease-in-out text-white">
+                            <div className="absolute bottom-0 inset-x-0 h-max mt-auto px-6 py-6 bg-brand-black transition duration-300 ease-in-out text-white">
                                 <div>
                                     <h4 className="text-xl font-semibold text-white">
                                         Andy &amp; Emily
@@ -54,7 +54,7 @@ export default function Page() {
                                 width={558}
                                 height={815}
                             />
-                            <div className="px-6 py-6 bg-black text-white">
+                            <div className="px-6 py-6 bg-brand-black text-white">
                                 <div>
                                     <h4 className="text-xl font-bold text-white">
                                         Lorah
@@ -77,7 +77,7 @@ export default function Page() {
                                 width={558}
                                 height={815}
                             />
-                            <div className="px-6 py-6 bg-black text-white">
+                            <div className="px-6 py-6 bg-brand-black text-white">
                                 <div>
                                     <h4 className="text-xl font-bold text-white">
                                         Charlie
@@ -100,7 +100,7 @@ export default function Page() {
                                 width={558}
                                 height={815}
                             />
-                            <div className="px-6 py-6 bg-black text-white">
+                            <div className="px-6 py-6 bg-brand-black text-white">
                                 <div>
                                     <h4 className="text-xl font-bold text-white">
                                         John &amp; Abi
