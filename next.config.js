@@ -42,11 +42,6 @@ const nextConfig = {
                 permanent: false,
             },
             {
-                source: "/light-party",
-                destination: "http://freedom.churchsuite.com/events/xvfkgsyt",
-                permanent: false,
-            },
-            {
                 source: "/calendar-subscribe",
                 destination: "https://fdom.ch/ctm-cal",
                 permanent: false,
