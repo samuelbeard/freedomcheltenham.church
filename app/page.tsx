@@ -7,73 +7,54 @@ import Footer from "components/Footer"
 
 export default function Page() {
     return (
-        <div className="h-screen w-screen">
-            <div className="absolute top-0 left-0 z-30 w-screen">
-                <Header background="black" />
-            </div>
-            <div className="flex h-full flex-col justify-between bg-brand-black">
-                <div className="absolute top-0 bottom-0 h-full w-full overflow-hidden">
-                    <video
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        className="absolute z-10 h-auto min-h-full w-auto min-w-full object-cover"
-                    >
-                        <source src="/video/bg-video.mp4" type="video/mp4" />
-                    </video>
+        <>
+            <div className="h-screen">
+                <div className="absolute top-0 left-0 z-30 w-full">
+                    <Header background="red" />
                 </div>
-                <div className="z-10 flex flex-grow items-center bg-brand-black bg-opacity-60">
-                    <section className="section">
-                        <div className="grid w-5/6 max-w-7xl grid-cols-3 gap-0">
-                            <div className="w-36 md:w-56 xl:w-96 pb-5 lg:pb-0 mx-auto col-span-3 md:col-span-1 flex justify-center items-center">
-                                <Image
-                                    src="/img/logo/logo-white.svg"
-                                    alt="Freedom Church"
-                                    height={400}
-                                    width={400}
-                                />
+                <div className="flex h-full flex-col justify-between bg-brand-beige">
+                    <div className="absolute top-0 bottom-0 h-full w-full overflow-hidden">
+                        <video
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            className="absolute z-10 h-auto min-h-full w-auto min-w-full object-cover"
+                        >
+                            <source
+                                src="/video/bg-video-2.mp4"
+                                type="video/mp4"
+                            />
+                        </video>
+                    </div>
+                    <div className="z-10 flex flex-grow items-center bg-brand-black bg-opacity-60">
+                        <section className="section">
+                            <div className="grid w-5/6 max-w-7xl grid-cols-3 gap-0">
+                                <div className="col-span-3 mx-auto flex flex-col justify-center text-center md:col-span-2 md:text-left">
+                                    <h2 className="m-0 text-xl font-bold text-white md:text-2xl lg:text-xl">
+                                        Welcome to
+                                    </h2>
+                                    <h1 className="h1 m-0 text-2xl text-brand-red md:text-4xl lg:text-3xl">
+                                        Freedom&nbsp;Church
+                                    </h1>
+                                    <h1 className="h1 m-0 text-4xl uppercase text-brand-red sm:text-6xl lg:text-7xl mt-20">
+                                        Your&nbsp;Place
+                                    </h1>
+                                    <h1 className="h1 m-0 text-4xl uppercase text-brand-red sm:text-6xl lg:text-7xl mt-5">
+                                        Your&nbsp;People
+                                    </h1>
+                                    <h1 className="h1 m-0 text-4xl uppercase text-brand-red sm:text-6xl lg:text-7xl mt-5">
+                                        Your&nbsp;Purpose
+                                    </h1>
+                                </div>
                             </div>
-                            <div className="col-span-3 mx-auto flex flex-col justify-center text-center md:col-span-2 md:text-left">
-                                <h2 className="m-0 text-xl font-bold text-white md:text-2xl lg:text-4xl">
-                                    Welcome to
-                                </h2>
-                                <h1 className="h1 m-0 text-2xl uppercase text-white md:text-4xl lg:text-6xl">
-                                    Freedom&nbsp;Church
-                                    <br />
-                                    <span className="text-brand-red">
-                                        Cheltenham
-                                    </span>
-                                </h1>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-                <EventBanner />
-            </div>
-
-            <div className="section z-30 bg-brand-black bg-[url('/img/photos/worshiping.jpg')] bg-cover bg-center bg-no-repeat text-white">
-                <div className="w-full bg-brand-black bg-opacity-80 py-24 text-center">
-                    <h3 className="text-2xl font-extrabold uppercase md:text-6xl">
-                        Connecting
-                        <br />
-                        <span className="text-3xl text-brand-red md:text-7xl">
-                            Anyone&nbsp;Anywhere
-                        </span>
-                        <br />
-                        <span className="">to a</span>{" "}
-                        <span className="italic">Life Changing</span>
-                        <br />
-                        Relationship with
-                        <br />
-                        <span className="text-5xl drop-shadow-[0_0_50px_rgba(255,0,0,1)] md:text-9xl">
-                            Jesus
-                        </span>
-                    </h3>
+                        </section>
+                    </div>
+                    <EventBanner />
                 </div>
             </div>
 
-            <div className="section z-30 bg-brand-black bg-none py-10 text-white">
+            <div className="section z-30 bg-brand-beige bg-none py-10 text-white">
                 <Carousel
                     direction="right"
                     speed={70}
@@ -82,7 +63,7 @@ export default function Page() {
                 />
             </div>
 
-            <div className="section z-30 bg-brand-black bg-none pb-10 text-white">
+            <div className="section z-30 bg-brand-beige bg-none pb-10 text-white">
                 <Carousel
                     direction="left"
                     speed={70}
@@ -91,9 +72,9 @@ export default function Page() {
                 />
             </div>
 
-            <div className="section bg-brand-black pt-24">
+            <div className="section bg-brand-beige pt-14">
                 <div className="container lg:w-2/3">
-                    <p className="text-white">
+                    <p className="text-brand-black text-lg">
                         Welcome to Freedom Church Cheltenham! We&apos;re a
                         diverse and loving family, passionate about helping
                         people thrive through a transformative relationship with
@@ -108,7 +89,7 @@ export default function Page() {
                     </p>
                 </div>
             </div>
-            <div className="section z-30 bg-brand-black py-10">
+            <div className="section z-30 bg-brand-beige py-10">
                 <div className="container z-30 py-12">
                     <div className="grid grid-cols-3 gap-6">
                         <Link
@@ -203,6 +184,6 @@ export default function Page() {
                 </div>
             </section> */}
             <Footer />
-        </div>
+        </>
     )
 }

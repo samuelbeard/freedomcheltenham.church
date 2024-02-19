@@ -174,7 +174,7 @@ const Header: FC<Props> = ({ background }) => {
                             <span className="sr-only">Workflow</span>
                             <Image
                                 className="h-10 w-auto sm:h-10"
-                                src="/img/logo/logo-white.svg"
+                                src="/img/logo/logo-beige.png"
                                 alt=""
                                 width={40}
                                 height={40}
@@ -182,7 +182,7 @@ const Header: FC<Props> = ({ background }) => {
                         </Link>
                     </div>
                     <div className="-mr-2 -my-2 md:hidden">
-                        <Popover.Button className="p-2 mr-2 inline-flex items-center justify-center text-white hover:text-gray-200">
+                        <Popover.Button className="p-2 mr-2 inline-flex items-center justify-center text-brand-beige hover:text-gray-200">
                             <span className="sr-only">Open menu</span>
                             <RiMenuLine
                                 className="h-6 w-6"
@@ -203,8 +203,8 @@ const Header: FC<Props> = ({ background }) => {
                                                 className={classNames(
                                                     open
                                                         ? "text-gray-900"
-                                                        : "text-white",
-                                                    "group rounded-md inline-flex items-center text-base font-bold hover:text-brand-red focus-visible:outline-none",
+                                                        : "text-brand-beige",
+                                                    "group rounded-md inline-flex items-center text-base font-bold hover:opacity-60 focus-visible:outline-none transition-all",
                                                 )}
                                             >
                                                 <span>{link.name}</span>
@@ -212,8 +212,8 @@ const Header: FC<Props> = ({ background }) => {
                                                     className={classNames(
                                                         open
                                                             ? "text-gray-600"
-                                                            : "text-white",
-                                                        "ml-2 -mr-3 h-5 w-5 group-hover:text-gray-500",
+                                                            : "text-brand-beige",
+                                                        "ml-2 -mr-3 h-5 w-5 group-hover:opacity-60",
                                                     )}
                                                     aria-hidden="true"
                                                 />
@@ -305,7 +305,7 @@ const Header: FC<Props> = ({ background }) => {
                                 <Link
                                     key={link.href}
                                     href={link.href}
-                                    className={`text-base font-bold text-white ${
+                                    className={`text-base font-bold text-brand-beige ${
                                         background === "red"
                                             ? "hover:text-brand-dark-gray"
                                             : "hover:text-brand-red"
@@ -324,7 +324,7 @@ const Header: FC<Props> = ({ background }) => {
                                 className="mx-2"
                             >
                                 <item.icon
-                                    className={`h-7 w-7 text-white ${
+                                    className={`h-7 w-7 text-brand-beige ${
                                         background === "red"
                                             ? "hover:text-brand-dark-gray"
                                             : "hover:text-brand-red"
@@ -355,7 +355,7 @@ const Header: FC<Props> = ({ background }) => {
                                 <div>
                                     <Image
                                         className="h-10 w-auto"
-                                        src="/img/logo/logo-white.svg"
+                                        src="/img/logo/logo-beige.png"
                                         alt="Workflow"
                                         width={40}
                                         height={40}

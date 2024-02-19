@@ -26,7 +26,7 @@ const Footer: FC = () => {
                 <div className="w-5xl mx-auto grid max-w-5xl grid-cols-3 px-5 sm:grid-cols-4 sm:gap-12">
                     <div className="col-span-3 text-center sm:col-span-1">
                         <Image
-                            src="/img/logo/logo-footer.png"
+                            src="/img/logo/logo-beige-full.png"
                             alt="Freedom Church"
                             width={120}
                             height={175}

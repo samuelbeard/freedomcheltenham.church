@@ -20,13 +20,16 @@ module.exports = {
         },
         extend: {
             fontFamily: {
-                sans: ["Poppins", ...defaultTheme.fontFamily.sans],
-                serif: ["Cormorant Garamond", ...defaultTheme.fontFamily.serif],
+                sans: ["Proxima Nova", ...defaultTheme.fontFamily.sans],
+                serif: ["Aerokids", ...defaultTheme.fontFamily.serif],
+                swish: ["Aerokids Swash", ...defaultTheme.fontFamily.serif],
             },
             colors: {
                 "brand-red": "#e74242",
                 "brand-dark-gray": "#3f3f3f",
                 "brand-black": "#30343a",
+                "brand-beige": "#f0f0e1",
+                "brand-yellow": "#f5be55",
                 "cubs-red": "#e62d33",
                 "adventurers-yellow": "#edc019",
                 "wave-blue": "#00b1fd",
