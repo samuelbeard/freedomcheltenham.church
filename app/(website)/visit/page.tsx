@@ -9,7 +9,9 @@ export default function Page() {
         <>
             <div className="section pt-12">
                 <div className="container">
-                    <h1 className="h1">WE&apos;D LOVE FOR YOU TO JOIN US</h1>
+                    <h1 className="h1 text-brand-red">
+                        WE&apos;D LOVE FOR YOU TO JOIN US
+                    </h1>
                 </div>
             </div>
             <section className="body-font relative text-gray-600">
@@ -21,7 +23,7 @@ export default function Page() {
                                 filter: "grayscale(0.8) contrast(1.2) opacity(0.7)",
                             }}
                             title="map"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4923.379817736884!2d-2.0784703225860617!3d51.903122825411856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7f32b943a245ff21!2sDanceworks!5e0!3m2!1sen!2suk!4v1652795920370!5m2!1sen!2suk"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.633811169656!2d-2.080072186912881!3d51.90414648152431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48711b290344d24b%3A0xaff4ef1d9d976715!2sFreedom%20Church%20Cheltenham!5e0!3m2!1sen!2suk!4v1707122663364!5m2!1sen!2suk"
                             width="100%"
                             height="100%"
                             frameBorder="0"
@@ -42,7 +44,7 @@ export default function Page() {
                             </div>
                         </div>
                     </div>
-                    <div className="mt-8 flex w-full flex-col bg-white md:ml-auto md:mt-0 md:w-1/2 md:py-8 lg:w-1/3 lg:pb-48">
+                    <div className="mt-8 flex w-full flex-col md:ml-auto md:mt-0 md:w-1/2 md:py-8 lg:w-1/3 lg:pb-48">
                         <h2 className="h3 my-1">Access and Parking</h2>
                         <p className="para text-base">
                             There are a variety of parking options available

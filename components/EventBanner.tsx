@@ -1,13 +1,8 @@
 "use client"
 
-import { useState, Fragment, useMemo } from "react"
+import { useState, Fragment } from "react"
 import { NextComponentType } from "next"
-import {
-    RiAtLine,
-    RiCalendarLine,
-    RiMapPin2Line,
-    RiTimeLine,
-} from "react-icons/ri"
+import { RiCalendarLine, RiMapPin2Line, RiTimeLine } from "react-icons/ri"
 import { Dialog, Transition } from "@headlessui/react"
 
 const EventBanner: NextComponentType = () => {
@@ -15,22 +10,22 @@ const EventBanner: NextComponentType = () => {
 
     return (
         <>
-            <div className="z-10 flex h-48 flex-wrap items-center justify-around bg-brand-black md:h-20 md:flex-nowrap">
-                <div className="flex items-center justify-center text-white">
+            <div className="z-10 flex h-48 flex-wrap items-center justify-around bg-brand-beige md:h-20 md:flex-nowrap">
+                <div className="flex items-center justify-center text-brand-red">
                     <RiCalendarLine className="mr-3 h-8 w-8" />
                     <h2 className="flex font-bold uppercase">Every sunday</h2>
                 </div>
-                <div className="flex w-full items-center justify-center text-white md:w-auto">
+                <div className="flex w-full items-center justify-center text-brand-red md:w-auto">
                     <RiMapPin2Line className="mr-3 h-8 w-8" />
                     <h2 className="flex font-bold uppercase">
                         Danceworks, Cheltenham
                     </h2>
                 </div>
-                <div className="flex items-center justify-center text-white">
+                <div className="flex items-center justify-center text-brand-red">
                     <RiTimeLine className="mr-3 h-8 w-8" />
                     <h2 className="flex font-bold uppercase">11AM</h2>
                 </div>
-                <div className="flex items-center justify-center text-white">
+                <div className="flex items-center justify-center text-brand-red">
                     <h2
                         className="flex cursor-pointer underline"
                         onClick={() => setIsOpen(true)}
@@ -96,12 +91,14 @@ const EventBanner: NextComponentType = () => {
                                     </div>
                                     <div className="container relative inset-0 mx-auto flex flex-wrap px-2 pt-4 sm:flex-nowrap">
                                         <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.63359743659!2d-2.0801020230815594!3d51.904150381641884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48711b9a13dcef19%3A0x7f32b943a245ff21!2sDanceworks!5e0!3m2!1sen!2suk!4v1688589294345!5m2!1sen!2suk"
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.633811169656!2d-2.080072186912881!3d51.90414648152431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48711b290344d24b%3A0xaff4ef1d9d976715!2sFreedom%20Church%20Cheltenham!5e0!3m2!1sen!2suk!4v1707122663364!5m2!1sen!2suk"
                                             width="400"
                                             height="300"
                                             data-style="border:0"
                                             loading="lazy"
                                             title="A google maps location of Freedom Church Cheltenham"
+                                            referrerPolicy="no-referrer-when-downgrade"
+                                            frameBorder={0}
                                         ></iframe>
                                     </div>
                                     <div className="mt-8 w-full">

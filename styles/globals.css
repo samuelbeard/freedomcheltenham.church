@@ -7,6 +7,69 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Proxima Nova";
+    src:
+        url("/fonts/proximanova-regular-webfont.woff2") format("woff2"),
+        url("/fonts/proximanova-regular-webfont.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src:
+        url("/fonts/proximanova-light-webfont.woff2") format("woff2"),
+        url("/fonts/proximanova-light-webfont.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src:
+        url("/fonts/proximanova-semibold-webfont.woff2") format("woff2"),
+        url("/fonts/proximanova-semibold-webfont.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src:
+        url("/fonts/proximanova-bold-webfont.woff2") format("woff2"),
+        url("/fonts/proximanova-bold-webfont.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src:
+        url("/fonts/proximanova-extrabold-webfont.woff2") format("woff2"),
+        url("/fonts/proximanova-extrabold-webfont.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Aerokids Swash";
+    src:
+        url("/fonts/aerokids_swash-webfont.woff2") format("woff2"),
+        url("/fonts/aerokids_swash-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Aerokids";
+    src:
+        url("/fonts/aerokids-webfont.woff2") format("woff2"),
+        url("/fonts/aerokids-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
 @layer components {
     /* Paragraph Styling */
     .para {
@@ -14,11 +77,11 @@
     }
 
     .h1 {
-        @apply mt-5 mb-3 text-4xl font-bold text-stone-600;
+        @apply mt-5 mb-3 text-4xl font-extrabold text-stone-600;
     }
 
     .h2 {
-        @apply mt-5 mb-3 text-3xl font-semibold text-stone-600;
+        @apply mt-5 mb-3 text-3xl font-bold text-stone-600;
     }
 
     .h3 {

@@ -7,11 +7,11 @@ export const metadata = {
 export default function Page() {
     return (
         <>
-            <section className="section mt-5">
-                <h1 className="h1 text-6xl">Welcome!</h1>
-            </section>
             <div className="section">
                 <div className="container mt-10">
+                    <h1 className="h1 text-6xl lg:w-8/12 mx-auto text-brand-red">
+                        Welcome!
+                    </h1>
                     <p className="para mx-auto text-lg lg:w-8/12">
                         Welcome to Freedom Church Cheltenham! We embrace all,
                         forming a diverse, loving family. Our passion is to help
