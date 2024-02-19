@@ -22,7 +22,7 @@ export default function Page() {
                             className="absolute z-10 h-auto min-h-full w-auto min-w-full object-cover"
                         >
                             <source
-                                src="/video/bg-video.mp4"
+                                src="/video/bg-video-2.mp4"
                                 type="video/mp4"
                             />
                         </video>
