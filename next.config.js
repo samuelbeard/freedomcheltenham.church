@@ -51,6 +51,17 @@ const nextConfig = {
                 destination: "/",
                 permanent: false,
             },
+            // Redirects for old pages that we may want to bring back.
+            {
+                source: "/carols",
+                destination: "/",
+                permanent: false,
+            },
+            {
+                source: "/christingle",
+                destination: "/",
+                permanent: false,
+            },
         ]
     },
 }

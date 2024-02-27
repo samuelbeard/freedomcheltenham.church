@@ -20,45 +20,44 @@ export default function Page() {
                         <iframe
                             className="absolute inset-0"
                             style={{
-                                filter: "grayscale(0.8) contrast(1.2) opacity(0.7)",
+                                filter: "grayscale(0.8) contrast(1) opacity(0.7)",
                             }}
                             title="map"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.633811169656!2d-2.080072186912881!3d51.90414648152431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48711b290344d24b%3A0xaff4ef1d9d976715!2sFreedom%20Church%20Cheltenham!5e0!3m2!1sen!2suk!4v1707122663364!5m2!1sen!2suk"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3966.0927607417066!2d-2.059686698268362!3d51.88541931084989!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48711bcc1f240cd7%3A0xeb5cb6acb237d40b!2sSt%20Edward&#39;s%20School!5e0!3m2!1sen!2suk!4v1709038886225!5m2!1sen!2suk"
                             width="100%"
                             height="100%"
                             frameBorder="0"
                         ></iframe>
+
                         <div className="relative flex flex-wrap rounded bg-white py-6 opacity-0 shadow-md md:opacity-100">
                             <div className="px-6 pr-20 lg:w-full">
                                 <p className="mt-1">
                                     <span className="font-bold">
-                                        Danceworks Studio
+                                        St Edward&apos;s School
                                     </span>
                                     <br />
-                                    35 St George&apos;s St,
+                                    Cirencester Road,
                                     <br />
-                                    Cheltenham
+                                    Cheltenham,
                                     <br />
-                                    GL50 4AF
+                                    GL53&nbsp;8EY
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div className="mt-8 flex w-full flex-col md:ml-auto md:mt-0 md:w-1/2 md:py-8 lg:w-1/3 lg:pb-48">
-                        <h2 className="h3 my-1">Access and Parking</h2>
+                        <h2 className="h3 my-1">Access and Parking TOUPDATE</h2>
                         <p className="para text-base">
-                            There are a variety of parking options available
-                            near to the venue, including the High Street Carpark
-                            (GL50 3HQ). Due to the venue&apos;s close proximity
-                            to the town centre, the venue is also accessible via
-                            foot, bike, bus and a 20-25 minute walk from
-                            Cheltenham Spa train station.
+                            There is plenty of parking available at St
+                            Edward&apos;s which makes it very easy to drive in
+                            and park. The main entrance is located on
+                            Cirencester Road and there will be a Freedom Church
+                            volunteer at the gates happy to direct you.
                         </p>
                         <p className="para text-base">
-                            Disabled parking is available onsite at the
-                            Danceworks Studio and the main event space, café
-                            area and toilets all accessible for guests with a
-                            disability.
+                            Disabled parking is available onsite and the main
+                            event space, café area and toilets all accessible
+                            for guests with a disability.
                         </p>
                     </div>
                 </div>
@@ -90,7 +89,7 @@ export default function Page() {
                     </p>
                 </div>
             </div>
-            <div className="container mt-10 mb-16">
+            <div className="container mb-16 mt-10">
                 <div className="mx-auto md:w-8/12 lg:w-1/2">
                     <h3 className="h3">Our Event</h3>
                     <p className="para">
