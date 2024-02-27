@@ -18,7 +18,7 @@ const EventBanner: NextComponentType = () => {
                 <div className="text-brand-red flex w-full items-center justify-center md:w-auto">
                     <RiMapPin2Line className="mr-3 h-8 w-8" />
                     <h2 className="flex font-bold uppercase">
-                        St Edward&apos;s , Cheltenham
+                        St Edward&apos;s, Cheltenham
                     </h2>
                 </div>
                 <div className="text-brand-red flex items-center justify-center">
