@@ -4,12 +4,14 @@ import { useState, Fragment } from "react"
 import { NextComponentType } from "next"
 import { RiCalendarLine, RiMapPin2Line, RiTimeLine } from "react-icons/ri"
 import { Dialog, Transition } from "@headlessui/react"
+import WeMovedBanner from "./WeMovedBanner"
 
 const EventBanner: NextComponentType = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
         <>
+            <WeMovedBanner />
             <div className="bg-brand-beige z-10 flex h-48 flex-wrap items-center justify-around md:h-20 md:flex-nowrap">
                 <div className="text-brand-red flex items-center justify-center">
                     <RiCalendarLine className="mr-3 h-8 w-8" />
