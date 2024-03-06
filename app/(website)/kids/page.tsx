@@ -86,7 +86,7 @@ export default function Page() {
                             className="sm:w-24 sm:mr-6 md:w-32"
                         />
                         <h2 className="text-white text-5xl font-bold">
-                            2-4 Years
+                            Preschool and Reception
                         </h2>
                     </div>
                 </div>
@@ -130,7 +130,7 @@ export default function Page() {
                             alt="adventurers"
                             className="sm:w-24 sm:mr-6 md:w-32"
                         />
-                        <h2 className="text-5xl font-bold">4-7 Years</h2>
+                        <h2 className="text-5xl font-bold">Years 1 - 4</h2>
                     </div>
                 </div>
                 <div className="container 2xl:px-56">
@@ -175,7 +175,7 @@ export default function Page() {
                             className="sm:w-24 sm:mr-6 md:w-32"
                         />
                         <h2 className="text-white text-5xl font-bold">
-                            7-11 Years
+                            Years 5 and 6
                         </h2>
                     </div>
                 </div>
