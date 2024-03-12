@@ -9,7 +9,7 @@ export default function Page() {
         <>
             <div className="section">
                 <div className="container mt-10">
-                    <h1 className="h1 text-6xl lg:w-8/12 mx-auto text-brand-red">
+                    <h1 className="h1 text-brand-red mx-auto text-6xl lg:w-8/12">
                         Welcome!
                     </h1>
                     <p className="para mx-auto text-lg lg:w-8/12">
@@ -32,8 +32,8 @@ export default function Page() {
                     <p className="para mx-auto text-lg lg:w-8/12">
                         We are Freedom Church Cheltenham.
                     </p>
-                    <p className="para mx-auto rounded bg-brand-red py-2 text-center text-lg text-white lg:w-8/12">
-                        EVERY&nbsp;SUNDAY | 11AM | DANCEWORKS&nbsp;STUDIO
+                    <p className="para bg-brand-red mx-auto rounded py-2 text-center text-lg text-white lg:w-8/12">
+                        EVERY&nbsp;SUNDAY | 11AM | ST EDWARD&apos;S SCHOOL
                     </p>
                 </div>
             </div>
@@ -169,10 +169,10 @@ const TeamMember = ({
 }) => {
     return (
         <div className="p-4 lg:w-1/2">
-            <div className="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+            <div className="flex h-full flex-col items-center justify-center text-center sm:flex-row sm:justify-start sm:text-left">
                 <Image
                     alt="team"
-                    className="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+                    className="mb-4 h-48 w-48 flex-shrink-0 rounded-lg object-cover object-center sm:mb-0"
                     src={`/img/photos/${image}`}
                     width={192}
                     height={192}

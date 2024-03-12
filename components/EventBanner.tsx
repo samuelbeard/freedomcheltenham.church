@@ -4,28 +4,30 @@ import { useState, Fragment } from "react"
 import { NextComponentType } from "next"
 import { RiCalendarLine, RiMapPin2Line, RiTimeLine } from "react-icons/ri"
 import { Dialog, Transition } from "@headlessui/react"
+import WeMovedBanner from "./WeMovedBanner"
 
 const EventBanner: NextComponentType = () => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
         <>
-            <div className="z-10 flex h-48 flex-wrap items-center justify-around bg-brand-beige md:h-20 md:flex-nowrap">
-                <div className="flex items-center justify-center text-brand-red">
+            <WeMovedBanner />
+            <div className="bg-brand-beige z-10 flex h-48 flex-wrap items-center justify-around md:h-20 md:flex-nowrap">
+                <div className="text-brand-red flex items-center justify-center">
                     <RiCalendarLine className="mr-3 h-8 w-8" />
                     <h2 className="flex font-bold uppercase">Every sunday</h2>
                 </div>
-                <div className="flex w-full items-center justify-center text-brand-red md:w-auto">
+                <div className="text-brand-red flex w-full items-center justify-center md:w-auto">
                     <RiMapPin2Line className="mr-3 h-8 w-8" />
                     <h2 className="flex font-bold uppercase">
-                        Danceworks, Cheltenham
+                        St Edward&apos;s, Cheltenham
                     </h2>
                 </div>
-                <div className="flex items-center justify-center text-brand-red">
+                <div className="text-brand-red flex items-center justify-center">
                     <RiTimeLine className="mr-3 h-8 w-8" />
                     <h2 className="flex font-bold uppercase">11AM</h2>
                 </div>
-                <div className="flex items-center justify-center text-brand-red">
+                <div className="text-brand-red flex items-center justify-center">
                     <h2
                         className="flex cursor-pointer underline"
                         onClick={() => setIsOpen(true)}
@@ -73,13 +75,13 @@ const EventBanner: NextComponentType = () => {
                                     <div className="mt-2 flex justify-between">
                                         <div>
                                             <p className="text-gray-500">
-                                                Danceworks
+                                                St Edward&apos;s School
                                                 <br />
-                                                35 St George&apos;s St,
+                                                Cirencester Road
                                                 <br />
                                                 Cheltenham
                                                 <br />
-                                                GL50&nbsp;4AF
+                                                GL53&nbsp;8EY
                                             </p>
                                         </div>
                                         <div className="text-right">
@@ -91,12 +93,12 @@ const EventBanner: NextComponentType = () => {
                                     </div>
                                     <div className="container relative inset-0 mx-auto flex flex-wrap px-2 pt-4 sm:flex-nowrap">
                                         <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.633811169656!2d-2.080072186912881!3d51.90414648152431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48711b290344d24b%3A0xaff4ef1d9d976715!2sFreedom%20Church%20Cheltenham!5e0!3m2!1sen!2suk!4v1707122663364!5m2!1sen!2suk"
+                                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3966.0927607417066!2d-2.059686698268362!3d51.88541931084989!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48711bcc1f240cd7%3A0xeb5cb6acb237d40b!2sSt%20Edward&#39;s%20School!5e0!3m2!1sen!2suk!4v1709038886225!5m2!1sen!2suk"
                                             width="400"
                                             height="300"
-                                            data-style="border:0"
+                                            data-style="border:0;"
                                             loading="lazy"
-                                            title="A google maps location of Freedom Church Cheltenham"
+                                            title="A google maps location of St Edward's School"
                                             referrerPolicy="no-referrer-when-downgrade"
                                             frameBorder={0}
                                         ></iframe>

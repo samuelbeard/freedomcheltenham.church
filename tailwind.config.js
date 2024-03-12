@@ -34,6 +34,10 @@ module.exports = {
                 "adventurers-yellow": "#edc019",
                 "wave-blue": "#00b1fd",
             },
+            animation: {
+                // Bounces 5 times 1s equals 5 seconds
+                "bounce-short": "bounce 1s ease-in-out 3.5",
+            },
         },
     },
 }

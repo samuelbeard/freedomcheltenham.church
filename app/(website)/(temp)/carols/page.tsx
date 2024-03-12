@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Carousel from "../../../components/Carousel"
+import Carousel from "../../../../components/Carousel"
 import Image from "next/image"
 
 export const metadata = {
@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function Page() {
     return (
-        <div className="bg-[#171717] text-[#dec87f] font-serif w-full text-xl">
+        <div className="w-full bg-[#171717] font-serif text-xl text-[#dec87f]">
             <Image
                 src="/img/carols/website-top.png"
                 alt=""
@@ -20,24 +20,24 @@ export default function Page() {
                 width={1080}
                 height={1080}
                 src="/img/carols/carols-logo.png"
-                className="mx-auto md:w-[600px] relative md:-top-36"
+                className="relative mx-auto md:-top-36 md:w-[600px]"
                 alt=""
             />
-            <div className="flex justify-center mt-12 md:mt-0">
-                <div className="flex mx-auto flex-col md:flex-row gap-12 md:gap-0">
-                    <div className="w-60 xh-24 center">
+            <div className="mt-12 flex justify-center md:mt-0">
+                <div className="mx-auto flex flex-col gap-12 md:flex-row md:gap-0">
+                    <div className="xh-24 center w-60">
                         <h2 className="text-[32px]">
                             SUNDAY <span className="md:hidden">17 DEC</span>
                         </h2>
                     </div>
-                    <div className="hidden md:flex w-60 center flex-col md:border-x border-[#dec87f]">
-                        <h1 className="text-[100px] mb-3 mt-0">17</h1>
-                        <h2 className="text-[32px] mt-12">DEC</h2>
+                    <div className="center hidden w-60 flex-col border-[#dec87f] md:flex md:border-x">
+                        <h1 className="mb-3 mt-0 text-[100px]">17</h1>
+                        <h2 className="mt-12 text-[32px]">DEC</h2>
                     </div>
-                    <div className="md:hidden text-center -mt-7">
+                    <div className="-mt-7 text-center md:hidden">
                         <h2 className="text-2xl">AT 11am & 6pm</h2>
                     </div>
-                    <div className="hidden md:flex w-60 center text-[32px]">
+                    <div className="center hidden w-60 text-[32px] md:flex">
                         <div className="mr-4">
                             <h2 className="">AT</h2>
                         </div>
@@ -48,7 +48,7 @@ export default function Page() {
                     </div>
                 </div>
             </div>
-            <div className="container lg:w-2/3 text-center mt-24 text-[32px] leading-10">
+            <div className="container mt-24 text-center text-[32px] leading-10 lg:w-2/3">
                 <p className="uppercase">
                     Join us for an enchanting celebration
                     <br />
@@ -76,21 +76,21 @@ export default function Page() {
             <div className="mt-24 text-center">
                 <Link
                     href="https://freedom.churchsuite.com/events/6zumsu72"
-                    className="bg-[#dec87f] text-[#171717] px-6 py-3 text-4xl rounded-lg"
+                    className="rounded-lg bg-[#dec87f] px-6 py-3 text-4xl text-[#171717]"
                 >
                     Sign up here!
                 </Link>
             </div>
-            <div className="flex mt-32 w-8/12 mx-auto text-center gap-10 flex-col md:flex-row">
+            <div className="mx-auto mt-32 flex w-8/12 flex-col gap-10 text-center md:flex-row">
                 <div className="w-full md:w-1/3">
                     <Image
                         width={1080}
                         height={1080}
                         src="/img/carols/kids.png"
-                        className="w-60 mx-auto"
+                        className="mx-auto w-60"
                         alt=""
                     />
-                    <h3 className="uppercase text-3xl font-bold mt-10">
+                    <h3 className="mt-10 text-3xl font-bold uppercase">
                         Kids provision
                     </h3>
                     <p>
@@ -104,10 +104,10 @@ export default function Page() {
                         width={1080}
                         height={1080}
                         src="/img/carols/mulled-wine.png"
-                        className="w-60 mx-auto"
+                        className="mx-auto w-60"
                         alt=""
                     />
-                    <h3 className="uppercase text-3xl font-bold mt-10">
+                    <h3 className="mt-10 text-3xl font-bold uppercase">
                         Mulled wine &amp; mince pies
                     </h3>
                     <p>Complimentary mulled wine and mince pies on arrival.</p>
@@ -117,10 +117,10 @@ export default function Page() {
                         width={1080}
                         height={1080}
                         src="/img/carols/double-event.png"
-                        className="w-60 mx-auto"
+                        className="mx-auto w-60"
                         alt=""
                     />
-                    <h3 className="uppercase text-3xl font-bold mt-10">
+                    <h3 className="mt-10 text-3xl font-bold uppercase">
                         Double event
                     </h3>
                     <p>
@@ -140,14 +140,14 @@ export default function Page() {
             </div>
             <div className="mt-24">
                 <div className="container">
-                    <h2 className="text-4xl uppercase font-bold">
+                    <h2 className="text-4xl font-bold uppercase">
                         How to find us
                     </h2>
                 </div>
             </div>
             <div>
-                <div className="container flex gap-10 mt-10 flex-col md:flex-row">
-                    <div className="w-full md:w-1/2 h-96">
+                <div className="container mt-10 flex flex-col gap-10 md:flex-row">
+                    <div className="h-96 w-full md:w-1/2">
                         <iframe
                             className="xabsolute inset-0 w-full"
                             style={{
@@ -161,7 +161,7 @@ export default function Page() {
                         ></iframe>
                     </div>
                     <div>
-                        <p className="uppercase text-xl">
+                        <p className="text-xl uppercase">
                             Danceworks studios
                             <br />
                             35 St George&apos;s st
@@ -176,7 +176,7 @@ export default function Page() {
             <div className="mt-24 text-center">
                 <Link
                     href="https://freedom.churchsuite.com/events/6zumsu72"
-                    className="bg-[#dec87f] text-[#171717] px-6 py-3 text-4xl rounded-lg"
+                    className="rounded-lg bg-[#dec87f] px-6 py-3 text-4xl text-[#171717]"
                 >
                     Sign up here!
                 </Link>
@@ -193,7 +193,7 @@ export default function Page() {
                     width={1080}
                     height={1080}
                     src="/img/carols/baby-jesus-footer.png"
-                    className="w-64 mx-auto mt-20 md:-mb-32"
+                    className="mx-auto mt-20 w-64 md:-mb-32"
                     alt=""
                 />
                 <Image
