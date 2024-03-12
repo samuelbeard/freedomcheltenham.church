@@ -46,7 +46,7 @@ export default function Page() {
                         </div>
                     </div>
                     <div className="mt-8 flex w-full flex-col md:ml-auto md:mt-0 md:w-1/2 md:py-8 lg:w-1/3 lg:pb-48">
-                        <h2 className="h3 my-1">Access and Parking TOUPDATE</h2>
+                        <h2 className="h3 my-1">Access and Parking</h2>
                         <p className="para text-base">
                             There is plenty of parking available at St
                             Edward&apos;s which makes it very easy to drive in
