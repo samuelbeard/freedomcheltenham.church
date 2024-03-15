@@ -122,24 +122,32 @@
     .center {
         @apply flex justify-center items-center;
     }
+
+    .typography > h1 {
+        @apply mt-10 font-bold text-5xl;
+    }
+
+    .typography > h2 {
+        @apply mt-8 font-bold text-3xl;
+    }
+
+    .typography > h3 {
+        @apply mt-6 font-bold text-xl;
+    }
+
+    .typography > p {
+        @apply mt-3;
+    }
+
+    .typography > ul {
+        @apply mt-6;
+    }
+
+    .typography li {
+        @apply list-disc mt-3;
+    }
 }
 
-/*
-.scroll-across-screen {
-    animation: righttoleftmove 4s ease 1s both;
-}
-
-@keyframes righttoleftmove {
-    from {
-        opacity: 1;
-        left: 110vw;
-    }
-    to {
-        opacity: 1;
-        left: -10vw;
-    }
-}
-*/
 .animate-in {
     animation: animateIn 0.3s ease 0.15s both;
 }

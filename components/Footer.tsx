@@ -18,11 +18,16 @@ const links2 = [
     ["Contact Us", "/contact"],
 ]
 
+const bottomLinks = [
+    ["Privacy Policy", "/privacy"],
+    ["Cookies", "/cookies"],
+]
+
 const Footer: FC = () => {
     return (
         <>
             <KeepConnectedSection />
-            <footer className="footer bg-brand-dark-gray py-10 text-white">
+            <footer className="footer bg-brand-dark-gray pt-10 pb-5 text-white">
                 <div className="w-5xl mx-auto grid max-w-5xl grid-cols-3 px-5 sm:grid-cols-4 sm:gap-12">
                     <div className="col-span-3 text-center sm:col-span-1">
                         <Image
@@ -61,6 +66,15 @@ const Footer: FC = () => {
                             )
                         })}
                     </div>
+                </div>
+                <div className="flex justify-center mt-5">
+                    {bottomLinks.map(link => {
+                        return (
+                            <Link className="mx-3" key={link[0]} href={link[1]}>
+                                {link[0]}
+                            </Link>
+                        )
+                    })}
                 </div>
             </footer>
         </>
