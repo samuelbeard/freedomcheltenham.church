@@ -139,6 +139,10 @@
         @apply mt-3;
     }
 
+    .typography a {
+        @apply underline;
+    }
+
     .typography > ul {
         @apply mt-6;
     }

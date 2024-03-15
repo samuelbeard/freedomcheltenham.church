@@ -201,7 +201,7 @@ export default function Page() {
                 information. ChurchSuite have rigorous technical and
                 organisation data security. This means that your data is kept
                 safely under lock and key on their UK data servers. For more
-                information, please see the
+                information, please see the{" "}
                 <Link
                     href="https://churchsuite.com/privacy-notice/"
                     target="_blank"
@@ -216,7 +216,7 @@ export default function Page() {
                 identifiable information except as outlined in the ‘Visitors to
                 our website’ section of this policy. This service meets the
                 ISO27001 and SOC 2 Type 2 standard for data security, keeping
-                your data safe. You can view the
+                your data safe. You can view the{" "}
                 <Link
                     href="https://vercel.com/legal/privacy-policy"
                     target="_blank"
@@ -277,7 +277,7 @@ export default function Page() {
                 keeping and financial management. Records of your donations will
                 be kept here. Your data is encrypted, highly secure, and
                 protected by enterprise grade security. Access to Xero is
-                strictly limited to essential personnel only. You can view the
+                strictly limited to essential personnel only. You can view the{" "}
                 <Link
                     href="https://www.xero.com/uk/legal/privacy/"
                     target="_blank"
