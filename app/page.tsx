@@ -59,7 +59,7 @@ export default function Page() {
                     direction="right"
                     speed={70}
                     carouselNumber={1}
-                    totalImages={10}
+                    totalImages={11}
                 />
             </div>
 
@@ -68,7 +68,7 @@ export default function Page() {
                     direction="left"
                     speed={70}
                     carouselNumber={2}
-                    totalImages={5}
+                    totalImages={6}
                 />
             </div>
 
