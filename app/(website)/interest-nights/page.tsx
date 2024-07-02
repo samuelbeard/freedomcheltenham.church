@@ -7,10 +7,10 @@ export const metadata = {
 }
 export default function Page() {
     return (
-        <div className="min-h-screenx flex flex-col justify-center py-32">
+        <div className="min-h-screenx flex flex-col justify-center py-24">
             <div className="container mx-auto">
                 <section className="text-center">
-                    <h1 className="h1 text-6xl">Interest Nights</h1>
+                    <h1 className="h1 text-6xl md:text-8xl">Interest Nights</h1>
                 </section>
                 <EventBanner
                     date="17th July | 21st August"
