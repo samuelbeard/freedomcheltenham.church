@@ -4,17 +4,26 @@ import Script from "next/script"
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://freedomcheltenham.church"),
-    title: "Freedom Church Cheltenham",
+    title: {
+        template: "%s | Freedom Church Cheltenham",
+        default: "Freedom Church Cheltenham",
+    },
     description:
         "Connecting Anyone Anywhere to a Life Changing Relationship with Jesus",
     keywords: ["church", "cheltenham", "gloucestershire"],
     openGraph: {
+        title: "Freedom Church Cheltenham",
+        description:
+            "Connecting Anyone Anywhere to a Life Changing Relationship with Jesus",
+        url: "https://freedomcheltenham.church",
+        siteName: "Freedom Church Cheltenham",
         images: [
             {
                 url: "/img/logo/og-image.png",
             },
         ],
         locale: "en_GB",
+        type: "website",
     },
     themeColor: "black",
 }

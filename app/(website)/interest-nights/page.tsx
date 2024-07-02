@@ -21,7 +21,7 @@ export default function Page() {
                 />
                 <section className="lg:flex items-center lg:text-right gap-12 mt-12">
                     <h2 className="lg:w-1/2 h2 text-4xl">
-                        Are you looking for
+                        Have you found
                         <br />
                         <span className="text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
                             YOUR&nbsp;
@@ -31,8 +31,10 @@ export default function Page() {
                             <span className="text-brand-red">PEOPLE</span>
                             <br />
                             YOUR&nbsp;
-                            <span className="text-brand-red">PURPOSE</span>?
+                            <span className="text-brand-red">PURPOSE</span>
                         </span>
+                        <br />
+                        in Cheltenham?
                     </h2>
                     <Image
                         src="/img/interest-nights/people-1.jpg"
@@ -50,14 +52,34 @@ export default function Page() {
                         alt=""
                         className="rounded mx-auto xmd:w-2/3 lg:w-1/2"
                     />
-                    <p className="para mt-6 lg:mt-0 lg:w-1/2">
+                    {/* <p className="para mt-6 lg:mt-0 lg:w-1/2">
                         Are you looking to be apart of something incredible in
                         Cheltenham? We&apos;d love to welcome you, get to know
                         you and share how YOU have an important part to play in
                         seeing something special come alive THIS September.
+                    </p> */}
+                    <p className="para mt-6 lg:mt-0 lg:w-1/2">
+                        Have you found your place, your people or your purpose?
+                        Interest nights are a great opportunity to find out
+                        more.
+                        <br />
+                        We believe life is all about building relationships
+                        which help us unlock our purpose. We LOVE meeting new
+                        people and can't wait to get to know you and hang out!
+                        <br />
+                        Come along for an an hour, grab a drink and some food in
+                        a chilled atmosphere, all on us, if you want to find out
+                        more.
                     </p>
                 </section>
-                <section></section>
+                <section className="mt-12">
+                    <iframe
+                        height="650"
+                        src="https://freedomcheltenham.churchsuite.com/events/usqy7fwo?details=0&photo=0&description=0&location=0&gmap=0&signup_form=1"
+                        style={{ borderWidth: 0 }}
+                        width="100%"
+                    ></iframe>
+                </section>
                 <section className="md:flex mt-12 gap-6">
                     <Image
                         src="/img/interest-nights/people-3.jpg"
