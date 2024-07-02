@@ -1,31 +1,34 @@
 "use client"
-
 import { useState, Fragment } from "react"
 import { NextComponentType } from "next"
 import { RiCalendarLine, RiMapPin2Line, RiTimeLine } from "react-icons/ri"
 import { Dialog, Transition } from "@headlessui/react"
-import WeMovedBanner from "./WeMovedBanner"
 
-const EventBanner: NextComponentType = () => {
+interface Props {
+    date: string
+    location: string
+    time: string
+    address: string
+    mapUrl: string
+}
+
+const EventBanner = ({ date, location, time, address, mapUrl }: Props) => {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
         <>
-            <WeMovedBanner />
             <div className="bg-brand-beige z-10 flex h-48 flex-wrap items-center justify-around md:h-20 md:flex-nowrap">
                 <div className="text-brand-red flex items-center justify-center">
                     <RiCalendarLine className="mr-3 h-8 w-8" />
-                    <h2 className="flex font-bold uppercase">Every sunday</h2>
+                    <h2 className="flex font-bold uppercase">{date}</h2>
                 </div>
                 <div className="text-brand-red flex w-full items-center justify-center md:w-auto">
                     <RiMapPin2Line className="mr-3 h-8 w-8" />
-                    <h2 className="flex font-bold uppercase">
-                        St Edward&apos;s, Cheltenham
-                    </h2>
+                    <h2 className="flex font-bold uppercase">{location}</h2>
                 </div>
                 <div className="text-brand-red flex items-center justify-center">
                     <RiTimeLine className="mr-3 h-8 w-8" />
-                    <h2 className="flex font-bold uppercase">11AM</h2>
+                    <h2 className="flex font-bold uppercase">{time}</h2>
                 </div>
                 <div className="text-brand-red flex items-center justify-center">
                     <h2
@@ -66,34 +69,23 @@ const EventBanner: NextComponentType = () => {
                                 leaveTo="opacity-0 scale-95"
                             >
                                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded bg-white p-6 text-left align-middle shadow-xl transition-all">
-                                    <Dialog.Title
-                                        as="h3"
-                                        className="text-lg font-medium leading-6 text-gray-900"
-                                    >
-                                        Where to find us
-                                    </Dialog.Title>
                                     <div className="mt-2 flex justify-between">
                                         <div>
-                                            <p className="text-gray-500">
-                                                St Edward&apos;s School
-                                                <br />
-                                                Cirencester Road
-                                                <br />
-                                                Cheltenham
-                                                <br />
-                                                GL53&nbsp;8EY
-                                            </p>
+                                            <p
+                                                className="text-gray-500"
+                                                dangerouslySetInnerHTML={{
+                                                    __html: address,
+                                                }}
+                                            />
                                         </div>
                                         <div className="text-right">
-                                            <h2 className="h2 mb-0">11AM</h2>
-                                            <h3 className="h3 mt-0">
-                                                Every Sunday
-                                            </h3>
+                                            <h2 className="h2 mb-0">{time}</h2>
+                                            <h3 className="h3 mt-0">{date}</h3>
                                         </div>
                                     </div>
                                     <div className="container relative inset-0 mx-auto flex flex-wrap px-2 pt-4 sm:flex-nowrap">
                                         <iframe
-                                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3966.0927607417066!2d-2.059686698268362!3d51.88541931084989!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48711bcc1f240cd7%3A0xeb5cb6acb237d40b!2sSt%20Edward&#39;s%20School!5e0!3m2!1sen!2suk!4v1709038886225!5m2!1sen!2suk"
+                                            src={mapUrl}
                                             width="400"
                                             height="300"
                                             data-style="border:0;"

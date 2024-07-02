@@ -50,7 +50,13 @@ export default function Page() {
                             </div>
                         </section>
                     </div>
-                    <EventBanner />
+                    <EventBanner
+                        date="Every Sunday"
+                        location="St Edward's, Cheltenham"
+                        time="11AM"
+                        address="St Edward's School<br />Cirencester Road<br />Cheltenham<br />GL53&nbsp;8EY"
+                        mapUrl="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3966.0927607417066!2d-2.059686698268362!3d51.88541931084989!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48711bcc1f240cd7%3A0xeb5cb6acb237d40b!2sSt%20Edward&#39;s%20School!5e0!3m2!1sen!2suk!4v1709038886225!5m2!1sen!2suk"
+                    />
                 </div>
             </div>
 
