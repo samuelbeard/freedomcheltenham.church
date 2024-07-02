@@ -4,12 +4,12 @@
 ```bash
 git clone [repo]
 cd [repo]
-yarn install
+npm install
 ```
 
 ## Development
 ```bash
-yarn dev
+npm run dev
 ```
 
 
