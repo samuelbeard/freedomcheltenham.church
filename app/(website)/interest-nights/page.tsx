@@ -27,14 +27,11 @@ export default function Page() {
                             YOUR&nbsp;
                             <span className="text-brand-red">PLACE</span>
                             <br />
-                            <span className="text-brand-red">
-                                YOUR&nbsp;PEOPLE
-                            </span>
+                            YOUR&nbsp;
+                            <span className="text-brand-red">PEOPLE</span>
                             <br />
-                            <span className="text-brand-red">
-                                YOUR&nbsp;PURPOSE
-                            </span>
-                            ?
+                            YOUR&nbsp;
+                            <span className="text-brand-red">PURPOSE</span>?
                         </span>
                     </h2>
                     <Image
