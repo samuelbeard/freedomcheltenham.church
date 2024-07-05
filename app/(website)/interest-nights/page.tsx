@@ -67,14 +67,14 @@ export default function Page() {
                         which help us unlock our purpose. We LOVE meeting new
                         people and can't wait to get to know you and hang out!
                         <br />
-                        Come along for an an hour, grab a drink and some food in
-                        a chilled atmosphere, all on us, if you want to find out
+                        Come along for an hour, grab a drink and some food in a
+                        chilled atmosphere, all on us, if you want to find out
                         more.
                     </p>
                 </section>
                 <section className="mt-12">
                     <iframe
-                        height="650"
+                        height="750"
                         src="https://freedomcheltenham.churchsuite.com/events/usqy7fwo?details=0&photo=0&description=0&location=0&gmap=0&signup_form=1"
                         style={{ borderWidth: 0 }}
                         width="100%"
