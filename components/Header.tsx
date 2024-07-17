@@ -56,20 +56,6 @@ const links: ILink[] = [
     ],
     actions: [],
   },
-  // {
-  //   name: "Visit",
-  //   href: "/visit",
-  //   active: true,
-  //   links: [],
-  //   actions: [],
-  // },
-  // {
-  //     name: "Calendar",
-  //     href: "/calendar",
-  //     active: true,
-  //     links: [],
-  //     actions: [],
-  // },
   {
     name: "Families",
     href: "/families",
@@ -80,11 +66,6 @@ const links: ILink[] = [
         description: "2 - 11 Years",
         href: "/kids",
       },
-      // {
-      //     name: "Zeal",
-      //     description: "xxx Years",
-      //     href: "/zeal",
-      // },
     ],
     actions: [
       {
@@ -94,27 +75,15 @@ const links: ILink[] = [
         description:
           "Joining us for the first time? Pre-register your kids here.",
       },
-      // {
-      //     name: "Safeguarding",
-      //     icon: RiSuperscript,
-      //     href: "/safeguarding",
-      // },
     ],
   },
   // {
-  //   name: "Midweeks",
-  //   href: "/midweeks",
-  //   active: false,
+  //   name: "Connect",
+  //   href: "/connect",
+  //   active: true,
   //   links: [],
   //   actions: [],
   // },
-  {
-    name: "Connect",
-    href: "/connect",
-    active: true,
-    links: [],
-    actions: [],
-  },
   {
     name: "Messages",
     href: "/messages",
