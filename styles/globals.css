@@ -8,188 +8,188 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "Proxima Nova";
-    src:
-        url("/fonts/proximanova-regular-webfont.woff2") format("woff2"),
-        url("/fonts/proximanova-regular-webfont.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Proxima Nova";
+  src:
+    url("/fonts/proximanova-regular-webfont.woff2") format("woff2"),
+    url("/fonts/proximanova-regular-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Proxima Nova";
-    src:
-        url("/fonts/proximanova-light-webfont.woff2") format("woff2"),
-        url("/fonts/proximanova-light-webfont.woff") format("woff");
-    font-weight: 300;
-    font-style: normal;
+  font-family: "Proxima Nova";
+  src:
+    url("/fonts/proximanova-light-webfont.woff2") format("woff2"),
+    url("/fonts/proximanova-light-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Proxima Nova";
-    src:
-        url("/fonts/proximanova-semibold-webfont.woff2") format("woff2"),
-        url("/fonts/proximanova-semibold-webfont.woff") format("woff");
-    font-weight: 600;
-    font-style: normal;
+  font-family: "Proxima Nova";
+  src:
+    url("/fonts/proximanova-semibold-webfont.woff2") format("woff2"),
+    url("/fonts/proximanova-semibold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Proxima Nova";
-    src:
-        url("/fonts/proximanova-bold-webfont.woff2") format("woff2"),
-        url("/fonts/proximanova-bold-webfont.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
+  font-family: "Proxima Nova";
+  src:
+    url("/fonts/proximanova-bold-webfont.woff2") format("woff2"),
+    url("/fonts/proximanova-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Proxima Nova";
-    src:
-        url("/fonts/proximanova-extrabold-webfont.woff2") format("woff2"),
-        url("/fonts/proximanova-extrabold-webfont.woff") format("woff");
-    font-weight: 800;
-    font-style: normal;
+  font-family: "Proxima Nova";
+  src:
+    url("/fonts/proximanova-extrabold-webfont.woff2") format("woff2"),
+    url("/fonts/proximanova-extrabold-webfont.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Aerokids Swash";
-    src:
-        url("/fonts/aerokids_swash-webfont.woff2") format("woff2"),
-        url("/fonts/aerokids_swash-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Aerokids Swash";
+  src:
+    url("/fonts/aerokids_swash-webfont.woff2") format("woff2"),
+    url("/fonts/aerokids_swash-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Aerokids";
-    src:
-        url("/fonts/aerokids-webfont.woff2") format("woff2"),
-        url("/fonts/aerokids-webfont.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Aerokids";
+  src:
+    url("/fonts/aerokids-webfont.woff2") format("woff2"),
+    url("/fonts/aerokids-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @layer components {
-    /* Paragraph Styling */
-    .para {
-        @apply mb-3 font-sans text-xl leading-relaxed text-stone-500;
-    }
+  /* Paragraph Styling */
+  .para {
+    @apply mb-3 font-sans text-xl leading-relaxed text-stone-500;
+  }
 
-    .h1 {
-        @apply mt-5 mb-3 text-4xl font-extrabold text-stone-600;
-    }
+  .h1 {
+    @apply mt-5 mb-3 text-4xl font-extrabold text-stone-600;
+  }
 
-    .h2 {
-        @apply mt-5 mb-3 text-3xl font-bold text-stone-600;
-    }
+  .h2 {
+    @apply mt-5 mb-3 text-3xl font-bold text-stone-600;
+  }
 
-    .h3 {
-        @apply mt-5 mb-3 text-2xl font-bold text-stone-600;
-    }
+  .h3 {
+    @apply mt-5 mb-3 text-2xl font-bold text-stone-600;
+  }
 
-    .h4 {
-        @apply mt-5 mb-3 text-xl font-bold text-stone-600;
-    }
+  .h4 {
+    @apply mt-5 mb-3 text-xl font-bold text-stone-600;
+  }
 
-    .card {
-        @apply border-2 border-stone-400 bg-stone-300 dark:border-stone-600 dark:bg-stone-700;
-    }
+  .card {
+    @apply border-2 border-stone-400 bg-stone-300 dark:border-stone-600 dark:bg-stone-700;
+  }
 
-    .card-hover {
-        @apply hover:border-stone-500 hover:bg-stone-400;
-    }
+  .card-hover {
+    @apply hover:border-stone-500 hover:bg-stone-400;
+  }
 
-    /* Full width container that wraps the entire content of a page (Including the header and footer.) */
-    .page {
-        @apply flex min-h-screen flex-col justify-between;
-    }
+  /* Full width container that wraps the entire content of a page (Including the header and footer.) */
+  .page {
+    @apply flex min-h-screen flex-col justify-between;
+  }
 
-    /* Full width of the page to encapsulate a section of content. */
-    /* Add padding and a background to this. */
-    .section {
-        @apply flex w-full justify-center;
-    }
+  /* Full width of the page to encapsulate a section of content. */
+  /* Add padding and a background to this. */
+  .section {
+    @apply flex w-full justify-center;
+  }
 
-    .social-media-bubble {
-        @apply flex h-14 w-14 items-center justify-center rounded-full border-2 border-brand-black bg-brand-black text-white transition-all hover:border-white;
-    }
+  .social-media-bubble {
+    @apply flex h-14 w-14 items-center justify-center rounded-full border-2 border-black bg-black text-white transition-all hover:border-white;
+  }
 
-    footer a {
-        @apply block hover:underline;
-    }
+  footer a {
+    @apply block hover:underline;
+  }
 
-    .center {
-        @apply flex justify-center items-center;
-    }
+  .center {
+    @apply flex justify-center items-center;
+  }
 
-    .typography > h1 {
-        @apply mt-10 font-bold text-5xl;
-    }
+  .typography > h1 {
+    @apply mt-10 font-bold text-5xl;
+  }
 
-    .typography > h2 {
-        @apply mt-8 font-bold text-3xl;
-    }
+  .typography > h2 {
+    @apply mt-8 font-bold text-3xl;
+  }
 
-    .typography > h3 {
-        @apply mt-6 font-bold text-xl;
-    }
+  .typography > h3 {
+    @apply mt-6 font-bold text-xl;
+  }
 
-    .typography > p {
-        @apply mt-3;
-    }
+  .typography > p {
+    @apply mt-3;
+  }
 
-    .typography a {
-        @apply underline;
-    }
+  .typography a {
+    @apply underline;
+  }
 
-    .typography > ul {
-        @apply mt-6;
-    }
+  .typography > ul {
+    @apply mt-6;
+  }
 
-    .typography li {
-        @apply list-disc mt-3;
-    }
+  .typography li {
+    @apply list-disc mt-3;
+  }
 }
 
 .animate-in {
-    animation: animateIn 0.3s ease 0.15s both;
+  animation: animateIn 0.3s ease 0.15s both;
 }
 
 @keyframes animateIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes slideAnimation {
-    from {
-        transform: translateX(0%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .looper {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 
 .looper__innerList {
-    display: flex;
-    justify-content: center;
-    width: fit-content;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
 }
 
 .looper__listInstance {
-    display: flex;
-    width: max-content;
+  display: flex;
+  width: max-content;
 
-    animation: slideAnimation linear infinite;
+  animation: slideAnimation linear infinite;
 }
