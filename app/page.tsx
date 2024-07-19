@@ -51,7 +51,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="section z-30 bg-brand-beige bg-none py-10 text-white">
+      <div className="section z-30 bg-none py-10">
         <Carousel
           direction="right"
           speed={70}
@@ -60,7 +60,7 @@ export default function Page() {
         />
       </div>
 
-      <div className="section z-30 bg-brand-beige bg-none pb-10 text-white">
+      <div className="section z-30 bg-none pb-10">
         <Carousel
           direction="left"
           speed={70}
@@ -69,7 +69,7 @@ export default function Page() {
         />
       </div>
 
-      <div className="section bg-brand-beige pt-14">
+      <div className="section pt-14">
         <div className="container lg:w-2/3">
           <p className="text-brand-black text-lg">
             Welcome to Freedom Church Cheltenham! We&apos;re a diverse and
@@ -84,7 +84,7 @@ export default function Page() {
           </p>
         </div>
       </div>
-      <div className="section z-30 bg-brand-beige py-10">
+      <div className="section z-30 py-10">
         <div className="container z-30 py-12">
           <div className="grid grid-cols-3 gap-6">
             <Link
