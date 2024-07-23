@@ -123,6 +123,14 @@
     @apply flex justify-center items-center;
   }
 
+  .gradient-bg {
+    @apply bg-gradient-to-br from-brand-red to-brand-yellow;
+  }
+
+  .gradient-bg-h {
+    @apply bg-gradient-to-r from-brand-red to-brand-yellow;
+  }
+
   .typography > h1 {
     @apply mt-10 font-bold text-5xl;
   }
