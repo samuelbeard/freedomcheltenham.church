@@ -28,15 +28,21 @@ export default function Page() {
             <section className="section">
               <div className="grid w-5/6 max-w-7xl grid-cols-3 gap-0">
                 <div className="col-span-3 mx-auto flex flex-col justify-center text-center md:col-span-2 md:text-left">
-                  <h1 className="h1 m-0 text-4xl uppercase text-white sm:text-7xl lg:text-8xl mt-20">
+                  <h2 className="h2 m-0 text-3xl uppercase text-brand-red sm:text-4xl  mt-20 ml-3">
+                    HAVE YOU FOUND
+                  </h2>
+                  <h1 className="h1 m-0 text-4xl uppercase text-white sm:text-7xl lg:text-8xl mt-1">
                     Your&nbsp;Place
                   </h1>
-                  <h1 className="h1 m-0 text-4xl uppercase text-white sm:text-7xl lg:text-8xl mt-5">
+                  <h1 className="h1 m-0 text-4xl uppercase text-white sm:text-7xl lg:text-8xl mt-2">
                     Your&nbsp;People
                   </h1>
-                  <h1 className="h1 m-0 text-4xl uppercase text-white sm:text-7xl lg:text-8xl mt-5">
+                  <h1 className="h1 m-0 text-4xl uppercase text-white sm:text-7xl lg:text-8xl mt-2">
                     Your&nbsp;Purpose
                   </h1>
+                  <h2 className="h2 m-0 text-3xl uppercase text-brand-red sm:text-4xl mt-1 ml-3">
+                    IN CHELTENHAM?
+                  </h2>
                 </div>
               </div>
             </section>
