@@ -178,11 +178,19 @@ export default function Page() {
           </div>
         </div>
       </div>
+      <section className="container">
+        <iframe
+          height="830"
+          scrolling="no"
+          src="https://freedomcheltenham.churchsuite.com/-/calendar/e4bc2064-d65f-4f07-8fab-f6a9bbf39ff5"
+          width="100%"
+        ></iframe>
+      </section>
       {/* <section className="section bg-black py-10">
-                <div className="container">
-                    <InstagramFeed />
-                </div>
-            </section> */}
+        <div className="container">
+          <InstagramFeed />
+        </div>
+      </section> */}
       <Footer />
     </>
   )

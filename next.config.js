@@ -1,69 +1,82 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
-    async redirects() {
-        return [
-            {
-                source: "/messages",
-                destination: "https://www.freedomchurch.cc/watch",
-                permanent: false,
-            },
-            {
-                source: "/youtube",
-                destination: "https://www.youtube.com/c/freedomchurchcc",
-                permanent: false,
-            },
-            {
-                source: "/facebook",
-                destination: "https://www.facebook.com/FreedomChurchCheltenham",
-                permanent: false,
-            },
-            {
-                source: "/instagram",
-                destination:
-                    "https://www.instagram.com/freedomcheltenham/?hl=en",
-                permanent: false,
-            },
-            {
-                source: "/tiktok",
-                destination: "https://www.tiktok.com/@freedomchurchcheltenham",
-                permanent: false,
-            },
-            {
-                source: "/kids-registration",
-                destination:
-                    "https://docs.google.com/forms/d/e/1FAIpQLSe12agi_7q1hwPl3jTXKPlaGitgUM9i0MjTvStg4gY3mi6UtA/viewform",
-                permanent: false,
-            },
-            {
-                source: "/volunteer-signup",
-                destination:
-                    "https://docs.google.com/forms/d/e/1FAIpQLSePDjQaIL9uQyJdTkDDsYCWPUk-wyj4Yg7gnfSCDHnfapqR_A/viewform",
-                permanent: false,
-            },
-            {
-                source: "/calendar-subscribe",
-                destination: "https://fdom.ch/ctm-cal",
-                permanent: false,
-            },
-            {
-                source: "/calendar",
-                destination: "/",
-                permanent: false,
-            },
-            // Redirects for old pages that we may want to bring back.
-            {
-                source: "/carols",
-                destination: "/",
-                permanent: false,
-            },
-            {
-                source: "/christingle",
-                destination: "/",
-                permanent: false,
-            },
-        ]
-    },
+  reactStrictMode: true,
+  async redirects() {
+    return [
+      {
+        source: "/messages",
+        destination: "https://www.freedomchurch.cc/watch",
+        permanent: false,
+      },
+      {
+        source: "/youtube",
+        destination: "https://www.youtube.com/c/freedomchurchcc",
+        permanent: false,
+      },
+      {
+        source: "/facebook",
+        destination: "https://www.facebook.com/FreedomChurchCheltenham",
+        permanent: false,
+      },
+      {
+        source: "/instagram",
+        destination: "https://www.instagram.com/freedomcheltenham/?hl=en",
+        permanent: false,
+      },
+      {
+        source: "/tiktok",
+        destination: "https://www.tiktok.com/@freedomchurchcheltenham",
+        permanent: false,
+      },
+      {
+        source: "/kids-check-in",
+        destination: "https://freedomcheltenham.churchsuite.com/forms/rfalyxh3",
+        permanent: false,
+      },
+      {
+        source: "/volunteer-signup",
+        destination:
+          "https://docs.google.com/forms/d/e/1FAIpQLSePDjQaIL9uQyJdTkDDsYCWPUk-wyj4Yg7gnfSCDHnfapqR_A/viewform",
+        permanent: false,
+      },
+      {
+        source: "/academy-plus-form",
+        destination: "https://freedomcheltenham.churchsuite.com/forms/xgat3o9y",
+        permanent: false,
+      },
+      {
+        source: "/growth-track-form",
+        destination: "https://freedomcheltenham.churchsuite.com/forms/csibi5wd",
+        permanent: false,
+      },
+      {
+        source: "/connect-form",
+        destination: "https://freedomcheltenham.churchsuite.com/forms/asikcxja",
+        permanent: false,
+      },
+      {
+        source: "/baptism-form",
+        destination: "https://freedomcheltenham.churchsuite.com/forms/oom4kiaf",
+        permanent: false,
+      },
+      {
+        source: "/gift-aid-form",
+        destination: "https://freedomcheltenham.churchsuite.com/forms/ig89en2c",
+        permanent: false,
+      },
+      // Redirects for old pages that we may want to bring back.
+      {
+        source: "/carols",
+        destination: "/",
+        permanent: false,
+      },
+      {
+        source: "/christingle",
+        destination: "/",
+        permanent: false,
+      },
+    ]
+  },
 }
 
 module.exports = nextConfig

@@ -7,6 +7,7 @@ export const metadata = {
 export default function Page() {
   return (
     <>
+      <div className="gradient-bg-h h-2" />
       <div className="section pt-12">
         <div className="container">
           <h1 className="h1 text-brand-red">
