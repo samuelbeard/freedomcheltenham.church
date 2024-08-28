@@ -53,6 +53,10 @@ const links: ILink[] = [
         name: "Our DNA",
         href: "/dna",
       },
+      {
+        name: "Beliefs",
+        href: "/beliefs",
+      },
     ],
     actions: [],
   },
@@ -71,7 +75,7 @@ const links: ILink[] = [
       {
         name: "Sign your Child Up",
         icon: RiBarChart2Line,
-        href: "/kids-registration",
+        href: "/kids-check-in",
         description:
           "Joining us for the first time? Pre-register your kids here.",
       },
