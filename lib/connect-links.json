@@ -1,37 +1,55 @@
 [
   {
-    "name": "Baptism",
-    "subtitle": "Feeling the call to be baptized? Let us know!",
-    "button": "Learn More",
-    "url": "https://freedomcheltenham.churchsuite.com/forms/oom4kiaf",
-    "image": "photos/baptism.jpg",
-    "width": 4000,
-    "height": 3000
-  },
-  {
     "name": "Connect",
     "subtitle": "We will reach out to plug you into community!",
     "button": "Connect",
-    "url": "https://freedomcheltenham.churchsuite.com/forms/asikcxja",
+    "url": "/connect-form",
     "image": "interest-nights/people-6.jpg",
     "width": 6048,
     "height": 4024
   },
   {
+    "name": "Growth Track",
+    "subtitle": "",
+    "button": "Sign Up",
+    "url": "/growth-track-form",
+    "image": "photos/people-2.jpg",
+    "width": 6048,
+    "height": 4024
+  },
+  {
+    "name": "Baptism",
+    "subtitle": "Feeling the call to be baptized? Let us know!",
+    "button": "Learn More",
+    "url": "/baptism-form",
+    "image": "photos/baptism.jpg",
+    "width": 4000,
+    "height": 3000
+  },
+  {
     "name": "Gift Aid",
     "subtitle": "Thank you so much for your generosity!",
     "button": "Give",
-    "url": "https://freedomcheltenham.churchsuite.com/forms/ig89en2c",
+    "url": "/gift-aid-form",
     "image": "photos/worship.jpg",
     "width": 1616,
     "height": 1080
   },
   {
-    "name": "Register your Kids",
+    "name": "Kids Check In",
     "subtitle": "",
-    "button": "Register",
-    "url": "/kids-registration",
+    "button": "Check In",
+    "url": "/kids-check-in",
     "image": "kids/adv-2.jpeg",
+    "width": 2000,
+    "height": 1500
+  },
+  {
+    "name": "Academy Plus",
+    "subtitle": "",
+    "button": "Sign Up",
+    "url": "/academy-plus-form",
+    "image": "photos/academy.jpg",
     "width": 2000,
     "height": 1500
   }
