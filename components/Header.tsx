@@ -81,13 +81,13 @@ const links: ILink[] = [
       },
     ],
   },
-  // {
-  //   name: "Connect",
-  //   href: "/connect",
-  //   active: true,
-  //   links: [],
-  //   actions: [],
-  // },
+  {
+    name: "Events",
+    href: "/events",
+    active: true,
+    links: [],
+    actions: [],
+  },
   {
     name: "Messages",
     href: "/messages",

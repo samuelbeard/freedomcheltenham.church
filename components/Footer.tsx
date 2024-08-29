@@ -6,15 +6,20 @@ import KeepConnectedSection from "./KeepConnectedSection"
 const links = [
   ["About Us", "/about"],
   ["Our DNA", "/dna"],
-  // ["Calendar", "/calendar"],
   ["Visit", "/visit"],
-  ["Kids", "/kids"],
+  ["Beliefs", "/beliefs"],
 ]
 
 const links2 = [
+  ["Kids", "/kids"],
   ["Midweeks", "/midweeks"],
   ["Messages", "/messages"],
   ["Giving", "/giving"],
+]
+
+const links3 = [
+  ["Events", "/events"],
+  ["Connect", "/connect"],
   ["Contact Us", "/contact"],
 ]
 
@@ -28,7 +33,7 @@ const Footer: FC = () => {
     <>
       <KeepConnectedSection />
       <footer className="footer bg-black pt-10 pb-5 text-white">
-        <div className="w-5xl mx-auto grid max-w-5xl grid-cols-3 px-5 sm:grid-cols-4 sm:gap-12">
+        <div className="w-5xl mx-auto grid max-w-5xl grid-cols-3 px-5 sm:grid-cols-5 sm:gap-12">
           <div className="col-span-3 text-center sm:col-span-1">
             <Image
               src="/img/logo/logo-beige-full.png"
@@ -57,6 +62,16 @@ const Footer: FC = () => {
           <div className="col-span-3 sm:col-span-1">
             <h4 className="h4 hidden text-white sm:block">&nbsp;</h4>
             {links2.map(link => {
+              return (
+                <Link key={link[0]} href={link[1]}>
+                  {link[0]}
+                </Link>
+              )
+            })}
+          </div>
+          <div className="col-span-3 sm:col-span-1">
+            <h4 className="h4 hidden text-white sm:block">&nbsp;</h4>
+            {links3.map(link => {
               return (
                 <Link key={link[0]} href={link[1]}>
                   {link[0]}
