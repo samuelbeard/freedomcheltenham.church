@@ -4,6 +4,7 @@ import Header from "components/Header"
 import EventBanner from "components/EventBanner"
 import Carousel from "components/Carousel"
 import Footer from "components/Footer"
+import UpcomingEvents from "../components/UpcomingEvents"
 
 export default function Page() {
   return (
@@ -178,13 +179,8 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <section className="container">
-        <iframe
-          height="830"
-          scrolling="no"
-          src="https://freedomcheltenham.churchsuite.com/-/calendar/e4bc2064-d65f-4f07-8fab-f6a9bbf39ff5"
-          width="100%"
-        ></iframe>
+      <section className="container mb-10">
+        <UpcomingEvents />
       </section>
       {/* <section className="section bg-black py-10">
         <div className="container">
