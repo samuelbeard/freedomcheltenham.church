@@ -5,10 +5,19 @@ import EventBanner from "components/EventBanner"
 import Carousel from "components/Carousel"
 import Footer from "components/Footer"
 import UpcomingEvents from "../components/UpcomingEvents"
+import Script from "next/script"
 
 export default function Page() {
   return (
     <>
+      <Script type="text/javascript">
+        window.pyvAccountKey = 'RG3DqvOC'; window.pyvDomain =
+        'https://lite.visitplanner.church'; var script =
+        document.createElement('script'); script.async = true; script.type =
+        'text/javascript'; script.src =
+        'https://lite.visitplanner.church/embed/embed.js';
+        document.head.appendChild(script);
+      </Script>
       <div className="h-screen">
         <div className="absolute top-0 left-0 z-30 w-full">
           <Header background="red" />
@@ -27,7 +36,7 @@ export default function Page() {
           </div>
           <div className="z-10 flex flex-grow items-center bg-brand-black bg-opacity-60">
             <section className="section">
-              <div className="grid w-5/6 max-w-7xl grid-cols-3 gap-0">
+              <div className="xgrid w-5/6 max-w-7xl grid-cols-3 gap-0">
                 <div className="col-span-3 mx-auto flex flex-col justify-center text-center md:col-span-2 md:text-left">
                   <h2 className="h2 m-0 text-3xl uppercase text-brand-red sm:text-4xl  mt-20 ml-3">
                     HAVE YOU FOUND
@@ -45,6 +54,14 @@ export default function Page() {
                     IN CHELTENHAM?
                   </h2>
                 </div>
+                {/* <div className="mt-10">
+                  <Link
+                    href="/plan-your-visit"
+                    className="bg-brand-red px-10 py-3 rounded-lg hover:bg-black transition-all text-white text-2xl font-bold"
+                  >
+                    Plan your Visit
+                  </Link>
+                </div> */}
               </div>
             </section>
           </div>
