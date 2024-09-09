@@ -23,14 +23,12 @@ interface IEvent {
 }
 
 const UpcomingEvents = async () => {
-  let data = await fetch(
-    "https://freedomcheltenham.churchsuite.com/embed/calendar/json?num_results=4",
-  )
+  let data = await fetch(`${process.env.URL}/api/next-4-events`)
   let events = await data.json()
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-      {events.map((event: IEvent) => {
+      {events.data.map((event: IEvent) => {
         return (
           <Link
             href={event.signup_options.tickets.url}
