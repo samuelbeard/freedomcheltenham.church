@@ -1,6 +1,8 @@
+"use client"
 import { RiMapPin2Fill, RiTimeFill, RiCalendar2Fill } from "react-icons/ri"
 import { format } from "date-fns"
 import Link from "next/link"
+import { useEffect, useState } from "react"
 
 interface IEvent {
   identifier: string
@@ -22,13 +24,25 @@ interface IEvent {
   }
 }
 
-const UpcomingEvents = async () => {
-  let data = await fetch(`${process.env.URL}/api/next-4-events`)
-  let events = await data.json()
+const UpcomingEvents = () => {
+  const [events, setEvents] = useState<IEvent[]>([])
+
+  useEffect(() => {
+    const fetchEvents = async () => {
+      let response = await fetch(
+        `https://freedomcheltenham.churchsuite.com/embed/calendar/json?num_results=4`,
+      )
+
+      let events = await response.json()
+
+      setEvents(events)
+    }
+    fetchEvents()
+  }, [])
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-      {events.data.map((event: IEvent) => {
+      {events?.map((event: IEvent) => {
         return (
           <Link
             href={event.signup_options.tickets.url}
