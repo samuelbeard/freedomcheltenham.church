@@ -5,37 +5,8 @@ export const metadata = {
 }
 
 export default function Page() {
-  const date = new Date()
-  const closeDate = new Date("2024-09-01")
-
   return (
     <>
-      {closeDate > date && (
-        <div className="w-screen gradient-bg py-10">
-          <div className="container flex flex-col items-center justify-center">
-            <Image
-              src="/img/kids/summer-fun-text.png"
-              width={797}
-              height={272}
-              alt="summer fun @ freedom kids"
-              className=""
-            />
-            <div className="flex mt-10 flex-col justify-center text-center">
-              <h1 className="h1 text-6xl text-white m-0">
-                6 WEEKS OF ACTIVITIES!
-              </h1>
-
-              <p className="text-white para leading-snug m-0">
-                Crafts, science, water sports, breakdance workshop, scavenger
-                hunt, snacks and more!
-              </p>
-              <h2 className="h2 text-4xl text-white mt-1">
-                EVERY SUNDAY | 11AM
-              </h2>
-            </div>
-          </div>
-        </div>
-      )}
       <div className="container mt-12 mb-16">
         <section className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="mb-8 flex flex-wrap justify-between md:mb-16">
