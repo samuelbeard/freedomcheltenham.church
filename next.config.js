@@ -10,7 +10,7 @@ const nextConfig = {
       },
       {
         source: "/youtube",
-        destination: "https://www.youtube.com/c/freedomchurchcc",
+        destination: "https://www.youtube.com/@freedomcheltenham",
         permanent: false,
       },
       {
@@ -28,6 +28,12 @@ const nextConfig = {
         destination: "https://www.tiktok.com/@freedomchurchcheltenham",
         permanent: false,
       },
+      {
+        source: "/live",
+        destination: "https://www.youtube.com/@freedomcheltenham/live",
+        permanent: false,
+      },
+      // Redirects for forms.
       {
         source: "/kids-check-in",
         destination: "https://freedomcheltenham.churchsuite.com/forms/rfalyxh3",
@@ -73,6 +79,13 @@ const nextConfig = {
       {
         source: "/christingle",
         destination: "/",
+        permanent: false,
+      },
+      // Redirects for external pages.
+      {
+        source: "/worship-songs-we-think-youll-love",
+        destination:
+          "https://open.spotify.com/playlist/1HKzWoQb7Yn8DfpePlLBF1?si=nxpNsONpQwm8937QwZTIjg&pi=NjSt-J33S6SC2",
         permanent: false,
       },
     ]
