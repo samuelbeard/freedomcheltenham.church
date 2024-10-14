@@ -174,7 +174,7 @@ export default function Page() {
             >
               <Image
                 alt=""
-                src="/img/photos/guys.jpg"
+                src="/img/photos/interest-night.jpg"
                 className="absolute inset-0 h-full w-full object-cover opacity-75 group-hover:opacity-50 transition-opacity rounded-lf"
                 fill
               />

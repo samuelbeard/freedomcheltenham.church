@@ -89,8 +89,8 @@ const links: ILink[] = [
     actions: [],
   },
   {
-    name: "Messages",
-    href: "/messages",
+    name: "Connect",
+    href: "/connect",
     active: true,
     links: [],
     actions: [],

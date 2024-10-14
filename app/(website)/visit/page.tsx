@@ -16,35 +16,16 @@ export default function Page() {
         </div>
       </div>
       <section className="body-font relative text-gray-600">
-        <div className="container mx-auto flex flex-wrap px-5 pt-12 sm:flex-nowrap">
-          <div className="relative flex w-full items-end justify-start overflow-hidden rounded-lg bg-gray-300 p-10 shadow sm:mr-10 md:w-1/2 lg:w-2/3">
-            <iframe
-              className="absolute inset-0"
-              style={{
-                filter: "grayscale(0.8) contrast(1) opacity(0.7)",
-              }}
-              title="map"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3966.0927607417066!2d-2.059686698268362!3d51.88541931084989!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48711bcc1f240cd7%3A0xeb5cb6acb237d40b!2sSt%20Edward&#39;s%20School!5e0!3m2!1sen!2suk!4v1709038886225!5m2!1sen!2suk"
-              width="100%"
-              height="100%"
-              frameBorder="0"
-            ></iframe>
+        <div className="container mx-auto md:flex flex-wrap px-5 pt-12 sm:flex-nowrap gap-6">
+          <Image
+            src="/img/photos/host-team.jpg"
+            width={3968}
+            height={2648}
+            alt="the host team"
+            className="rounded shadow-lg md:aspect-square md:object-cover md:w-1/2"
+          />
 
-            <div className="relative flex flex-wrap rounded bg-white py-6 opacity-0 shadow-md md:opacity-100">
-              <div className="px-6 pr-20 lg:w-full">
-                <p className="mt-1">
-                  <span className="font-bold">St Edward&apos;s School</span>
-                  <br />
-                  Cirencester Road,
-                  <br />
-                  Cheltenham,
-                  <br />
-                  GL53&nbsp;8EY
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="mt-8 flex w-full flex-col md:ml-auto md:mt-0 md:w-1/2 md:py-8 lg:w-1/3 lg:pb-48">
+          <div className="mt-8 flex w-full flex-col md:ml-auto md:mt-0 md:w-1/2 md:py-8">
             <h2 className="h3 my-1">Access and Parking</h2>
             <p className="para text-base">
               There is plenty of parking available at St Edward&apos;s which
@@ -59,7 +40,22 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <div className="container gap-10 md:mt-20 md:flex">
+      <section className="mt-10 mx-auto md:w-1/2">
+        <div className="relative flex w-full items-end justify-start overflow-hidden rounded-lg bg-gray-300 p-10 shadow h-96">
+          <iframe
+            className="absolute inset-0"
+            style={{
+              filter: "grayscale(0.8) contrast(1) opacity(0.9)",
+            }}
+            title="map"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3966.0927607417066!2d-2.059686698268362!3d51.88541931084989!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48711bcc1f240cd7%3A0xeb5cb6acb237d40b!2sSt%20Edward&#39;s%20School!5e0!3m2!1sen!2suk!4v1709038886225!5m2!1sen!2suk"
+            width="100%"
+            height="100%"
+            frameBorder="0"
+          ></iframe>
+        </div>
+      </section>
+      <div className="container gap-10 md:mt-16 md:flex">
         <div className="md:w-1/2">
           <Image
             width={1080}
