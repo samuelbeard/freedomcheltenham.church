@@ -51,6 +51,11 @@ const nextConfig = {
         permanent: false,
       },
       {
+        source: "/alpha-form",
+        destination: "https://freedomcheltenham.churchsuite.com/forms/eh0psibj",
+        permanent: false,
+      },
+      {
         source: "/growth-track-form",
         destination: "https://freedomcheltenham.churchsuite.com/forms/csibi5wd",
         permanent: false,
