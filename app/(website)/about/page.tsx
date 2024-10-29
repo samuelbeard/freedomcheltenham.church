@@ -31,12 +31,13 @@ export default function Page() {
           <p className="para mx-auto text-lg lg:w-8/12">
             We are Freedom Church Cheltenham.
           </p>
-          <p className="para bg-brand-red mx-auto rounded py-2 text-center text-lg text-white lg:w-8/12">
+          <p className="para bg-brand-red mx-auto rounded py-4 text-center text-white lg:w-8/12">
             EVERY&nbsp;SUNDAY | 9:45AM and 11:30AM | ST EDWARD&apos;S SCHOOL
           </p>
         </div>
       </div>
-      <div className="section mt-10 bg-[url('/img/photos/cave-2023.jpg')] bg-cover">
+      <div className="gradient-bg-h h-2 mt-10" />
+      <div className="section bg-[url('/img/photos/cave-2023.jpg')] bg-cover">
         <div className="w-full bg-black bg-opacity-50 py-10 lg:py-24">
           <div className="container gap-10 md:flex">
             <div className="flex items-center md:w-1/2">
@@ -65,9 +66,10 @@ export default function Page() {
           </div>
         </div>
       </div>
+      <div className="gradient-bg-h h-2" />
       <section className="body-font mt-5 text-gray-600 md:mt-24">
-        <div className="xpy-24 container mx-auto flex flex-col items-center px-5 md:flex-row lg:max-w-7xl">
-          <div className="xmb-10 w-5/6 md:mb-0 md:w-1/2 lg:w-full lg:max-w-lg">
+        <div className="container mx-auto flex flex-col items-center px-5 md:flex-row lg:max-w-7xl">
+          <div className="w-5/6 md:mb-0 md:w-1/2 lg:w-full lg:max-w-lg">
             <Image
               className="rounded object-cover object-center"
               alt=""

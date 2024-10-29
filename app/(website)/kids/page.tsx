@@ -11,13 +11,16 @@ export default function Page() {
         <section className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="mb-8 flex flex-wrap justify-between md:mb-16">
             <div className="mb-6 flex w-full flex-col justify-center sm:mb-12 lg:mb-0 lg:w-1/3 lg:pb-24 lg:pt-48">
-              <h1 className="mb-4 text-4xl font-bold text-brand-red sm:text-5xl md:mb-8 md:text-6xl">
-                KIDS
-              </h1>
+              <Image
+                src="/img/kids/kids-logo-vertical.svg"
+                width={200}
+                height={100}
+                alt="Freedom Kids"
+              />
               <p className="max-w-md leading-relaxed xl:text-xl">
-                Freedom kids is a children&apos;s ministry designed to be safe,
-                age appropriate, fun and engaging! We love teaching the next
-                generation about Jesus.
+                <strong>Welcome to Freedom Kids!</strong>
+                <br /> We're all about helping your kids explore what it means
+                to follow Jesus in a way that makes sense to them.
               </p>
             </div>
 
@@ -46,66 +49,73 @@ export default function Page() {
             </div>
           </div>
         </section>
-        <div className="md:w-8/12 lg:w-2/3 mx-auto">
+        <div className="mx-auto">
           <h3 className="h3">Relevant content for all age groups</h3>
           <p className="para">
             We go through teaching in series bringing a topic to life over
             several weeks. This is also tailored to each age group, making sure
             each session is relevant, engaging and fun.
           </p>
-          <h3 className="h3">First Time?</h3>
-          <p className="para">
-            We can&apos;t wait to meet you! One of our friendly Kids volunteers
-            will meet you and your children to welcome them!
-          </p>
-          <p className="para">
-            At check-in, we will ask for the following personal information;
-            family member&apos;s names, children&apos;s names and birthdates,
-            address, phone number, and any special instructions such as
-            allergies or special needs for your child.
-          </p>
-          <p className="para">
-            Your child&apos;s safety is of utmost importance to us and we commit
-            to creating an environment that is both fun and engaging as well as
-            safe.
-          </p>
+          <div className="flex flex-col md:flex-row gap-10 mt-6">
+            <div className="md:w-1/2">
+              <h3 className="h3">First Time?</h3>
+              <p className="para">
+                We can&apos;t wait to meet you! One of our friendly Kids
+                volunteers will meet you and your children to welcome them!
+              </p>
+              <p className="para">
+                At check-in, we will ask for the following personal information;
+                family member&apos;s names, children&apos;s names and
+                birthdates, address, phone number, and any special instructions
+                such as allergies or special needs for your child.
+              </p>
+              <p className="para">
+                Your child&apos;s safety is of utmost importance to us and we
+                commit to creating an environment that is both fun and engaging
+                as well as safe.
+              </p>
+            </div>
+            <div className="md:w-1/2">
+              <Image
+                src="/img/kids/check-in.jpg"
+                width={4028}
+                height={6048}
+                alt="the kids check in desk"
+                className="rounded shadow-lg h-auto w-full"
+              />
+            </div>
+          </div>
         </div>
       </div>
-      <section className="bg-cubs-red py-16">
+      <section className="bg-ramblers-yellow py-16">
         <div className="w-7/12 mx-auto">
           <div className="flex items-center flex-col sm:flex-row text-center">
             <Image
               width="500"
               height="500"
-              src="/img/kids/cubs.png"
-              alt="cubs"
-              className="sm:w-24 sm:mr-6 md:w-32"
+              src="/img/kids/ramblers-logo.svg"
+              alt="ramblers"
+              className="sm:w-24 sm:mr-6 md:w-40"
             />
-            <h2 className="text-white text-5xl font-bold">
+            <h2 className="text-black text-5xl font-bold">
               Preschool and Reception
             </h2>
           </div>
         </div>
         <div className="container 2xl:px-56">
           <div className="md:flex gap-24 mt-6">
-            <div className="text-white md:w-1/2">
-              <p className="para text-white">
+            <div className="md:w-1/2">
+              <p className="para text-black">
                 A fun, loving environment for children aged two to four years.
                 Children will enjoy play time, snack time, Bible stories, fun
                 activities and exciting songs about Jesus. We love to share
-                God&apos;s love with our cubs!
-              </p>
-              <h4 className="h4 text-white">Baby Room</h4>
-              <p className="para text-white">
-                On Sundays, we have a baby room for nursing mothers. Kitted out
-                with a changing station and nap station. There are also soft
-                toys, tea and coffee and a screen to watch the preach.
+                God&apos;s love with our ramblers!
               </p>
             </div>
             <div className="w-1/2">
               <Image
                 className="rounded shadow-lg w-96"
-                src="/img/kids/cubs-1.JPG"
+                src="/img/kids/ramblers-1.jpg"
                 alt=""
                 width={336}
                 height={336}
@@ -114,17 +124,17 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="bg-adventurers-yellow py-16">
+      <section className="bg-adventurers-green py-16">
         <div className="w-7/12 mx-auto">
           <div className="flex items-center flex-col sm:flex-row text-center">
             <Image
               width="500"
               height="500"
-              src="/img/kids/adventurers.png"
+              src="/img/kids/adventurers-logo.svg"
               alt="adventurers"
-              className="sm:w-24 sm:mr-6 md:w-32"
+              className="sm:w-24 sm:mr-6 md:w-40"
             />
-            <h2 className="text-5xl font-bold">Years 1 - 4</h2>
+            <h2 className="text-5xl font-bold">Infants & Juniors</h2>
           </div>
         </div>
         <div className="container 2xl:px-56">
@@ -132,17 +142,17 @@ export default function Page() {
             <div className="lg:w-1/2 2xl:w-1/3">
               <Image
                 className="rounded shadow-lg mb-3"
-                src="/img/kids/adv-1.jpeg"
+                src="/img/kids/adv-1.jpg"
                 alt=""
                 width={372}
                 height={279}
               />
             </div>
             <div className="lg:w-1/2 2xl:w-1/3  flex items-center">
-              <p className="para text-brand-dark-gray">
-                For children aged four to seven years. Your children will begin
-                to learn about their relationship with God in ways that are
-                simple, creative and lots of fun!
+              <p className="para text-black">
+                For children in school years 1 to 4. Your children will begin to
+                learn to learn about their relationship with God in ways that
+                are simple, creative and lots of fun!
               </p>
             </div>
             <div className="lg:hidden 2xl:inline 2xl:w-1/3">
@@ -157,33 +167,32 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="bg-wave-blue py-16">
+      <section className="bg-explorers-red py-16">
         <div className="w-7/12 mx-auto">
           <div className="flex items-center flex-col sm:flex-row text-center">
             <Image
               width="500"
               height="500"
-              src="/img/kids/the-wave.png"
-              alt="wave"
-              className="sm:w-24 sm:mr-6 md:w-32"
+              src="/img/kids/explorers-logo.svg"
+              alt="explorers"
+              className="sm:w-24 sm:mr-6 md:w-40"
             />
-            <h2 className="text-white text-5xl font-bold">Years 5 and 6</h2>
+            <h2 className="text-white text-5xl font-bold">Juniors +</h2>
           </div>
         </div>
         <div className="container 2xl:px-56">
           <div className="md:flex gap-5 lg:gap-24 mt-6">
             <div className="md:w-1/2 mx-auto flex items-center">
               <p className="para text-white">
-                For children aged seven to eleven years. The Wave currently
-                joins The Adventurers for fun and games with an opportunity to
-                dive deeper into the teaching and their personal relationship
-                with God.
+                For children in school years 5 and 6. Your children will enjoy
+                fun and games with an opportunity to dive deeper into the
+                teaching and their personal relationship with God.
               </p>
             </div>
             <div>
               <Image
                 className="rounded shadow-lg"
-                src="/img/kids/wave-1.jpg"
+                src="/img/kids/exp-1.jpg"
                 alt=""
                 width={372}
                 height={279}
@@ -194,10 +203,32 @@ export default function Page() {
       </section>
       <div className="container py-10">
         <p className="para">
-          All our kids vonunteers are DBS checked and meet regularly for
+          All our kids leaders are DBS checked and meet regularly for
           safeguarding training.
         </p>
       </div>
+      <section className="container mt-10 mb-10">
+        <h2 className="h2">Baby Room</h2>
+        <p className="para">
+          A dedicated space for nursing mums and guardians of young children
+          aged 0-2 years.
+        </p>
+        <p className="para">
+          The parent and baby room is a warm, engaging and fun space for
+          parents/guardians to engage with the Sunday service via live stream,
+          whilst being able to care for their little ones as they play. It's
+          equipped with baby and toddler-friendly amenities including changing
+          facilities, high chairs, toys, comfortable seating, snacks, and a
+          Nespresso machine for parents to have a hot coffee.
+        </p>
+        <p className="para">
+          It is a place for parents and young children to feel comfortable, play
+          freely and build friendships whilst watching the live stream to the
+          service. There are dedicated room hosts ready and on hand to help with
+          settling in and supporting parents to connect in too. We can’t wait to
+          meet you!
+        </p>
+      </section>
     </>
   )
 }
