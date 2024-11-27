@@ -33,6 +33,11 @@ const nextConfig = {
         destination: "https://www.youtube.com/@freedomcheltenham/live",
         permanent: false,
       },
+      {
+        source: "/donate",
+        destination: "https://freedomcheltenham.churchsuite.com/donate",
+        permanent: false,
+      },
       // Redirects for forms.
       {
         source: "/kids-check-in",
