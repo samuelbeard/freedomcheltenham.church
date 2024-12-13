@@ -51,7 +51,7 @@ const nextConfig = {
         permanent: false,
       },
       {
-        source: "/academy-plus-form",
+        source: "/leadership-night-school-form",
         destination: "https://freedomcheltenham.churchsuite.com/forms/xgat3o9y",
         permanent: false,
       },

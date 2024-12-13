@@ -45,11 +45,11 @@
     "height": 1500
   },
   {
-    "name": "Academy Plus",
+    "name": "Leadership Night School",
     "subtitle": "",
     "button": "Sign Up",
-    "url": "/academy-plus-form",
-    "image": "photos/academy.jpg",
+    "url": "/leadership-night-school-form",
+    "image": "graphics/night-school.png",
     "width": 2000,
     "height": 1500
   }
