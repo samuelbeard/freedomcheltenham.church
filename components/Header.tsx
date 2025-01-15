@@ -11,7 +11,7 @@ import {
   RiYoutubeFill,
   RiBarChart2Line,
 } from "react-icons/ri"
-import { FaTiktok } from "react-icons/fa"
+import { FaPodcast } from "react-icons/fa"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -128,9 +128,9 @@ const socialMedia = [
     icon: RiInstagramLine,
   },
   {
-    name: "TikTok",
-    href: "/tiktok",
-    icon: FaTiktok,
+    name: "Podcast",
+    href: "/podcast",
+    icon: FaPodcast,
   },
 ]
 
