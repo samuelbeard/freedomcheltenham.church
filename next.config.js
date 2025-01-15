@@ -52,17 +52,17 @@ const nextConfig = {
       },
       {
         source: "/expenses-form",
-        desination: "https://freedomcheltenham.churchsuite.com/forms/nwczyb0a",
+        destination: "https://freedomcheltenham.churchsuite.com/forms/nwczyb0a",
         permanent: false,
       },
       {
         source: "/zeal-form",
-        desination: "https://freedomcheltenham.churchsuite.com/forms/fucuh7bg",
+        destination: "https://freedomcheltenham.churchsuite.com/forms/fucuh7bg",
         permanent: false,
       },
       {
         source: "/groups-form",
-        desination: "https://freedomcheltenham.churchsuite.com/forms/pczcys0u",
+        destination: "https://freedomcheltenham.churchsuite.com/forms/pczcys0u",
         permanent: false,
       },
       {
