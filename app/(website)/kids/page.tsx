@@ -189,15 +189,6 @@ export default function Page() {
                 teaching and their personal relationship with God.
               </p>
             </div>
-            <div>
-              <Image
-                className="rounded shadow-lg"
-                src="/img/kids/exp-1.jpg"
-                alt=""
-                width={372}
-                height={279}
-              />
-            </div>
           </div>
         </div>
       </section>
