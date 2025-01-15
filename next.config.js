@@ -29,6 +29,11 @@ const nextConfig = {
         permanent: false,
       },
       {
+        source: "/podcast",
+        destination: "https://freedomchurchcheltenham.buzzsprout.com/",
+        permanent: false,
+      },
+      {
         source: "/live",
         destination: "https://www.youtube.com/@freedomcheltenham/live",
         permanent: false,
