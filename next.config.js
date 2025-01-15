@@ -51,6 +51,21 @@ const nextConfig = {
         permanent: false,
       },
       {
+        source: "/expenses-form",
+        desination: "https://freedomcheltenham.churchsuite.com/forms/nwczyb0a",
+        permanent: false,
+      },
+      {
+        source: "/zeal-form",
+        desination: "https://freedomcheltenham.churchsuite.com/forms/fucuh7bg",
+        permanent: false,
+      },
+      {
+        source: "/groups-form",
+        desination: "https://freedomcheltenham.churchsuite.com/forms/pczcys0u",
+        permanent: false,
+      },
+      {
         source: "/leadership-night-school-form",
         destination: "https://freedomcheltenham.churchsuite.com/forms/xgat3o9y",
         permanent: false,
