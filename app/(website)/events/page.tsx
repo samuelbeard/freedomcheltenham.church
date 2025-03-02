@@ -13,8 +13,7 @@ export default function Page() {
               <h3 className="h3">Sundays</h3>
               <p className="para">
                 We meet every Sunday at our church building. The doors open at
-                9:30AM ready for a 9:45AM kick-off and our second event starts
-                at 11:30AM! Kids church for 0-11’s runs every Sunday too so that
+                10:45AM ready for a 11:00AM kick-off! Kids church for 0-11’s runs every Sunday too so that
                 they can meet Jesus on their level and you can focus on the
                 worship and preach in our main event!
               </p>

@@ -32,7 +32,7 @@ export default function Page() {
             We are Freedom Church Cheltenham.
           </p>
           <p className="para bg-brand-red mx-auto rounded py-4 text-center text-white lg:w-8/12">
-            EVERY&nbsp;SUNDAY | 9:45AM and 11:30AM | ST EDWARD&apos;S SCHOOL
+            EVERY&nbsp;SUNDAY | 11:00AM | ST EDWARD&apos;S SCHOOL
           </p>
         </div>
       </div>
