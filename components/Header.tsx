@@ -262,7 +262,6 @@ const Header: FC<Props> = ({ background }) => {
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             {socialMedia.map(item => {
               if (item.name === "YouTube") {
-                item.href = "/live";
                 const date = new Date();
 
                 // matches Sunday between 10:45 -> 12:30
@@ -279,6 +278,8 @@ const Header: FC<Props> = ({ background }) => {
                 && mins <= streamEnd[1];
 
                 if (isWithinTimeRange) {
+                  item.href = "/live";
+
                   return (
                     <>
                       <span className="text-white">Live Now!</span>
