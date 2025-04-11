@@ -14,6 +14,7 @@ import {
 import { FaPodcast } from "react-icons/fa"
 import Link from "next/link"
 import Image from "next/image"
+import { serviceIsLiveOnYouTube } from "util/date"
 
 interface ILink {
   name: string
@@ -261,40 +262,20 @@ const Header: FC<Props> = ({ background }) => {
           </Popover.Group>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             {socialMedia.map(item => {
-              if (item.name === "YouTube") {
-                const date = new Date();
+              let displayLiveNowText = false;
 
-                // matches Sunday between 10:45 -> 12:30
-                const streamStart = [10, 45]
-                const streamEnd = [12, 30];
-
-                const hours = date.getHours();
-                const mins = date.getMinutes();
-
-                const isWithinTimeRange = date.getDay() === 0 &&
-                hours >= streamStart[0]
-                && mins >= streamStart[1]
-                && hours <= streamEnd[0]
-                && mins <= streamEnd[1];
-
-                if (isWithinTimeRange) {
-                  item.href = "/live";
-
-                  return (
-                    <>
-                      <span className="text-white">Live Now!</span>
-                      <Link key={item.href} href={item.href} className="mx-2">
-                        <item.icon className="h-7 w-7 text-brand-red hover:text-white transition-all cursor-pointer" />
-                      </Link>
-                    </>
-                  )
-                }
+              if (item.name === "YouTube" && serviceIsLiveOnYouTube() ) {
+                item.href = "/live";
+                displayLiveNowText = true;
               }
 
               return (
-                <Link key={item.href} href={item.href} className="mx-2">
-                  <item.icon className="h-7 w-7 text-brand-red hover:text-white transition-all cursor-pointer" />
-                </Link>
+                <>
+                  {displayLiveNowText && <span className="text-white">Live Now!</span>}
+                  <Link key={item.href} href={item.href} className="mx-2">
+                    <item.icon className="h-7 w-7 text-brand-red hover:text-white transition-all cursor-pointer" />
+                  </Link>
+                </>
               )
             }
             )}

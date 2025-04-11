@@ -97,3 +97,22 @@ export const goMonthForward = (
     setDate(update)
     setDays(generateDates(update))
 }
+
+export const serviceIsLiveOnYouTube = () => {
+    const date = new Date();
+
+    // matches Sunday between 10:45 -> 12:30
+    const streamStart = [10, 45]
+    const streamEnd = [12, 30];
+
+    const hours = date.getHours();
+    const mins = date.getMinutes();
+
+    const isWithinTimeRange = date.getDay() === 0 &&
+        hours >= streamStart[0]
+        && mins >= streamStart[1]
+        && hours <= streamEnd[0]
+        && mins <= streamEnd[1];
+
+    return isWithinTimeRange;
+}
