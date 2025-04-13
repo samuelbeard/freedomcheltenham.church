@@ -14,6 +14,7 @@ import {
 import { FaPodcast } from "react-icons/fa"
 import Link from "next/link"
 import Image from "next/image"
+import { serviceIsLiveOnYouTube } from "util/date"
 
 interface ILink {
   name: string
@@ -260,11 +261,24 @@ const Header: FC<Props> = ({ background }) => {
             })}
           </Popover.Group>
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            {socialMedia.map(item => (
-              <Link key={item.href} href={item.href} className="mx-2">
-                <item.icon className="h-7 w-7 text-brand-red hover:text-white transition-all cursor-pointer" />
-              </Link>
-            ))}
+            {socialMedia.map(item => {
+              let displayLiveNowText = false;
+
+              if (item.name === "YouTube" && serviceIsLiveOnYouTube() ) {
+                item.href = "/live";
+                displayLiveNowText = true;
+              }
+
+              return (
+                <>
+                  {displayLiveNowText && <span className="text-white">Live Now!</span>}
+                  <Link key={item.href} href={item.href} className="mx-2">
+                    <item.icon className="h-7 w-7 text-brand-red hover:text-white transition-all cursor-pointer" />
+                  </Link>
+                </>
+              )
+            }
+            )}
           </div>
         </div>
       </div>
