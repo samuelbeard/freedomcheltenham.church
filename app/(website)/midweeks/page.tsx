@@ -8,17 +8,8 @@ export default function Page() {
       <div className="flex justify-around bg-brand-red py-12 text-4xl font-extrabold text-white md:text-[5rem]">
         <h1>MIDWEEKS</h1>
       </div>
-      <section className="bg-brand-dark-gray">
-        <div className="container py-10">
-          <h1 className="h1 my-0 text-white">STREAMS</h1>
-          <p className="text-white lg:w-1/2">
-            Streams are our Mid-Week groups that happen every other week across
-            Cheltenham, either on a Wednesday or Thursday night. Depending on
-            your preference, there are currently three Streams to choose from:
-          </p>
-        </div>
-      </section>
-      <div className="container mt-12 mb-16">
+
+      {/* <div className="container mt-12 mb-16">
         <div className="md:w-8/12 lg:w-1/2">
           <h2 className="h1">
             Core Truths{" "}
@@ -54,7 +45,22 @@ export default function Page() {
             reaching people through Godly creativity.
           </p>
         </div>
+      </div> */}
+
+      <section className="flex h-[200px] flex-col justify-center bg-black bg-[url('/img/elements/prayer-fast-banner.png')] bg-right bg-no-repeat lg:bg-contain">
+        <div className="container py-10">
+          <h1 className="h1 my-0 text-white">PRAYER & FAST</h1>
+          {/* <p className="text-white lg:w-1/2">Sisters | Daughters | Warriors</p> */}
+        </div>
+      </section>
+      <div className="container mt-12 mb-16">
+        <div className="md:w-8/12 lg:w-1/2">
+          <p className="para">
+            On the first Monday of each month, as a church we follow the example set by Jesus and set time aside to fast & pray. Join us as we pray together for God to move in our city.
+          </p>
+        </div>
       </div>
+
       <section className="flex h-[200px] flex-col justify-center bg-black bg-[url('/img/elements/she-banner.png')] bg-right bg-no-repeat lg:bg-contain">
         <div className="container py-10">
           <h1 className="h1 my-0 text-white">SHE</h1>
@@ -98,6 +104,55 @@ export default function Page() {
             and brother, to being a father and friend. The event includes
             passionate worship and a live or video message following chosen
             theme.
+          </p>
+        </div>
+      </div>
+      <section className="bg-brand-dark-gray">
+        <div className="container py-10">
+          <h1 className="h1 my-0 text-white">INTEREST GROUPS</h1>
+          <p className="text-white lg:w-1/2">
+            We believe that strong community is essential to our health as a church. There are regular opportunities throughout the month for us to come together and grow in fellowship. Take a look - we can't wait to meet you!
+          </p>
+        </div>
+      </section>
+      <section className="flex h-[200px] flex-col justify-center bg-black bg-[url('/img/elements/music-banner.png')] bg-right bg-no-repeat lg:bg-contain">
+        <div className="container py-10">
+          <h1 className="h1 my-0 text-white">MUSIC INTEREST GROUP</h1>
+          {/* <p className="text-white lg:w-1/2"></p> */}
+        </div>
+      </section>
+      {/* <section className="bg-black">
+                <img
+                    className="xmx-auto"
+                    src="/img/elements/barbarians-banner.png"
+                    alt=""
+                />
+            </section> */}
+      <div className="container mt-12 mb-16">
+        <div className="md:w-8/12 lg:w-1/2">
+          <p className="para">
+            This one's for the music lovers. We meet once a month to honour God with our instruments and voices, as well as teaching around the understanding of the power of music and worship. Join us to learn, listen, play, and sing!
+             If you are passionate about music this is a great place to gather with other people with a similar passion, to pray, learn and grow in community.
+          </p>
+        </div>
+      </div>
+      <section className="flex h-[200px] flex-col justify-center bg-black bg-[url('/img/elements/fitness-banner.png')] bg-right bg-no-repeat lg:bg-contain">
+        <div className="container py-10">
+          <h1 className="h1 my-0 text-white">MENS FITNESS INTEREST GROUP</h1>
+          {/* <p className="text-white lg:w-1/2"></p> */}
+        </div>
+      </section>
+      {/* <section className="bg-black">
+                <img
+                    className="xmx-auto"
+                    src="/img/elements/barbarians-banner.png"
+                    alt=""
+                />
+            </section> */}
+      <div className="container mt-12 mb-16">
+        <div className="md:w-8/12 lg:w-1/2">
+          <p className="para">
+            Hello earlybirds! The mens fitness interest group meets once a month at the crack of dawn. As Christians we believe our body is a temple of God, so let's exercise together!
           </p>
         </div>
       </div>
