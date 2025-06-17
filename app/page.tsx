@@ -31,7 +31,7 @@ export default function Page() {
               playsInline
               className="absolute z-10 h-auto min-h-full w-auto min-w-full object-cover"
             >
-              <source src="/video/bg-video-2.mp4" type="video/mp4" />
+              <source src="/video/bg-video-2025_1.mp4" type="video/mp4" />
             </video>
           </div>
           <div className="z-10 flex flex-grow items-center bg-brand-black bg-opacity-60">
