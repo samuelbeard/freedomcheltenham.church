@@ -47,6 +47,20 @@ export default function Page() {
         </div>
       </div> */}
 
+      <section className="flex h-[200px] flex-col justify-center bg-black bg-[url('/img/elements/connect-banner.png')] bg-right bg-no-repeat lg:bg-contain">
+        <div className="container py-10">
+          <h1 className="h1 my-0 text-white">CONNECT GROUPS</h1>
+          {/* <p className="text-white lg:w-1/2">Sisters | Daughters | Warriors</p> */}
+        </div>
+      </section>
+      <div className="container mt-12 mb-16">
+        <div className="md:w-8/12 lg:w-1/2">
+          <p className="para">These are a great opportunity to find your place, connect with your people and discover more of your purpose.</p>
+          <p className="para">Each time we gather it&apos;s a time of fun, food and friendship. The core ingredients of a connect group are centred around faith, upstanding more of and applying the bible to our lives, as well as prayer.</p>
+          <p className="para">We meet on the 1st and 3rd week of the month on a Wednesday evening during term time.</p>
+        </div>
+      </div>
+
       <section className="flex h-[200px] flex-col justify-center bg-black bg-[url('/img/elements/prayer-fast-banner.png')] bg-right bg-no-repeat lg:bg-contain">
         <div className="container py-10">
           <h1 className="h1 my-0 text-white">PRAYER & FAST</h1>
@@ -56,8 +70,9 @@ export default function Page() {
       <div className="container mt-12 mb-16">
         <div className="md:w-8/12 lg:w-1/2">
           <p className="para">
-            On the first Monday of each month, as a church we follow the example set by Jesus and set time aside to fast & pray. Join us as we pray together for God to move in our city.
+            On the first Monday of each month, as a church we follow the example set by Jesus and set time aside to fast & pray.
           </p>
+          <p className="para">Join us as we pray together for God to move in our city.</p>
         </div>
       </div>
 
@@ -72,13 +87,15 @@ export default function Page() {
           <p className="para">
             SHE is our women&apos;s ministry. Meeting once a month, primarily
             the last Wednesday of the month, the women in our campus gather
-            together for SHE. The time together varies, from worship and live or
+            together for SHE.
+          </p>
+          <p className="para">The time together varies, from worship and live or
             video message, to special events and hospitality nights. It offers
             an opportunity for connection, friendship, growth and empowerment,
             discovering purpose and learning to thrive as women as God designed
-            it to be. Just like our Sunday events, SHE also follows in series,
-            honing in on a specific topic for the year.
-          </p>
+            it to be.</p>
+          <p className="para">Just like our Sunday events, SHE also follows in series,
+            honing in on a specific topic for the year.</p>
         </div>
       </div>
       <section className="flex h-[200px] flex-col justify-center bg-black bg-[url('/img/elements/barbarians-banner.png')] bg-right bg-no-repeat lg:bg-contain">
@@ -96,15 +113,9 @@ export default function Page() {
             </section> */}
       <div className="container mt-12 mb-16">
         <div className="md:w-8/12 lg:w-1/2">
-          <p className="para">
-            Barbarians is our men&apos;s ministry. Gathering once a month,
-            primarily the second Sunday of the month, in the evening. Barbarians
-            is a safe space that encourages men to grow, lead and develop into
-            all that God has called them to be. From what it means to be a son
-            and brother, to being a father and friend. The event includes
-            passionate worship and a live or video message following chosen
-            theme.
-          </p>
+          <p className="para">Barbarians is our men's ministry. Gathering once a month, on the second Wednesday of the month.</p>
+          <p className="para">Barbarians is a space that encourages men to grow, lead and develop into all that God has called them to be. From what it means to be a son and brother, to being a father and friend.</p>
+          <p className="para">The event includes passionate worship, a challenging message, and time to pray for each other.</p>
         </div>
       </div>
       <section className="bg-brand-dark-gray">
@@ -131,9 +142,12 @@ export default function Page() {
       <div className="container mt-12 mb-16">
         <div className="md:w-8/12 lg:w-1/2">
           <p className="para">
-            This one's for the music lovers. We meet once a month to honour God with our instruments and voices, as well as teaching around the understanding of the power of music and worship. Join us to learn, listen, play, and sing!
-             If you are passionate about music this is a great place to gather with other people with a similar passion, to pray, learn and grow in community.
+            This one's for the music lovers. We meet on the 1st and 3rd week of the month on a Tuesday during term time.
           </p>
+          <p className="para">We want to honour God with our instruments and voices, as well as teaching around the understanding of the power of music
+            and worship.</p>
+          <p className="para">Join us to learn, listen, play, write and sing! If you are passionate about music this is a great place
+            to gather with other people with a similar passion, to pray, learn and grow in community</p>
         </div>
       </div>
       <section className="flex h-[200px] flex-col justify-center bg-black bg-[url('/img/elements/fitness-banner.png')] bg-right bg-no-repeat lg:bg-contain">
@@ -152,8 +166,11 @@ export default function Page() {
       <div className="container mt-12 mb-16">
         <div className="md:w-8/12 lg:w-1/2">
           <p className="para">
-            Hello earlybirds! The mens fitness interest group meets once a month at the crack of dawn. As Christians we believe our body is a temple of God, so let's exercise together!
+            Men&apos;s fitness interest group meets on the 1st and 3rd week of the month on a Tuesday morning during term time.
           </p>
+          <p className="para">As Christians we believe our body is a temple of God, so let's exercise together and look after it!
+            Each time we gather we have a different focus, linking physical exercise to our faith.</p>
+          <p className="para">We also take time to pray for one another. A great way to start the day!</p>
         </div>
       </div>
     </>
