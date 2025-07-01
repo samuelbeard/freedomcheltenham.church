@@ -40,7 +40,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="mt-10 mx-auto md:w-1/2">
+      <section className="mt-10 mx-auto md:w-3/4 px-5 md:px-0">
         <div className="relative flex w-full items-end justify-start overflow-hidden rounded-lg bg-gray-300 p-10 shadow h-96">
           <iframe
             className="absolute inset-0"
@@ -55,14 +55,14 @@ export default function Page() {
           ></iframe>
         </div>
       </section>
-      <div className="container gap-10 md:mt-16 md:flex">
+      <div className="container gap-10 md:mt-16 md:flex mt-16">
         <div className="md:w-1/2">
           <Image
-            width={1080}
-            height={1616}
-            src="/img/photos/worship-2.jpg"
+            width={600}
+            height={400}
+            src="/img/photos/worship-3-resized.jpg"
             alt=""
-            className="rounded shadow md:aspect-square md:object-cover"
+            className="rounded shadow md:aspect-auto md:object-cover"
           />
         </div>
         <div className="md:flex md:w-6/12 md:flex-col md:justify-center lg:w-1/2">
@@ -78,8 +78,20 @@ export default function Page() {
             Our host team will be the first to greet you at the door, showing
             you where to go and answering any questions you might have.
           </p>
+
         </div>
       </div>
+      
+      <div className="mx-auto w-1/2 mt-16">
+          <Image
+            src="/img/photos/host-team-pose-resized.jpg"
+            width={604}
+            height={907}
+            alt=""
+            className="rounded shadow"
+          />
+      </div>
+
       <div className="container mb-16 mt-10">
         <div className="mx-auto md:w-8/12 lg:w-1/2">
           <h3 className="h3">Our Event</h3>
