@@ -96,6 +96,24 @@ export default function Page() {
             is a core aspect to who we are and something we cherish.
           </p>
         </div>
+
+<div className="flex md:flex-row flex-col items-center gap-8 justify-center my-16">
+        <Image
+        src={"/img/photos/charlie-emma-resized.jpg"}
+        alt=""
+        width={400}
+        height={600}
+        className="rounded shadow aspect-auto"
+        />
+        <Image
+        src={"/img/photos/tyson-resized.jpg"}
+        alt=""
+        width={400}
+        height={600}
+        className="rounded shadow aspect-auto"
+        />
+
+</div>
       </div>
     </>
   )
