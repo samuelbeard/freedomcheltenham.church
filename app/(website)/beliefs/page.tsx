@@ -86,18 +86,6 @@ export default function Page() {
             </p>
           </div>
           <div>
-            <h3 className="h3">ABOUT ETERNAL SECURITY</h3>
-            <p className="para">
-              Because God gives us eternal life through Jesus Christ, the true
-              believer is secure in that salvation for eternity. If you have
-              been genuinely saved, you cannot "lose" it. Salvation is
-              maintained by the grace and power of God, not by the self-effort
-              of the Christian. It is the grace and keeping power of God that
-              gives us this security. John 10:29 / 2 Timothy 1:12 / Hebrews
-              7:25, 10:10 & 14 / 1 Peter 1:3-5​​
-            </p>
-          </div>
-          <div>
             <h3 className="h3">ABOUT THE BIBLE</h3>
             <p className="para">
               The Bible is God's Word to us. It was written by human authors,
