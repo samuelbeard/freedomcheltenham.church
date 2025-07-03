@@ -6,6 +6,7 @@ import Carousel from "components/Carousel"
 import Footer from "components/Footer"
 import UpcomingEvents from "../components/UpcomingEvents"
 import Script from "next/script"
+import Taggbox from "components/Taggbox"
 
 export default function Page() {
   return (
@@ -75,23 +76,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="section z-30 bg-none py-10">
-        <Carousel
-          direction="right"
-          speed={70}
-          carouselNumber={1}
-          totalImages={11}
-        />
-      </div>
-
-      <div className="section z-30 bg-none pb-10">
-        <Carousel
-          direction="left"
-          speed={70}
-          carouselNumber={2}
-          totalImages={6}
-        />
-      </div>
+      <Taggbox />
 
       <div className="section pt-14">
         <div className="container lg:w-2/3">
