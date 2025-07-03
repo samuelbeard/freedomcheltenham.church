@@ -60,7 +60,7 @@ export default function Page() {
           <Image
             width={600}
             height={400}
-            src="/img/photos/worship-3-resized.jpg"
+            src="/img/photos/worship-3.jpg"
             alt=""
             className="rounded shadow md:aspect-auto md:object-cover"
           />
@@ -81,10 +81,10 @@ export default function Page() {
 
         </div>
       </div>
-      
+
       <div className="mx-auto w-1/2 mt-16">
           <Image
-            src="/img/photos/host-team-pose-resized.jpg"
+            src="/img/photos/host-team-pose.jpg"
             width={604}
             height={907}
             alt=""
