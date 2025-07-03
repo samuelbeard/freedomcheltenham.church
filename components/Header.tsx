@@ -160,7 +160,7 @@ const Header: FC<Props> = ({ background }) => {
               />
             </Link>
           </div>
-          <div className="p-2 border-white border-4 text-white cursor-pointer font-bold hover:border-red-600 transition-colors md:border-2 text-center"><a href="/visit">I'm New</a></div>
+          <div className="py-2 px-4 border-white border-4 text-white cursor-pointer font-bold hover:border-brand-red hover:text-brand-red transition-colors md:border-2 text-center"><a href="/visit">I&apos;m&nbsp;New</a></div>
           <div className="-mr-2 -my-2 md:hidden">
             <Popover.Button className="p-2 mr-2 inline-flex items-center justify-center text-white hover:text-gray-200">
               <span className="sr-only">Open menu</span>
