@@ -12,13 +12,12 @@ const links = [
 
 const links2 = [
   ["Kids", "/kids"],
-  ["Midweeks", "/midweeks"],
   ["Messages", "/messages"],
   ["Giving", "/giving"],
 ]
 
 const links3 = [
-  ["Events", "/events"],
+  ["What's On", "/events"],
   ["Connect", "/connect"],
   ["Contact Us", "/contact"],
 ]

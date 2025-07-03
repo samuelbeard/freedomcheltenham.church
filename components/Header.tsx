@@ -83,7 +83,7 @@ const links: ILink[] = [
     ],
   },
   {
-    name: "Events",
+    name: "What's On",
     href: "/events",
     active: true,
     links: [],

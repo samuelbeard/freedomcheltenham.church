@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export const metadata = {
   title: "Events",
 }
@@ -5,50 +7,161 @@ export const metadata = {
 export default function Page() {
   return (
     <>
+      <div className="flex justify-around bg-brand-red py-12 text-4xl font-extrabold text-white md:text-[5rem]">
+        <h1>SUNDAYS</h1>
+      </div>
+
       <section>
         <div className="container mt-20 mb-20">
-          {/* <h1 className="text-center text-4xl font-bold">Events</h1> */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
-            <div>
-              <h3 className="h3">Sundays</h3>
-              <p className="para">
-                We meet every Sunday at our church building. The doors open at
-                10:45AM ready for a 11:00AM kick-off! Kids church for 0-11’s runs every Sunday too so that
-                they can meet Jesus on their level and you can focus on the
-                worship and preach in our main event!
-              </p>
-            </div>
-            <div>
-              <h3 className="h3">Outreach</h3>
-              <p className="para">
-                Outreach stream is committed to love, bless and reach out to our
-                town using innovate and creative ways. We are a group that has a
-                heart to meet tangible needs, and build relationships with
-                people, showing the love of Jesus!
-                {/* Some weeks outreach stream
-                will be a hub of dreams and ideas, plans and strategies, whilst
-                other weeks it will be more 'hands on' designing, wrapping,
-                writing, or even editing and creating things to reach our town
-                digitally! */}
-              </p>
-            </div>
-            <div>
-              <h3 className="h3">She</h3>
-              <p className="para">
-                A group just for our women! We have socials, teaching, worship
-                and ministry following a theme for the year.
-              </p>
-            </div>
-            <div>
-              <h3 className="h3">Barbarians</h3>
-              <p className="para">
-                Our men's group meets once a month to worship, learn, grow,
-                challenge and inspire.
-              </p>
+          <p className="para">
+            We meet every Sunday at our church building in Cheltenham. The doors open at
+            10:45 AM ready for a 11:00 AM kick-off! Kids church for 0-11’s runs every Sunday too so that
+            they can meet Jesus on their level and you can focus on the
+            worship and preach in our main event!
+          </p>
+
+          <div className="text-center mt-8">
+            <p className="para">We meet at St. Edwards School, Cheltenham, GL53 9AT</p>
+            <div className="w-full sm:w-1/2 mx-auto">
+              <Link className="block para p-2 border-2 rounded border-red-400 transition-transform hover:scale-105 cursor-pointer" href="https://w3w.co/slope.puppy.smooth">/// What3Words</Link>
+              <Link className="block para p-2 border-2 rounded border-red-400 transition-transform hover:scale-105 cursor-pointer" href="https://www.google.com/maps/dir/?api=1&destination=51.885228,-2.059596">Google Maps</Link>
             </div>
           </div>
+
         </div>
       </section>
+
+      <div className="flex justify-around bg-brand-red py-12 text-4xl font-extrabold text-white md:text-[5rem]">
+        <h1>MIDWEEKS</h1>
+      </div>
+
+      <section className="flex h-[200px] flex-col justify-center bg-black bg-[url('/img/elements/connect-banner.png')] bg-right bg-no-repeat lg:bg-contain">
+        <div className="container py-10">
+          <h1 className="h1 my-0 text-white">CONNECT GROUPS</h1>
+        </div>
+      </section>
+      <div className="container mt-12 mb-16">
+        <div>
+          <p className="para">These are a great opportunity to find your place, connect with your people and discover more of your purpose.</p>
+          <p className="para">Each time we gather it&apos;s a time of fun, food and friendship. The core ingredients of a connect group are centred around faith, upstanding more of and applying the bible to our lives, as well as prayer.</p>
+          <p className="para">We meet on the 1st and 3rd week of the month on a Wednesday evening during term time.</p>
+        </div>
+      </div>
+
+      <section className="flex h-[200px] flex-col justify-center bg-black bg-[url('/img/elements/prayer-fast-banner.png')] bg-right bg-no-repeat lg:bg-contain">
+        <div className="container py-10">
+          <h1 className="h1 my-0 text-white">PRAYER & FAST</h1>
+          {/* <p className="text-white lg:w-1/2">Sisters | Daughters | Warriors</p> */}
+        </div>
+      </section>
+      <div className="container mt-12 mb-16">
+        <div>
+          <p className="para">
+            On the first Monday of each month, as a church we follow the example set by Jesus and set time aside to fast & pray.
+          </p>
+          <p className="para">Join us as we pray together for God to move in our city.</p>
+        </div>
+      </div>
+
+      <section className="flex h-[200px] flex-col justify-center bg-black bg-[url('/img/elements/she-banner.png')] bg-right bg-no-repeat lg:bg-contain">
+        <div className="container py-10">
+          <h1 className="h1 my-0 text-white">SHE</h1>
+          <p className="text-white lg:w-1/2">Sisters | Daughters | Warriors</p>
+        </div>
+      </section>
+      <div className="container mt-12 mb-16">
+        <div>
+          <p className="para">
+            SHE is our women&apos;s ministry. Meeting once a month, primarily
+            the last Wednesday of the month, the women in our campus gather
+            together for SHE.
+          </p>
+          <p className="para">The time together varies, from worship and live or
+            video message, to special events and hospitality nights. It offers
+            an opportunity for connection, friendship, growth and empowerment,
+            discovering purpose and learning to thrive as women as God designed
+            it to be.</p>
+          <p className="para">Just like our Sunday events, SHE also follows in series,
+            honing in on a specific topic for the year.</p>
+        </div>
+      </div>
+      <section className="flex h-[200px] flex-col justify-center bg-black bg-[url('/img/elements/barbarians-banner.png')] bg-right bg-no-repeat lg:bg-contain">
+        <div className="container py-10">
+          <h1 className="h1 my-0 text-white">BARBARIANS</h1>
+          <p className="text-white lg:w-1/2">Sons | Brothers | Warriors</p>
+        </div>
+      </section>
+      {/* <section className="bg-black">
+                <img
+                    className="xmx-auto"
+                    src="/img/elements/barbarians-banner.png"
+                    alt=""
+                />
+            </section> */}
+      <div className="container mt-12 mb-16">
+        <div>
+          <p className="para">Barbarians is our men's ministry. Gathering once a month, on the second Wednesday of the month.</p>
+          <p className="para">Barbarians is a space that encourages men to grow, lead and develop into all that God has called them to be. From what it means to be a son and brother, to being a father and friend.</p>
+          <p className="para">The event includes passionate worship, a challenging message, and time to pray for each other.</p>
+        </div>
+      </div>
+      <section className="bg-brand-dark-gray">
+        <div className="container py-10">
+          <h1 className="h1 my-0 text-white">INTEREST GROUPS</h1>
+          <p className="text-white lg:w-1/2">
+            We believe that strong community is essential to our health as a church. There are regular opportunities throughout the month for us to come together and grow in fellowship. Take a look - we can't wait to meet you!
+          </p>
+        </div>
+      </section>
+      <section className="flex h-[200px] flex-col justify-center bg-black bg-[url('/img/elements/music-banner.png')] bg-right bg-no-repeat lg:bg-contain">
+        <div className="container py-10">
+          <h1 className="h1 my-0 text-white">MUSIC INTEREST GROUP</h1>
+          {/* <p className="text-white lg:w-1/2"></p> */}
+        </div>
+      </section>
+      {/* <section className="bg-black">
+                <img
+                    className="xmx-auto"
+                    src="/img/elements/barbarians-banner.png"
+                    alt=""
+                />
+            </section> */}
+      <div className="container mt-12 mb-16">
+        <div>
+          <p className="para">
+            This one's for the music lovers. We meet on the 1st and 3rd week of the month on a Tuesday during term time.
+          </p>
+          <p className="para">We want to honour God with our instruments and voices, as well as teaching around the understanding of the power of music
+            and worship.</p>
+          <p className="para">Join us to learn, listen, play, write and sing! If you are passionate about music this is a great place
+            to gather with other people with a similar passion, to pray, learn and grow in community</p>
+        </div>
+      </div>
+      <section className="flex h-[200px] flex-col justify-center bg-black bg-[url('/img/elements/fitness-banner.png')] bg-right bg-no-repeat lg:bg-contain">
+        <div className="container py-10">
+          <h1 className="h1 my-0 text-white">MENS FITNESS INTEREST GROUP</h1>
+          {/* <p className="text-white lg:w-1/2"></p> */}
+        </div>
+      </section>
+      {/* <section className="bg-black">
+                <img
+                    className="xmx-auto"
+                    src="/img/elements/barbarians-banner.png"
+                    alt=""
+                />
+            </section> */}
+      <div className="container mt-12 mb-16">
+        <div>
+          <p className="para">
+            Men&apos;s fitness interest group meets on the 1st and 3rd week of the month on a Tuesday morning during term time.
+          </p>
+          <p className="para">As Christians we believe our body is a temple of God, so let's exercise together and look after it!
+            Each time we gather we have a different focus, linking physical exercise to our faith.</p>
+          <p className="para">We also take time to pray for one another. A great way to start the day!</p>
+        </div>
+      </div>
+
+
       <div className="container mx-auto p-0 lg:p-2">
         <iframe
           height="800"
