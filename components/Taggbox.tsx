@@ -6,7 +6,7 @@ export default function Taggbox() {
   return (
     <>
       <div
-        className="container mx-auto taggbox w-full h-full overflow-auto pt-10"
+        className="mx-auto taggbox w-full h-full overflow-auto pt-10 md:!w-2/3 lg:!w-full"
         data-widget-id="289926"
         {...({ website: "1" } as any)}></div>
 
