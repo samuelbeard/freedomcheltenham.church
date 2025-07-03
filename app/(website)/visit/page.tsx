@@ -82,7 +82,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="mx-auto w-1/2 mt-16">
+      <div className="mx-auto sm:w-1/2 mt-16 px-5">
           <Image
             src="/img/photos/host-team-pose.jpg"
             width={604}
