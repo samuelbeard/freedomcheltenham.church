@@ -160,6 +160,7 @@ const Header: FC<Props> = ({ background }) => {
               />
             </Link>
           </div>
+          <div className="py-2 px-4 border-white border-4 text-white cursor-pointer font-bold hover:border-brand-red hover:text-brand-red transition-colors md:border-2 text-center"><a href="/visit">I&apos;m&nbsp;New</a></div>
           <div className="-mr-2 -my-2 md:hidden">
             <Popover.Button className="p-2 mr-2 inline-flex items-center justify-center text-white hover:text-gray-200">
               <span className="sr-only">Open menu</span>
@@ -250,11 +251,10 @@ const Header: FC<Props> = ({ background }) => {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`text-base font-bold text-white ${
-                    background === "red"
-                      ? "hover:text-brand-dark-gray"
-                      : "hover:text-brand-red"
-                  } transition-all`}
+                  className={`text-base font-bold text-white ${background === "red"
+                    ? "hover:text-brand-dark-gray"
+                    : "hover:text-brand-red"
+                    } transition-all`}
                   dangerouslySetInnerHTML={{ __html: link.name }}
                 />
               )
@@ -264,7 +264,7 @@ const Header: FC<Props> = ({ background }) => {
             {socialMedia.map(item => {
               let displayLiveNowText = false;
 
-              if (item.name === "YouTube" && serviceIsLiveOnYouTube() ) {
+              if (item.name === "YouTube" && serviceIsLiveOnYouTube()) {
                 item.href = "/live";
                 displayLiveNowText = true;
               }
