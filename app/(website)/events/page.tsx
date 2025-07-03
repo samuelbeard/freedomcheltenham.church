@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export const metadata = {
   title: "Events",
 }
@@ -20,9 +22,9 @@ export default function Page() {
 
           <div className="text-center mt-8">
             <p className="para">We meet at St. Edwards School, Cheltenham, GL53 9AT</p>
-            <div className="w-1/2 mx-auto">
-              <p className="para p-2 border-2 rounded border-red-400 transition-transform hover:scale-105 cursor-pointer"><a href="https://w3w.co/slope.puppy.smooth">/// What3Words</a></p>
-              <p className="para p-2 border-2 rounded border-red-400 transition-transform hover:scale-105 cursor-pointer"><a href="https://www.google.com/maps/dir/?api=1&destination=51.885228,-2.059596">Google Maps</a></p>
+            <div className="w-full sm:w-1/2 mx-auto">
+              <Link className="block para p-2 border-2 rounded border-red-400 transition-transform hover:scale-105 cursor-pointer" href="https://w3w.co/slope.puppy.smooth">/// What3Words</Link>
+              <Link className="block para p-2 border-2 rounded border-red-400 transition-transform hover:scale-105 cursor-pointer" href="https://www.google.com/maps/dir/?api=1&destination=51.885228,-2.059596">Google Maps</Link>
             </div>
           </div>
 
