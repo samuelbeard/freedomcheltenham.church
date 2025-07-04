@@ -8,7 +8,7 @@ const allRoutes = [
     "/visit",
     "/dna",
     "/kids",
-    "/midweeks",
+    "/events",
     "/contact",
 ]
 

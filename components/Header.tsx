@@ -83,7 +83,7 @@ const links: ILink[] = [
     ],
   },
   {
-    name: "Events",
+    name: "What's On",
     href: "/events",
     active: true,
     links: [],
@@ -160,13 +160,14 @@ const Header: FC<Props> = ({ background }) => {
               />
             </Link>
           </div>
-          <div className="-mr-2 -my-2 md:hidden">
+          <div className="py-2 px-4 border-white border-4 text-white cursor-pointer font-bold hover:border-brand-red hover:text-brand-red transition-colors md:border-2 text-center"><a href="/visit">I&apos;m&nbsp;New</a></div>
+          <div className="-mr-2 -my-2 lg:hidden">
             <Popover.Button className="p-2 mr-2 inline-flex items-center justify-center text-white hover:text-gray-200">
               <span className="sr-only">Open menu</span>
               <RiMenuLine className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
           </div>
-          <Popover.Group as="nav" className="hidden md:flex space-x-10">
+          <Popover.Group as="nav" className="hidden lg:flex space-x-10">
             {links.map(link => {
               return link.links.length > 0 ? (
                 <Popover className="relative" key={link.href}>
@@ -250,11 +251,10 @@ const Header: FC<Props> = ({ background }) => {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`text-base font-bold text-white ${
-                    background === "red"
-                      ? "hover:text-brand-dark-gray"
-                      : "hover:text-brand-red"
-                  } transition-all`}
+                  className={`text-base font-bold text-white ${background === "red"
+                    ? "hover:text-brand-dark-gray"
+                    : "hover:text-brand-red"
+                    } transition-all`}
                   dangerouslySetInnerHTML={{ __html: link.name }}
                 />
               )
@@ -264,7 +264,7 @@ const Header: FC<Props> = ({ background }) => {
             {socialMedia.map(item => {
               let displayLiveNowText = false;
 
-              if (item.name === "YouTube" && serviceIsLiveOnYouTube() ) {
+              if (item.name === "YouTube" && serviceIsLiveOnYouTube()) {
                 item.href = "/live";
                 displayLiveNowText = true;
               }
@@ -294,7 +294,7 @@ const Header: FC<Props> = ({ background }) => {
       >
         <Popover.Panel
           focus
-          className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+          className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right lg:hidden"
         >
           <div className="rounded shadow-lg ring-1 ring-black ring-opacity-5 bg-brand-red divide-y-2 divide-gray-50">
             <div className="pt-5 pb-6 px-5">

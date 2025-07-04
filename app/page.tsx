@@ -6,6 +6,7 @@ import Carousel from "components/Carousel"
 import Footer from "components/Footer"
 import UpcomingEvents from "../components/UpcomingEvents"
 import Script from "next/script"
+import Taggbox from "components/Taggbox"
 
 export default function Page() {
   return (
@@ -75,23 +76,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="section z-30 bg-none py-10">
-        <Carousel
-          direction="right"
-          speed={70}
-          carouselNumber={1}
-          totalImages={11}
-        />
-      </div>
-
-      <div className="section z-30 bg-none pb-10">
-        <Carousel
-          direction="left"
-          speed={70}
-          carouselNumber={2}
-          totalImages={6}
-        />
-      </div>
+      <Taggbox />
 
       <div className="section pt-14">
         <div className="container lg:w-2/3">
@@ -169,7 +154,7 @@ export default function Page() {
               </div>
             </Link>
             <Link
-              href="/midweeks"
+              href="/events"
               className="group relative col-span-3 block w-full overflow-hidden rounded bg-black shadow-lg transition-all hover:shadow md:col-span-1"
             >
               <Image
@@ -181,13 +166,13 @@ export default function Page() {
 
               <div className="relative flex h-full flex-col justify-between p-4 sm:p-6 lg:p-8">
                 <p className="text-xl font-bold text-white sm:text-2xl">
-                  Midweeks
+                  What's On
                 </p>
 
                 <div className="mt-32 sm:mt-48 lg:mt-64">
                   <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
                     <p className="text-sm text-white">
-                      Get involved during the week
+                      Find out what events are on
                     </p>
                   </div>
                 </div>

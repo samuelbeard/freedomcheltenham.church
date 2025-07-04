@@ -30,9 +30,9 @@ export default function Page() {
                   loading="lazy"
                   alt=""
                   className="h-full w-full object-cover object-center"
-                  width="500"
-                  height="500"
-                  src="/img/kids/cubs-2.jpg"
+                  width={4021}
+                  height={3217}
+                  src="/img/kids/kids-1.jpg"
                 />
               </div>
 
@@ -41,9 +41,9 @@ export default function Page() {
                   loading="lazy"
                   alt=""
                   className="h-full w-full object-cover object-center"
-                  width="500"
-                  height="500"
-                  src="/img/kids/adv-2.jpeg"
+                  width={6026}
+                  height={4024}
+                  src="/img/kids/kids-2.jpg"
                 />
               </div>
             </div>
