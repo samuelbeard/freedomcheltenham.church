@@ -18,9 +18,9 @@ export default function Page() {
       <section className="body-font relative text-gray-600">
         <div className="container mx-auto md:flex flex-wrap px-5 pt-12 sm:flex-nowrap gap-6">
           <Image
-            src="/img/photos/host-team-2.jpg"
-            width={3968}
-            height={2648}
+            src="/img/photos/parking-this-way.jpg"
+            width={4672}
+            height={7008}
             alt="the host team"
             className="rounded shadow-lg md:aspect-square md:object-cover md:w-1/2"
           />
