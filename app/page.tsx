@@ -76,8 +76,6 @@ export default function Page() {
         </div>
       </div>
 
-      <Taggbox />
-
       <div className="section pt-14">
         <div className="container lg:w-2/3">
           <p className="font-bold text-brand-black text-lg">
@@ -208,6 +206,11 @@ export default function Page() {
           </div>
         </div>
       </div>
+
+      <section className="mb-28">
+        <Taggbox />
+      </section>
+
       <section className="container mb-10">
         <UpcomingEvents />
       </section>
