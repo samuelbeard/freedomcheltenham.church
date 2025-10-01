@@ -100,6 +100,10 @@
     @apply hover:border-stone-500 hover:bg-stone-400;
   }
 
+  .button {
+    @apply inline-block bg-brand-red text-white px-5 py-3 hover:bg-red-500 transition-all font-semibold;
+  }
+
   /* Full width container that wraps the entire content of a page (Including the header and footer.) */
   .page {
     @apply flex min-h-screen flex-col justify-between;

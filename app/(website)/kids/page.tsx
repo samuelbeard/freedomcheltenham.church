@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export const metadata = {
   title: "Kids",
@@ -7,6 +8,11 @@ export const metadata = {
 export default function Page() {
   return (
     <>
+      <section className="flex justify-end mb-10">
+        <Link href="/kids-check-in" className="button">
+          Kids Check In Here
+        </Link>
+      </section>
       <div className="container mt-12 mb-16">
         <section className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="mb-8 flex flex-wrap justify-between md:mb-16">
@@ -74,6 +80,11 @@ export default function Page() {
                 commit to creating an environment that is both fun and engaging
                 as well as safe.
               </p>
+              <div className="flex justify-center">
+                <Link href="/kids-check-in" className="button mt-5">
+                  Kids Check In Here
+                </Link>
+              </div>
             </div>
             <div className="md:w-1/2">
               <Image
