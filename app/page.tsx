@@ -80,16 +80,43 @@ export default function Page() {
 
       <div className="section pt-14">
         <div className="container lg:w-2/3">
+          <p className="font-bold text-brand-black text-lg">
+            Welcome to Freedom Church Cheltenham!
+          </p>
           <p className="text-brand-black text-lg">
-            Welcome to Freedom Church Cheltenham! We&apos;re a diverse and
-            loving family, passionate about helping people thrive through a
-            transformative relationship with Jesus. We love meeting new people
-            from all ages and backgrounds. We believe in an ageless message, but
-            seek to make church modern and relevant in Cheltenham. As followers
-            of Jesus, we learn, explore and grow in fruitfulness within
-            community. Our pursuit is to live fully, leaving a lasting impact by
-            having; audacious faith, trusting God, honoring others, expressing
-            gratitude, and reflecting Jesus to the&nbsp;world.
+            Our heart is to build a church that helps you find{" "}
+            <span className="font-bold">
+              your people, your place, and your purpose
+            </span>
+            . We believe passionately that life is all about building meaningful
+            relationships with others. We’re a diverse and loving family,
+            committed to helping <span className="font-bold">people</span>{" "}
+            thrive through a personal relationship with Jesus. We love meeting
+            new <span className="font-bold">people</span> from all ages
+            and&nbsp;backgrounds.
+          </p>
+          <p className="text-brand-black text-lg">
+            We pray that at Freedom Church, you’ll find a{" "}
+            <span className="font-bold">place</span> that truly welcomes you.
+            Whether it’s your first time stepping through the doors or you’ve
+            been part of the faith journey for years, this church is a{" "}
+            <span className="font-bold">place</span> where lives are impacted —
+            and where everyone is&nbsp;valued.
+          </p>
+          <p className="text-brand-black text-lg">
+            We believe in an ageless message, yet we’re passionate about making
+            church modern and relevant in the heart of Cheltenham. We’re also
+            committed to helping people discover and unlock their
+            God-given&nbsp;
+            <span className="font-bold">purpose</span>.
+          </p>
+          <p className="text-brand-black text-lg">
+            As followers of Jesus, we learn, explore, and grow in fruitfulness —
+            together, in community. Our{" "}
+            <span className="font-bold">purpose</span> in life is to live fully
+            and leave a lasting impact on those around us by having audacious
+            faith, trusting God, honoring others, and reflecting Jesus to
+            the&nbsp;world.
           </p>
         </div>
       </div>
