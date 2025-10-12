@@ -100,6 +100,12 @@ const nextConfig = {
         destination: "https://freedomcheltenham.churchsuite.com/forms/ig89en2c",
         permanent: false,
       },
+      {
+        source: "/light-party",
+        destination:
+          "https://freedomcheltenham.churchsuite.com/events/n3ipitgj",
+        permanent: false,
+      },
       // Redirects for old pages that we may want to bring back.
       {
         source: "/carols",
