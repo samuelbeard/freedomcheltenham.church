@@ -3,13 +3,13 @@
 import { Tab } from "@headlessui/react"
 import { Suspense } from "react"
 function classNames(...classes: string[]) {
-    return classes.filter(Boolean).join(" ")
+  return classes.filter(Boolean).join(" ")
 }
 
 const songs = [
-    {
-        name: "Angels we have Heard on High",
-        lyrics: `
+  {
+    name: "Angels we have Heard on High",
+    lyrics: `
 Angels we have on heard high
 Sweetly singing o'er the plains
 And the mountains in reply
@@ -30,10 +30,10 @@ While our hearts in love, we raise
 Gloria, in excelsis Deo
 Gloria, in excelsis Deo
             `,
-    },
-    {
-        name: "Hark the Herald",
-        lyrics: `
+  },
+  {
+    name: "Hark the Herald",
+    lyrics: `
 Hark! The herald angels sing
 "Glory to the newborn King
 Peace on earth and mercy mild
@@ -77,10 +77,10 @@ Born to give them second birth
 Hark! The herald angels sing
 "Glory to the newborn King"
             `,
-    },
-    {
-        name: "Joy to the World",
-        lyrics: `
+  },
+  {
+    name: "Joy to the World",
+    lyrics: `
 You are my joy, joy, joy
 
 Joy to the world the Lord is come
@@ -119,10 +119,10 @@ Joy joy joy
 You are my joy
 You are my joy
             `,
-    },
-    {
-        name: "O Come All Ye Faithful",
-        lyrics: `
+  },
+  {
+    name: "O Come All Ye Faithful",
+    lyrics: `
 O Come All Ye Faithful
 Joyful and triumphant
 O come ye, O come ye to Bethlehem
@@ -172,10 +172,10 @@ O come let us adore Him
 O come let us adore Him
 Christ the Lord
             `,
-    },
-    {
-        name: "The First Noel",
-        lyrics: `
+  },
+  {
+    name: "The First Noel",
+    lyrics: `
 The First Noel the Angels did say
 Was to certain poor shepherds in fields as they lay
 In fields where they lay keeping their sheep
@@ -220,10 +220,10 @@ Born is the King
 Born is the King
 Born is the King of Israel!
         `,
-    },
-    {
-        name: "Oh Holy Night",
-        lyrics: `
+  },
+  {
+    name: "Oh Holy Night",
+    lyrics: `
 We fall to our knees
 Lord we adore You
 With angels above
@@ -267,10 +267,10 @@ Oh night when Christ was born
 Oh night divine
 Oh night divine
         `,
-    },
-    {
-        name: "Jingle Bell Rock",
-        lyrics: `
+  },
+  {
+    name: "Jingle Bell Rock",
+    lyrics: `
 Oh Jingle bell, jingle bell, jingle bell rock
 Jingle bells swing and jingle bells ring
 Snowing and blowing up bushels of fun
@@ -303,51 +303,51 @@ That's the jingle bell
 That's the jingle bell,
 That's the jingle bell rock.
         `,
-    },
+  },
 ]
 export default function Page() {
-    return (
-        <>
-            <Suspense>
-                <div className="container">
-                    <h1 className="h1">Christmas Carols</h1>
-                    <Tab.Group>
-                        <Tab.List className="xspace-x-1 grid grid-cols-2 flex-wrap gap-1 rounded p-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                            {songs.map(song => (
-                                <Tab
-                                    key={song.name}
-                                    className={({ selected }) =>
-                                        classNames(
-                                            "col-span-1 h-16 w-full rounded py-3 px-2 text-sm leading-5 text-black",
-                                            selected
-                                                ? "bg-black !text-white shadow"
-                                                : "border-2 bg-gray-100 text-black hover:text-white",
-                                        )
-                                    }
-                                >
-                                    {song.name}
-                                </Tab>
-                            ))}
-                        </Tab.List>
-                        <Tab.Panels className="mt-2">
-                            {songs.map(song => (
-                                <Tab.Panel
-                                    key={song.name}
-                                    className={classNames("rounded p-3")}
-                                >
-                                    <h2 className="h3 mb-0">{song.name}</h2>
-                                    <p
-                                        className="whitespace-pre-wrap"
-                                        dangerouslySetInnerHTML={{
-                                            __html: song.lyrics,
-                                        }}
-                                    />
-                                </Tab.Panel>
-                            ))}
-                        </Tab.Panels>
-                    </Tab.Group>
-                </div>
-            </Suspense>
-        </>
-    )
+  return (
+    <>
+      <Suspense>
+        <div className="container">
+          <h1>Christmas Carols</h1>
+          <Tab.Group>
+            <Tab.List className="xspace-x-1 grid grid-cols-2 flex-wrap gap-1 rounded p-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              {songs.map(song => (
+                <Tab
+                  key={song.name}
+                  className={({ selected }) =>
+                    classNames(
+                      "col-span-1 h-16 w-full rounded py-3 px-2 text-sm leading-5 text-black",
+                      selected
+                        ? "bg-black !text-white shadow"
+                        : "border-2 bg-gray-100 text-black hover:text-white",
+                    )
+                  }
+                >
+                  {song.name}
+                </Tab>
+              ))}
+            </Tab.List>
+            <Tab.Panels className="mt-2">
+              {songs.map(song => (
+                <Tab.Panel
+                  key={song.name}
+                  className={classNames("rounded p-3")}
+                >
+                  <h2 className="mb-0">{song.name}</h2>
+                  <p
+                    className="whitespace-pre-wrap"
+                    dangerouslySetInnerHTML={{
+                      __html: song.lyrics,
+                    }}
+                  />
+                </Tab.Panel>
+              ))}
+            </Tab.Panels>
+          </Tab.Group>
+        </div>
+      </Suspense>
+    </>
+  )
 }

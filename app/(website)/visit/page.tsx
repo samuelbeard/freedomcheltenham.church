@@ -10,12 +10,10 @@ export default function Page() {
       <div className="gradient-bg-h h-2" />
       <div className="section pt-12">
         <div className="container">
-          <h1 className="h1 text-brand-red">
-            WE&apos;D LOVE FOR YOU TO JOIN US
-          </h1>
+          <h1 className="text-brand-red">WE&apos;D LOVE FOR YOU TO JOIN US</h1>
         </div>
       </div>
-      <section className="body-font relative text-gray-600">
+      <section>
         <div className="container mx-auto md:flex flex-wrap px-5 pt-12 sm:flex-nowrap gap-6">
           <Image
             src="/img/photos/parking-this-way.jpg"
@@ -26,14 +24,14 @@ export default function Page() {
           />
 
           <div className="mt-8 flex w-full flex-col md:ml-auto md:mt-0 md:w-1/2 md:py-8">
-            <h2 className="h3 my-1">Access and Parking</h2>
-            <p className="para text-base">
+            <h2 className="my-1">Access and Parking</h2>
+            <p>
               There is plenty of parking available at St Edward&apos;s which
               makes it very easy to drive in and park. The main entrance is
               located on Cirencester Road and there will be a Freedom Church
               volunteer at the gates happy to direct you.
             </p>
-            <p className="para text-base">
+            <p>
               Disabled parking is available onsite and the main event space,
               café area and toilets all accessible for guests with a disability.
             </p>
@@ -55,7 +53,7 @@ export default function Page() {
           ></iframe>
         </div>
       </section>
-      <div className="container gap-10 md:mt-16 md:flex mt-16">
+      <div className="container gap-10 md:mt-16 md:flex items-center mt-16">
         <div className="md:w-1/2">
           <Image
             width={600}
@@ -66,43 +64,42 @@ export default function Page() {
           />
         </div>
         <div className="md:flex md:w-6/12 md:flex-col md:justify-center lg:w-1/2">
-          <h3 className="h3">What to Expect</h3>
-          <p className="para">
+          <h2>What to Expect</h2>
+          <p>
             Whatever your background, beliefs or experience of Church, everyone
             is welcome at Freedom Church Cheltenham. We are an inclusive,
             diverse family and community that loves people, is passionate about
             people experiencing a life changing relationship with Jesus and
             wants to see people thrive.
           </p>
-          <p className="para">
+          <p>
             Our host team will be the first to greet you at the door, showing
             you where to go and answering any questions you might have.
           </p>
-
         </div>
       </div>
 
       <div className="mx-auto sm:w-1/2 mt-16 px-5">
-          <Image
-            src="/img/photos/host-team-pose.jpg"
-            width={604}
-            height={907}
-            alt=""
-            className="rounded shadow"
-          />
+        <Image
+          src="/img/photos/host-team-pose.jpg"
+          width={604}
+          height={907}
+          alt=""
+          className="rounded shadow"
+        />
       </div>
 
       <div className="container mb-16 mt-10">
         <div className="mx-auto md:w-8/12 lg:w-1/2">
-          <h3 className="h3">Our Event</h3>
-          <p className="para">
+          <h2>Our Event</h2>
+          <p>
             Our Church event is vibrant and passionate including worship, weekly
             notices, celebrations and a live or video message, where the content
             is relevant and transformational. We are a Church that believes the
             Bible to be true and have personally seen the gospel impact lives
             when embraced.
           </p>
-          <p className="para">
+          <p>
             After the event, our café time, offers the chance to grab a coffee,
             tea or piece of cake and an opportunity to get to know us. Community
             is a core aspect to who we are and something we cherish.
@@ -124,7 +121,6 @@ export default function Page() {
             height={600}
             className="rounded shadow aspect-auto"
           />
-
         </div>
       </div>
     </>

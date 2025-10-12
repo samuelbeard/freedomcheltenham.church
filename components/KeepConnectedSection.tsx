@@ -6,7 +6,7 @@ const KeepConnectedSection = () => {
   return (
     <section className="section bg-brand-red py-16">
       <div className="container text-center">
-        <h1 className="h1 m-0 text-white">Keep Connected</h1>
+        <h1 className="m-0 text-white">Keep Connected</h1>
         <div className="mt-10 flex justify-center gap-6">
           <Link href="/instagram">
             <div className="social-media-bubble">

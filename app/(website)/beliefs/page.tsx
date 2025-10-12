@@ -8,10 +8,8 @@ export default function Page() {
       <div className="gradient-bg-h h-2" />
       <div className="section">
         <div className="container mt-20 md:flex justify-center items-center gap-5">
-          <h1 className="h1 text-brand-red mx-auto text-8xl lg:w-8/12">
-            Beliefs
-          </h1>
-          <p className="para mx-auto text-lg lg:w-8/12">
+          <h1 className="text-brand-red mx-auto text-8xl lg:w-8/12">Beliefs</h1>
+          <p className="mx-auto text-lg lg:w-8/12">
             We are whole heartedly committed to build a church that reaches
             peoples who don&apos;t yet know God. We will present the timeless
             message of the Gospel in modern and relevant ways. The message is
@@ -25,8 +23,8 @@ export default function Page() {
       <section className="section mb-20">
         <div className="container mt-10 grid gid-cols-1 md:grid-cols-2 gap-10">
           <div>
-            <h3 className="h3">ABOUT GOD</h3>
-            <p className="para">
+            <h3>ABOUT GOD</h3>
+            <p>
               God is the creator and ruler of the universe. He exists eternally
               in three personalities; the Father, the Son and the Holy Spirit.
               These three are co-equal and are one God. Genesis 1:1,26,27, 3:22
@@ -34,8 +32,8 @@ export default function Page() {
             </p>
           </div>
           <div>
-            <h3 className="h3">ABOUT HUMAN BEINGS</h3>
-            <p className="para">
+            <h3>ABOUT HUMAN BEINGS</h3>
+            <p>
               People are made in the spiritual image of God, to be like him in
               character. People are the supreme object of God's creation.
               Although every person has tremendous potential for good, all of us
@@ -46,8 +44,8 @@ export default function Page() {
             </p>
           </div>
           <div>
-            <h3 className="h3">ABOUT JESUS CHRIST</h3>
-            <p className="para">
+            <h3>ABOUT JESUS CHRIST</h3>
+            <p>
               Jesus Christ is the Son of God. He is co-equal with the Father.
               Jesus lived a sinless human life and offered himself as the
               perfect sacrifice for the sins of all people by dying on a cross.
@@ -59,8 +57,8 @@ export default function Page() {
             </p>
           </div>
           <div>
-            <h3 className="h3">ABOUT SALVATION</h3>
-            <p className="para">
+            <h3>ABOUT SALVATION</h3>
+            <p>
               Salvation is God's free gift to us but we must accept it. We can
               never make up for our sin by self-improvement or good works. Only
               by trusting in Jesus Christ as God's offer of forgiveness can
@@ -71,8 +69,8 @@ export default function Page() {
             </p>
           </div>
           <div>
-            <h3 className="h3">ABOUT THE HOLY SPIRIT</h3>
-            <p className="para">
+            <h3>ABOUT THE HOLY SPIRIT</h3>
+            <p>
               The Holy Spirit is co-equal with the Father and the Son of God. He
               is present in the world to make men aware of their need for Jesus
               Christ. He also lives in every Christian from the moment of
@@ -86,8 +84,8 @@ export default function Page() {
             </p>
           </div>
           <div>
-            <h3 className="h3">ABOUT THE BIBLE</h3>
-            <p className="para">
+            <h3>ABOUT THE BIBLE</h3>
+            <p>
               The Bible is God's Word to us. It was written by human authors,
               under the supernatural guidance of the Holy Spirit. It is the
               supreme source of truth for Christian beliefs and living. Because
@@ -97,8 +95,8 @@ export default function Page() {
             </p>
           </div>
           <div>
-            <h3 className="h3">ABOUT ETERNITY</h3>
-            <p className="para">
+            <h3>ABOUT ETERNITY</h3>
+            <p>
               People were created to exist forever. We will either exist
               eternally separated from God by sin, or eternally with God through
               forgiveness and salvation. To be eternally separated from God is

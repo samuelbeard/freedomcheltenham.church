@@ -49,7 +49,7 @@ const Footer: FC = () => {
           </div>
           <div className="hidden sm:col-span-1 sm:inline"></div>
           <div className="col-span-3 sm:col-span-1">
-            <h4 className="h4 text-white">Links</h4>
+            <h4 className="text-white">Links</h4>
             {links.map(link => {
               return (
                 <Link key={link[0]} href={link[1]}>
@@ -59,7 +59,7 @@ const Footer: FC = () => {
             })}
           </div>
           <div className="col-span-3 sm:col-span-1">
-            <h4 className="h4 hidden text-white sm:block">&nbsp;</h4>
+            <h4 className="hidden text-white sm:block">&nbsp;</h4>
             {links2.map(link => {
               return (
                 <Link key={link[0]} href={link[1]}>
@@ -69,7 +69,7 @@ const Footer: FC = () => {
             })}
           </div>
           <div className="col-span-3 sm:col-span-1">
-            <h4 className="h4 hidden text-white sm:block">&nbsp;</h4>
+            <h4 className="hidden text-white sm:block">&nbsp;</h4>
             {links3.map(link => {
               return (
                 <Link key={link[0]} href={link[1]}>

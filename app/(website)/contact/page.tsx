@@ -9,7 +9,7 @@ export default function Page() {
     <>
       <section className="section bg-[url('/img/photos/smiling.jpg')] bg-cover md:bg-[url('/img/photos/smiling-cropped.jpg')] md:bg-center">
         <div className="w-full bg-black bg-opacity-50 py-24">
-          <h1 className="h1 text-center text-6xl text-white">Get in Contact</h1>
+          <h1 className="text-center text-6xl text-white">Get in Contact</h1>
         </div>
       </section>
       <div className="section py-20">

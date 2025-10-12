@@ -72,24 +72,32 @@
 
 @layer components {
   /* Paragraph Styling */
-  .para {
-    @apply mb-3 font-sans text-xl leading-relaxed text-stone-500;
+  p {
+    @apply mb-3 font-sans text-lg leading-relaxed text-stone-500;
   }
 
-  .h1 {
+  p.small {
+    @apply text-base;
+  }
+
+  h1 {
     @apply mt-5 mb-3 text-4xl font-extrabold text-stone-600;
   }
 
-  .h2 {
+  h2 {
     @apply mt-5 mb-3 text-3xl font-bold text-stone-600;
   }
 
-  .h3 {
+  h3 {
     @apply mt-5 mb-3 text-2xl font-bold text-stone-600;
   }
 
-  .h4 {
+  h4 {
     @apply mt-5 mb-3 text-xl font-bold text-stone-600;
+  }
+
+  h5 {
+    @apply font-bold;
   }
 
   .card {

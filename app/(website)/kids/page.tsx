@@ -35,33 +35,33 @@ export default function Page() {
           </div>
         </section>
         <section className="mt-10 mb-10 max-w-md mx-auto">
-          <h3 className="h3 text-center">Welcome to Freedom Kids!</h3>
-          <p className="para text-center">
+          <h3 className="text-center">Welcome to Freedom Kids!</h3>
+          <p className="text-center">
             We're all about helping your kids explore what it means to follow
             Jesus in a way that makes sense to them.
           </p>
         </section>
         <div className="mx-auto">
-          <h3 className="h3">Relevant content for all age groups</h3>
-          <p className="para">
+          <h3>Relevant content for all age groups</h3>
+          <p>
             We go through teaching in series bringing a topic to life over
             several weeks. This is also tailored to each age group, making sure
             each session is relevant, engaging and fun.
           </p>
           <div className="flex flex-col md:flex-row gap-10 mt-6">
             <div className="md:w-1/2">
-              <h3 className="h3">First Time?</h3>
-              <p className="para">
+              <h3>First Time?</h3>
+              <p>
                 We can&apos;t wait to meet you! One of our friendly Kids
                 volunteers will meet you and your children to welcome them!
               </p>
-              <p className="para">
+              <p>
                 At check-in, we will ask for the following personal information;
                 family member&apos;s names, children&apos;s names and
                 birthdates, address, phone number, and any special instructions
                 such as allergies or special needs for your child.
               </p>
-              <p className="para">
+              <p>
                 Your child&apos;s safety is of utmost importance to us and we
                 commit to creating an environment that is both fun and engaging
                 as well as safe.
@@ -102,7 +102,7 @@ export default function Page() {
         <div className="container 2xl:px-56">
           <div className="md:flex gap-24 mt-6">
             <div className="md:w-1/2">
-              <p className="para text-black">
+              <p className="text-black">
                 A fun, loving environment for children aged two to four years.
                 Children will enjoy play time, snack time, Bible stories, fun
                 activities and exciting songs about Jesus. We love to share
@@ -146,7 +146,7 @@ export default function Page() {
               />
             </div>
             <div className="lg:w-1/2 2xl:w-1/3  flex items-center">
-              <p className="para text-black">
+              <p className="text-black">
                 For children in school years 1 to 4. Your children will begin to
                 learn to learn about their relationship with God in ways that
                 are simple, creative and lots of fun!
@@ -180,7 +180,7 @@ export default function Page() {
         <div className="container 2xl:px-56">
           <div className="md:flex gap-5 lg:gap-24 mt-6">
             <div className="md:w-1/2 mx-auto flex items-center">
-              <p className="para text-white">
+              <p className="text-white">
                 For children in school years 5 and 6. Your children will enjoy
                 fun and games with an opportunity to dive deeper into the
                 teaching and their personal relationship with God.
@@ -190,18 +190,18 @@ export default function Page() {
         </div>
       </section>
       <div className="container py-10">
-        <p className="para">
+        <p>
           All our kids leaders are DBS checked and meet regularly for
           safeguarding training.
         </p>
       </div>
       <section className="container mt-10 mb-10">
-        <h2 className="h2">Baby Room</h2>
-        <p className="para">
+        <h2>Baby Room</h2>
+        <p>
           A dedicated space for nursing mums and guardians of young children
           aged 0-2 years.
         </p>
-        <p className="para">
+        <p>
           The parent and baby room is a warm, engaging and fun space for
           parents/guardians to engage with the Sunday service via live stream,
           whilst being able to care for their little ones as they play. It's
@@ -209,7 +209,7 @@ export default function Page() {
           facilities, high chairs, toys, comfortable seating, snacks, and a
           Nespresso machine for parents to have a hot coffee.
         </p>
-        <p className="para">
+        <p>
           It is a place for parents and young children to feel comfortable, play
           freely and build friendships whilst watching the live stream to the
           service. There are dedicated room hosts ready and on hand to help with

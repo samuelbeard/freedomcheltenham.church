@@ -18,25 +18,25 @@ const EventBanner = ({ date, location, time, address, mapUrl }: Props) => {
   return (
     <>
       <div className="bg-black z-10 flex h-48 flex-wrap items-center justify-around md:h-20 md:flex-nowrap">
-        <div className="text-brand-red flex items-center justify-center">
-          <RiCalendarLine className="mr-3 h-8 w-8" />
-          <h2 className="flex font-bold uppercase">{date}</h2>
+        <div className="flex items-center justify-center">
+          <RiCalendarLine className="text-brand-red mr-3 h-8 w-8 text-lg" />
+          <h5 className="text-brand-red uppercase">{date}</h5>
         </div>
         <div className="text-brand-red flex w-full items-center justify-center md:w-auto">
           <RiMapPin2Line className="mr-3 h-8 w-8" />
-          <h2 className="flex font-bold uppercase">{location}</h2>
+          <h5 className="flex uppercase">{location}</h5>
         </div>
         <div className="text-brand-red flex items-center justify-center">
           <RiTimeLine className="mr-3 h-8 w-8" />
-          <h2 className="flex font-bold uppercase">{time}</h2>
+          <h5 className="flex uppercase">{time}</h5>
         </div>
         <div className="text-brand-red flex items-center justify-center">
-          <h2
+          <h5
             className="flex cursor-pointer underline"
             onClick={() => setIsOpen(true)}
           >
             More Details
-          </h2>
+          </h5>
         </div>
       </div>
       <Transition appear show={isOpen} as={Fragment}>
@@ -79,8 +79,8 @@ const EventBanner = ({ date, location, time, address, mapUrl }: Props) => {
                       />
                     </div>
                     <div className="text-right">
-                      <h2 className="h2 mb-0">{time}</h2>
-                      <h3 className="h3 mt-0">{date}</h3>
+                      <h2 className="mb-0">{time}</h2>
+                      <h3 className="mt-0">{date}</h3>
                     </div>
                   </div>
                   <div className="container relative inset-0 mx-auto flex flex-wrap px-2 pt-4 sm:flex-nowrap">

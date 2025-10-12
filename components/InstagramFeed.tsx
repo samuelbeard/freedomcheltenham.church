@@ -27,9 +27,7 @@ const InstagramFeed = () => {
   return (
     <>
       <div>
-        <h1 className="h1 text-white mb-10 text-center">
-          Latest from Instagram
-        </h1>
+        <h1 className="text-white mb-10 text-center">Latest from Instagram</h1>
       </div>
       <div className="flex justify-around items-center">
         {data &&

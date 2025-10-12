@@ -11,7 +11,7 @@ export default function Page() {
     <>
       <section className="section bg-[url('/img/photos/people.jpg')] bg-cover md:bg-[url('/img/photos/people-cropped.jpg')] md:bg-center">
         <div className="w-full bg-black bg-opacity-50 py-24">
-          <h1 className="h1 text-center text-6xl text-white">Connect</h1>
+          <h1 className="text-center text-6xl text-white">Connect</h1>
         </div>
       </section>
       <div className="xbg-black bg-white">
@@ -29,10 +29,10 @@ export default function Page() {
                 className="mx-auto"
               />
               <div className="p-6 text-center">
-                <h2 className="h2 text-white text-2xl m-0 font-bold">
+                <h2 className="text-white text-2xl m-0 font-bold">
                   {link.name}
                 </h2>
-                <h3 className="h3 text-white text-lg m-0 font-bold">
+                <h3 className="text-white text-lg m-0 font-bold">
                   {link.subtitle}
                 </h3>
                 <Link

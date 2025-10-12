@@ -10,7 +10,7 @@ export default function Page() {
     <div className="min-h-screenx flex flex-col justify-center py-24">
       <div className="container mx-auto">
         <section className="text-center">
-          <h1 className="h1 text-6xl md:text-8xl">Interest Nights</h1>
+          <h1 className="text-6xl md:text-8xl">Interest Nights</h1>
         </section>
         <EventBanner
           date="17th July | 21st August"
@@ -52,7 +52,7 @@ export default function Page() {
             alt=""
             className="rounded mx-auto xmd:w-2/3 lg:w-1/2"
           />
-          <p className="para mt-6 lg:mt-0 lg:w-1/2">
+          <p className="mt-6 lg:mt-0 lg:w-1/2">
             Have you found your place, your people or your purpose? Interest
             nights are a great opportunity to find out more.
             <br />

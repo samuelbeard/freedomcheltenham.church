@@ -60,20 +60,20 @@ const UpcomingEvents = () => {
                 />
               ) : (
                 <div className="text-center">
-                  <h3 className="h3 m-0 text-white uppercase">
+                  <h3 className="m-0 text-white uppercase">
                     {format(event.datetime_start, "EEEE")}
                   </h3>
-                  <h3 className="h1 m-0 text-white uppercase">
+                  <h3 className="m-0 text-white uppercase">
                     {format(event.datetime_start, "do")}
                   </h3>
-                  <h3 className="h3 m-0 text-white uppercase">
+                  <h3 className="m-0 text-white uppercase">
                     {format(event.datetime_start, "MMMM")}
                   </h3>
                 </div>
               )}
             </div>
             <div className="px-5 py-5 text-brand-dark-gray">
-              <h4 className="h4 mt-0 font-normal">{event.name}</h4>
+              <h4 className="mt-0 font-normal">{event.name}</h4>
               <h5 className="">
                 <RiCalendar2Fill className="inline opacity-30" />{" "}
                 {format(event.datetime_start, "do MMMM, yyyy")}

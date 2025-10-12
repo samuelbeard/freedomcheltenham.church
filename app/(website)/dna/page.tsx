@@ -16,7 +16,7 @@ export default function Page() {
           <h1 className="m-0 text-center text-6xl font-bold uppercase leading-none text-white md:-mt-10 md:text-[250px]">
             DNA
           </h1>
-          <p className="para mx-auto mt-8 text-lg text-stone-200 lg:w-8/12">
+          <p className="mx-auto mt-8 text-lg text-stone-200 lg:w-8/12">
             The Freedom Church DNA are the core values of our community. Like a
             compass they point us towards our identity. We are committed to
             wholeheartedly practicing and developing these principles in our own
@@ -56,8 +56,8 @@ const DNACard = ({ title, image, description, right }: DNACardProps) => {
       } justify-between shadow`}
     >
       <div>
-        <h3 className="h2 mt-0 uppercase text-brand-red">{title}</h3>
-        <p className="para text-lg leading-snug text-white">{description}</p>
+        <h3 className="mt-0 uppercase text-brand-red">{title}</h3>
+        <p className="text-lg leading-snug text-white">{description}</p>
       </div>
       <Image
         src={`/img/dna/${image}`}

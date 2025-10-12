@@ -10,16 +10,16 @@ export default function Page() {
       <div className="gradient-bg-h h-2" />
       <div className="section">
         <div className="container mt-10">
-          <h1 className="h1 text-brand-red mx-auto text-6xl lg:w-8/12">
+          <h1 className="text-brand-red mx-auto text-6xl lg:w-8/12">
             Welcome!
           </h1>
-          <p className="para mx-auto text-lg lg:w-8/12">
+          <p className="mx-auto lg:w-8/12">
             Welcome to Freedom Church Cheltenham! We embrace all, forming a
             diverse, loving family. Our passion is to help people thrive through
             a personal, transformative relationship with Jesus. Whether young or
             old, believer or unsure, there&apos;s something for everyone.
           </p>
-          <p className="para mx-auto text-lg lg:w-8/12">
+          <p className="mx-auto lg:w-8/12">
             We believe the gospel is alive and relevant, bringing excitement and
             abundant life. As followers of Jesus, we&apos;re called to grow,
             explore, and bear fruit by loving God and others. Community is vital
@@ -28,10 +28,8 @@ export default function Page() {
             God&apos;s character, honoring others, expressing gratitude, and
             reflecting Jesus to the world.
           </p>
-          <p className="para mx-auto text-lg lg:w-8/12">
-            We are Freedom Church Cheltenham.
-          </p>
-          <p className="para bg-brand-red mx-auto rounded py-4 text-center text-white lg:w-8/12">
+          <p className="mx-auto lg:w-8/12">We are Freedom Church Cheltenham.</p>
+          <p className="bg-brand-red mx-auto py-4 text-center text-white lg:w-8/12">
             EVERY&nbsp;SUNDAY | 11:00AM | ST EDWARD&apos;S SCHOOL
           </p>
         </div>
@@ -41,7 +39,7 @@ export default function Page() {
         <div className="w-full bg-black bg-opacity-50 py-10 lg:py-24">
           <div className="container gap-10 md:flex">
             <div className="flex items-center md:w-1/2">
-              <h1 className="h1 mt-0 text-6xl text-white">
+              <h1 className="mt-0 text-6xl text-white">
                 One
                 <br />
                 Church,
@@ -52,7 +50,7 @@ export default function Page() {
               </h1>
             </div>
             <div className="mt-8 flex flex-col justify-center md:mt-0 md:w-1/2">
-              <p className="para text-lg text-white">
+              <p className="text-white">
                 Freedom Church Cheltenham is one of many locations within the
                 Freedom Church movement. Freedom Church is a non-denominational
                 Church that teaches the truth of the Bible and shares the power
@@ -79,15 +77,15 @@ export default function Page() {
             />
           </div>
           <div className="flex flex-col items-center text-center md:w-1/2 md:items-start md:pl-16 md:text-left lg:flex-grow lg:pl-24">
-            <h3 className="h3 mb-0 font-thin">Our Pastors</h3>
-            <h2 className="h2 mt-0">Andy &amp; Emily</h2>
-            <p className="para text-lg">
+            <h3 className="mb-0 font-thin">Our Pastors</h3>
+            <h2 className="mt-0">Andy &amp; Emily</h2>
+            <p>
               Meet Andy and Em, our Campus Pastors! Andy, originally from Hull
               and Em, originally from Herefordshire, joined Freedom Church in
               2011 and consequently relocated from the North back down South to
               Hereford.
             </p>
-            <p className="para text-lg">
+            <p>
               They moved to Cheltenham in 2017 to plant church, living here with
               four children. Andy a teacher by trade is our resident expert in
               all things Peter Kay and Em, a former teacher, is an avid people
@@ -172,8 +170,8 @@ const TeamMember = ({
           height={192}
         />
         <div className="flex-grow sm:pl-8">
-          <h4 className="h4 mb-0">{name}</h4>
-          <h5 className="h5 mb-3 text-gray-500">{title}</h5>
+          <h4 className="mb-0">{name}</h4>
+          <h5 className="mb-3 text-gray-500">{title}</h5>
           <p
             className="mb-4 whitespace-pre-wrap"
             dangerouslySetInnerHTML={{ __html: bio }}
