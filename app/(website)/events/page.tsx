@@ -8,7 +8,7 @@ export default function Page() {
   return (
     <>
       <div className="flex justify-around bg-brand-red py-12 text-4xl font-extrabold text-white md:text-[5rem]">
-        <h1>SUNDAYS</h1>
+        <h1 className="text-black">SUNDAYS</h1>
       </div>
 
       <section>
@@ -22,7 +22,7 @@ export default function Page() {
 
           <div className="text-center mt-8">
             <p>We meet at St. Edwards School, Cheltenham, GL53 9AT</p>
-            <div className="w-full sm:w-1/2 mx-auto">
+            <div className="w-full sm:w-1/2 mx-auto space-y-2">
               <Link
                 className="block p-2 border-2 rounded border-red-400 transition-transform hover:scale-105 cursor-pointer"
                 href="https://w3w.co/slope.puppy.smooth"
@@ -41,7 +41,7 @@ export default function Page() {
       </section>
 
       <div className="flex justify-around bg-brand-red py-12 text-4xl font-extrabold text-white md:text-[5rem]">
-        <h1>MIDWEEKS</h1>
+        <h1 className="text-black">MIDWEEKS</h1>
       </div>
 
       <section className="flex h-[200px] flex-col justify-center bg-black bg-[url('/img/elements/connect-banner.png')] bg-right bg-no-repeat lg:bg-contain">

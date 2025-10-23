@@ -9,7 +9,7 @@ export default function Page() {
       <div className="section">
         <div className="container mt-20 md:flex justify-center items-center gap-5">
           <h1 className="text-brand-red mx-auto text-8xl lg:w-8/12">Beliefs</h1>
-          <p className="mx-auto text-lg lg:w-8/12">
+          <p className="mx-auto lg:w-8/12">
             We are whole heartedly committed to build a church that reaches
             peoples who don&apos;t yet know God. We will present the timeless
             message of the Gospel in modern and relevant ways. The message is

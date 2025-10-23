@@ -15,7 +15,7 @@ export default function Page() {
       <div className="section py-20">
         <div className="mx-auto px-6 xl:container md:px-12">
           <div className="mb-16 md:w-2/3 lg:w-1/2">
-            <h2 className="mb-4 text-2xl font-bold">Got questions?</h2>
+            <h3 className="mb-4 font-bold">Got questions?</h3>
           </div>
           <div className="grid gap-6 px-4 sm:grid-cols-2 sm:px-0 md:grid-cols-3 lg:grid-cols-4">
             <div className="relative h-fit overflow-hidden rounded-xl">
