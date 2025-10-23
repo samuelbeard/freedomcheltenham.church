@@ -78,27 +78,25 @@ export default function Page() {
 
       <div className="section pt-14">
         <div className="container lg:w-2/3">
-          <p className="font-bold text-brand-black text-lg">
+          <h2 className="font-bold text-brand-black">
             Welcome to Freedom Church Cheltenham!
-          </p>
-          <p className="text-brand-black text-lg">
-            Our heart is to build a church that helps you find{" "}
-            <span className="font-bold">
-              your people, your place, and your purpose
-            </span>
+          </h2>
+          <p className="text-brand-black">
+            Our heart is to build a church that helps you find
+            <strong> your people, your place, and your purpose</strong>
             . We believe passionately that life is all about building meaningful
             relationships with others. We’re a diverse and loving family,
-            committed to helping <span className="font-bold">people</span>{" "}
+            committed to helping <strong>people </strong>
             thrive through a personal relationship with Jesus. We love meeting
-            new <span className="font-bold">people</span> from all ages
+            new <strong>people</strong> from all ages
             and&nbsp;backgrounds.
           </p>
-          <p className="text-brand-black text-lg">
+          <p className="text-brand-black">
             We pray that at Freedom Church, you’ll find a{" "}
-            <span className="font-bold">place</span> that truly welcomes you.
+            <strong>place</strong> that truly welcomes you.
             Whether it’s your first time stepping through the doors or you’ve
             been part of the faith journey for years, this church is a{" "}
-            <span className="font-bold">place</span> where lives are impacted —
+            <strong>place</strong> where lives are impacted —
             and where everyone is&nbsp;valued.
           </p>
           <p className="text-brand-black text-lg">
@@ -106,12 +104,12 @@ export default function Page() {
             church modern and relevant in the heart of Cheltenham. We’re also
             committed to helping people discover and unlock their
             God-given&nbsp;
-            <span className="font-bold">purpose</span>.
+            <strong>purpose</strong>.
           </p>
           <p className="text-brand-black text-lg">
             As followers of Jesus, we learn, explore, and grow in fruitfulness —
             together, in community. Our{" "}
-            <span className="font-bold">purpose</span> in life is to live fully
+            <strong>purpose</strong> in life is to live fully
             and leave a lasting impact on those around us by having audacious
             faith, trusting God, honoring others, and reflecting Jesus to
             the&nbsp;world.
