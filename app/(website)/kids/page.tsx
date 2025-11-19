@@ -35,14 +35,14 @@ export default function Page() {
           </div>
         </section>
         <section className="mt-10 mb-10 max-w-md mx-auto">
-          <h3 className="text-center">Welcome to Freedom Kids!</h3>
+          <h2 className="text-center">Welcome to Freedom Kids!</h2>
           <p className="text-center">
             We're all about helping your kids explore what it means to follow
             Jesus in a way that makes sense to them.
           </p>
         </section>
         <div className="mx-auto">
-          <h3>Relevant content for all age groups</h3>
+          <h2>Relevant content for all age groups</h2>
           <p>
             We go through teaching in series bringing a topic to life over
             several weeks. This is also tailored to each age group, making sure
@@ -50,7 +50,7 @@ export default function Page() {
           </p>
           <div className="flex flex-col md:flex-row gap-10 mt-6">
             <div className="md:w-1/2">
-              <h3>First Time?</h3>
+              <h2>First Time?</h2>
               <p>
                 We can&apos;t wait to meet you! One of our friendly Kids
                 volunteers will meet you and your children to welcome them!
@@ -94,9 +94,9 @@ export default function Page() {
               alt="ramblers"
               className="sm:w-24 sm:mr-6 md:w-40"
             />
-            <h2 className="text-black text-5xl font-bold">
+            <h1 className="text-black font-bold">
               Preschool and Reception
-            </h2>
+            </h1>
           </div>
         </div>
         <div className="container 2xl:px-56">
@@ -131,7 +131,7 @@ export default function Page() {
               alt="adventurers"
               className="sm:w-24 sm:mr-6 md:w-40"
             />
-            <h2 className="text-5xl font-bold">Infants & Juniors</h2>
+            <h1 className="text-black font-bold">Infants & Juniors</h1>
           </div>
         </div>
         <div className="container 2xl:px-56">
@@ -174,7 +174,7 @@ export default function Page() {
               alt="explorers"
               className="sm:w-24 sm:mr-6 md:w-40"
             />
-            <h2 className="text-white text-5xl font-bold">Juniors +</h2>
+            <h1 className="text-white font-bold">Juniors +</h1>
           </div>
         </div>
         <div className="container 2xl:px-56">
@@ -190,9 +190,11 @@ export default function Page() {
         </div>
       </section>
       <div className="container py-10">
-        <p>
-          All our kids leaders are DBS checked and meet regularly for
-          safeguarding training.
+        <p className="text-center">
+          <strong>
+            All our kids leaders are DBS checked and meet regularly for
+            safeguarding training.
+          </strong>
         </p>
       </div>
       <section className="container mt-10 mb-10">

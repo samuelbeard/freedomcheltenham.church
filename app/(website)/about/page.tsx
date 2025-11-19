@@ -10,7 +10,7 @@ export default function Page() {
       <div className="gradient-bg-h h-2" />
       <div className="section">
         <div className="container mt-10">
-          <h1 className="text-brand-red mx-auto text-6xl lg:w-8/12">
+          <h1 className="text-brand-red mx-auto lg:w-8/12">
             Welcome!
           </h1>
           <p className="mx-auto lg:w-8/12">
@@ -92,7 +92,7 @@ export default function Page() {
               person and knows how to make a mean Pavlova. Also known as the
               hospitality King and Queen, Andy and Em are passionate about
               building the local church, seeing it flourish as a diverse home
-              for anyone, anywhere – where life change, friendship, faith and
+              for anyone, anywhere - where life change, friendship, faith and
               community is found. Andy and Em are supported by a number of
               leaders within the Campus who oversee different areas of the
               Church, from Worship and Volunteering, to Zeal and Kids.
@@ -106,16 +106,8 @@ export default function Page() {
             <TeamMember
               name="Charlie"
               title="Volunteer Coordinator"
-              bio="As VC, Charlie oversees all our
-                                        volunteers within our Campus. From
-                                        organising rotas and raising the next,
-                                        to stirring passion and praying for them
-                                        &ndash; this enables our volunteers to
-                                        bring their first and best each Sunday
-                                        and throughout the week, making church
-                                        happen."
-              fact="I secretly LOVE country music,
-                                        genuinely cannot get enough of it"
+              bio="As VC, Charlie oversees all our volunteers within our Campus. From organising rotas and raising the next, to stirring passion and praying for them &ndash; this enables our volunteers to bring their first and best each Sunday and throughout the week, making church happen."
+              fact="I secretly LOVE country music, genuinely cannot get enough of it"
               image="charlie-img.jpg"
             />
             <TeamMember
@@ -170,8 +162,8 @@ const TeamMember = ({
           height={192}
         />
         <div className="flex-grow sm:pl-8">
-          <h4 className="mb-0">{name}</h4>
-          <h5 className="mb-3 text-gray-500">{title}</h5>
+          <h3 className="mb-0 font-thin text-gray-500">{title}</h3>
+          <h2 className="mt-0">{name}</h2>
           <p
             className="mb-4 whitespace-pre-wrap"
             dangerouslySetInnerHTML={{ __html: bio }}
