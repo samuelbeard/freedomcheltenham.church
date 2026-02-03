@@ -10,9 +10,7 @@ export default function Page() {
       <div className="gradient-bg-h h-2" />
       <div className="section">
         <div className="container mt-10">
-          <h1 className="text-brand-red mx-auto lg:w-8/12">
-            Welcome!
-          </h1>
+          <h1 className="text-brand-red mx-auto lg:w-8/12">Welcome!</h1>
           <p className="mx-auto lg:w-8/12">
             Welcome to Freedom Church Cheltenham! We embrace all, forming a
             diverse, loving family. Our passion is to help people thrive through
@@ -30,7 +28,7 @@ export default function Page() {
           </p>
           <p className="mx-auto lg:w-8/12">We are Freedom Church Cheltenham.</p>
           <p className="bg-brand-red mx-auto py-4 text-center text-white lg:w-8/12">
-            EVERY&nbsp;SUNDAY | 11:00AM | ST EDWARD&apos;S SCHOOL
+            EVERY&nbsp;SUNDAY | 9:45AM and 11:15AM | ST EDWARD&apos;S SCHOOL
           </p>
         </div>
       </div>

@@ -69,9 +69,13 @@ export default function Page() {
           <EventBanner
             date="Every Sunday"
             location="St Edward's, Cheltenham"
-            time="11:00AM"
+            time="9:45AM and 11:15AM"
             address="St Edward's School<br />Cirencester Road<br />Cheltenham<br />GL53&nbsp;8EY"
             mapUrl="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3966.0927607417066!2d-2.059686698268362!3d51.88541931084989!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48711bcc1f240cd7%3A0xeb5cb6acb237d40b!2sSt%20Edward&#39;s%20School!5e0!3m2!1sen!2suk!4v1709038886225!5m2!1sen!2suk"
+            times={[
+              { time: "9:45AM" },
+              { time: "11:15AM", note: "with Kids Church" },
+            ]}
           />
         </div>
       </div>
@@ -83,21 +87,19 @@ export default function Page() {
           </h2>
           <p className="text-brand-black">
             Our heart is to build a church that helps you find
-            <strong> your people, your place, and your purpose</strong>
-            . We believe passionately that life is all about building meaningful
+            <strong> your people, your place, and your purpose</strong>. We
+            believe passionately that life is all about building meaningful
             relationships with others. We’re a diverse and loving family,
             committed to helping <strong>people </strong>
             thrive through a personal relationship with Jesus. We love meeting
-            new <strong>people</strong> from all ages
-            and&nbsp;backgrounds.
+            new <strong>people</strong> from all ages and&nbsp;backgrounds.
           </p>
           <p className="text-brand-black">
-            We pray that at Freedom Church, you’ll find a{" "}
-            <strong>place</strong> that truly welcomes you.
-            Whether it’s your first time stepping through the doors or you’ve
-            been part of the faith journey for years, this church is a{" "}
-            <strong>place</strong> where lives are impacted —
-            and where everyone is&nbsp;valued.
+            We pray that at Freedom Church, you’ll find a <strong>place</strong>{" "}
+            that truly welcomes you. Whether it’s your first time stepping
+            through the doors or you’ve been part of the faith journey for
+            years, this church is a <strong>place</strong> where lives are
+            impacted — and where everyone is&nbsp;valued.
           </p>
           <p className="text-brand-black text-lg">
             We believe in an ageless message, yet we’re passionate about making
@@ -108,11 +110,10 @@ export default function Page() {
           </p>
           <p className="text-brand-black text-lg">
             As followers of Jesus, we learn, explore, and grow in fruitfulness —
-            together, in community. Our{" "}
-            <strong>purpose</strong> in life is to live fully
-            and leave a lasting impact on those around us by having audacious
-            faith, trusting God, honoring others, and reflecting Jesus to
-            the&nbsp;world.
+            together, in community. Our <strong>purpose</strong> in life is to
+            live fully and leave a lasting impact on those around us by having
+            audacious faith, trusting God, honoring others, and reflecting Jesus
+            to the&nbsp;world.
           </p>
         </div>
       </div>

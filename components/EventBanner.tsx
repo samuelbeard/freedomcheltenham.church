@@ -1,6 +1,5 @@
 "use client"
 import { useState, Fragment } from "react"
-import { NextComponentType } from "next"
 import { RiCalendarLine, RiMapPin2Line, RiTimeLine } from "react-icons/ri"
 import { Dialog, Transition } from "@headlessui/react"
 
@@ -10,9 +9,20 @@ interface Props {
   time: string
   address: string
   mapUrl: string
+  times: {
+    time: string
+    note?: string
+  }[]
 }
 
-const EventBanner = ({ date, location, time, address, mapUrl }: Props) => {
+const EventBanner = ({
+  date,
+  location,
+  time,
+  address,
+  mapUrl,
+  times,
+}: Props) => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
@@ -28,7 +38,19 @@ const EventBanner = ({ date, location, time, address, mapUrl }: Props) => {
         </div>
         <div className="text-brand-red flex items-center justify-center">
           <RiTimeLine className="mr-3 h-8 w-8" />
-          <h5 className="flex uppercase">{time}</h5>
+          <h5 className="uppercase">
+            {times.map((time, index) => (
+              <span key={index}>
+                <span>{time.time}</span>
+                {time.note && (
+                  <span className="font-normal text-base"> {time.note}</span>
+                )}
+                {index < times.length - 1 && (
+                  <span className="font-normal"> and </span>
+                )}
+              </span>
+            ))}
+          </h5>
         </div>
         <div className="text-brand-red flex items-center justify-center">
           <h5
@@ -69,18 +91,35 @@ const EventBanner = ({ date, location, time, address, mapUrl }: Props) => {
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded bg-white p-6 text-left align-middle shadow-xl transition-all">
-                  <div className="mt-2 flex justify-between">
-                    <div>
+                  <div className="mt-2">
+                    <div className="">
+                      <span className="mb-0">
+                        {times.map((t, index) => (
+                          <>
+                            <h2 key={index}>
+                              <span>{t.time}</span>
+                              {t.note && (
+                                <span className="font-normal text-base">
+                                  {" "}
+                                  {t.note}
+                                </span>
+                              )}
+                            </h2>
+                            {index < times.length - 1 && (
+                              <span className="font-normal">and</span>
+                            )}
+                          </>
+                        ))}
+                      </span>
+                      <h3 className="mt-0">{date}</h3>
+                    </div>
+                    <div className="mt-2">
                       <p
                         className="text-gray-500"
                         dangerouslySetInnerHTML={{
                           __html: address,
                         }}
                       />
-                    </div>
-                    <div className="text-right">
-                      <h2 className="mb-0">{time}</h2>
-                      <h3 className="mt-0">{date}</h3>
                     </div>
                   </div>
                   <div className="container relative inset-0 mx-auto flex flex-wrap px-2 pt-4 sm:flex-nowrap">
