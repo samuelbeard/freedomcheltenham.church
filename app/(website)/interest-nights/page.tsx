@@ -12,13 +12,6 @@ export default function Page() {
         <section className="text-center">
           <h1 className="text-6xl md:text-8xl">Interest Nights</h1>
         </section>
-        <EventBanner
-          date="17th July | 21st August"
-          location="All Bar One | Cheltenham"
-          time="7:30 - 8:30PM"
-          address="All Bar One<br />18 Montpellier Walk<br />Cheltenham<br />GL50 1SD"
-          mapUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d157058.2636693386!2d-2.3158231461195986!3d52.04266873414024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48711ba22617c5c7%3A0x53b2c51777374869!2sAll%20Bar%20One%20Cheltenham!5e0!3m2!1sen!2suk!4v1718798675149!5m2!1sen!2suk"
-        />
         <section className="lg:flex items-center lg:text-right gap-12 mt-12">
           <h2 className="lg:w-1/2 h2 text-4xl">
             Have you found
