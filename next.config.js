@@ -81,7 +81,7 @@ const nextConfig = {
         permanent: false,
       },
       {
-        source: "/growth-track-form",
+        source: "/connect-course-form",
         destination: "https://freedomcheltenham.churchsuite.com/forms/csibi5wd",
         permanent: false,
       },
