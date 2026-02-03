@@ -61,13 +61,13 @@ const UpcomingEvents = () => {
               ) : (
                 <div className="text-center">
                   <h3 className="m-0 text-white uppercase">
-                    {format(event.datetime_start, "EEEE")}
+                    {format(new Date(event.datetime_start), "EEEE")}
                   </h3>
                   <h3 className="m-0 text-white uppercase">
-                    {format(event.datetime_start, "do")}
+                    {format(new Date(event.datetime_start), "do")}
                   </h3>
                   <h3 className="m-0 text-white uppercase">
-                    {format(event.datetime_start, "MMMM")}
+                    {format(new Date(event.datetime_start), "MMMM")}
                   </h3>
                 </div>
               )}
@@ -76,12 +76,12 @@ const UpcomingEvents = () => {
               <h4 className="mt-0 font-normal">{event.name}</h4>
               <h5 className="">
                 <RiCalendar2Fill className="inline opacity-30" />{" "}
-                {format(event.datetime_start, "do MMMM, yyyy")}
+                {format(new Date(event.datetime_start), "do MMMM, yyyy")}
               </h5>
               <h5 className="mt-2">
                 <RiTimeFill className="inline opacity-30" />{" "}
-                {format(event.datetime_start, "h:mm a")} to{" "}
-                {format(event.datetime_end, "h:mm a")}
+                {format(new Date(event.datetime_start), "h:mm a")} to{" "}
+                {format(new Date(event.datetime_end), "h:mm a")}
               </h5>
               {event.location.name && (
                 <h5 className="mt-2">
