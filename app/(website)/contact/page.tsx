@@ -53,12 +53,12 @@ export default function Page() {
                   <h4 className="text-xl font-bold text-white">Lorah</h4>
                   <span className="block text-sm">Kids Pastor</span>
                   <span className="mt-2 block text-sm">
-                    ctm.kids@freedomchurch.cc
+                    lorah.beard@freedomcheltenham.church
                   </span>
                 </div>
               </div>
             </div>
-            <div className="relative h-fit overflow-hidden rounded-xl">
+            {/* <div className="relative h-fit overflow-hidden rounded-xl">
               <Image
                 className="h-fu mx-auto"
                 src="/img/photos/charlie-img.jpg"
@@ -78,7 +78,7 @@ export default function Page() {
                   </span>
                 </div>
               </div>
-            </div>
+            </div> */}
             <div className="relative h-fit overflow-hidden rounded-xl">
               <Image
                 className="h-fu mx-auto"

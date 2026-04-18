@@ -101,13 +101,13 @@ export default function Page() {
       <section className="body-font text-gray-600">
         <div className="container mx-auto px-5 py-24">
           <div className="-m-4 flex flex-wrap">
-            <TeamMember
+            {/* <TeamMember
               name="Charlie"
               title="Volunteer Coordinator"
               bio="As VC, Charlie oversees all our volunteers within our Campus. From organising rotas and raising the next, to stirring passion and praying for them &ndash; this enables our volunteers to bring their first and best each Sunday and throughout the week, making church happen."
               fact="I secretly LOVE country music, genuinely cannot get enough of it"
               image="charlie-img.jpg"
-            />
+            /> */}
             <TeamMember
               name="Lorah"
               title="Kids Pastor"
