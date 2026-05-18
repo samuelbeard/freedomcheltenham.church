@@ -1,6 +1,7 @@
 import { Metadata } from "next"
 import "styles/globals.css"
 import Script from "next/script"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
     metadataBase: new URL("https://freedomcheltenham.church"),
@@ -59,6 +60,7 @@ export default function RootLayout({
                     data-website-id={process.env.NEXT_PUBLIC_UMAMI_ANALYTICS_ID}
                 ></Script>
                 {children}
+                <SpeedInsights />
             </body>
         </html>
     )
