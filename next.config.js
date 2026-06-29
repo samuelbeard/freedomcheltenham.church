@@ -124,6 +124,11 @@ const nextConfig = {
           "https://open.spotify.com/playlist/1HKzWoQb7Yn8DfpePlLBF1?si=nxpNsONpQwm8937QwZTIjg&pi=NjSt-J33S6SC2",
         permanent: false,
       },
+      {
+        source: "/she-video",
+        destination: "https://youtu.be/GgOYzdbjLs0?si=lzcKc2mINO8mbJGi",
+        permanent: false,
+      },
     ]
   },
 }
