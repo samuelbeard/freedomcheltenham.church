@@ -15,10 +15,10 @@ export default function Page() {
         <div className="container mt-20 mb-20">
           <p>
             We meet every Sunday at our church building in Cheltenham. The doors
-            open at 9:30AM ready for a 9:45AM kick-off and our second event
-            starts at 11:15AM! Kids church for 0-11’s runs every Sunday too
-            during the 11:15AM event so that they can meet Jesus on their level
-            and you can focus on the worship and preach in our main event!
+            open at 11AM ready for a 11:15AM kick-off. Kids church for 0-11’s
+            runs every Sunday too during the event so that they can meet Jesus
+            on their level and you can focus on the worship and preach in our
+            main event!
           </p>
 
           <div className="text-center mt-8">

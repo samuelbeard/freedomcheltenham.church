@@ -1,12 +1,11 @@
-import Link from "next/link"
-import Image from "next/image"
-import Header from "components/Header"
 import EventBanner from "components/EventBanner"
-import Carousel from "components/Carousel"
 import Footer from "components/Footer"
-import UpcomingEvents from "../components/UpcomingEvents"
-import Script from "next/script"
+import Header from "components/Header"
 import Taggbox from "components/Taggbox"
+import Image from "next/image"
+import Link from "next/link"
+import Script from "next/script"
+import UpcomingEvents from "../components/UpcomingEvents"
 
 export default function Page() {
   return (
@@ -69,13 +68,10 @@ export default function Page() {
           <EventBanner
             date="Every Sunday"
             location="St Edward's, Cheltenham"
-            time="9:45AM and 11:15AM"
+            time="11:15AM"
             address="St Edward's School<br />Cirencester Road<br />Cheltenham<br />GL53&nbsp;8EY"
             mapUrl="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3966.0927607417066!2d-2.059686698268362!3d51.88541931084989!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48711bcc1f240cd7%3A0xeb5cb6acb237d40b!2sSt%20Edward&#39;s%20School!5e0!3m2!1sen!2suk!4v1709038886225!5m2!1sen!2suk"
-            times={[
-              { time: "9:45AM" },
-              { time: "11:15AM", note: "with kids provision" },
-            ]}
+            times={[{ time: "11:15AM" }]}
           />
         </div>
       </div>

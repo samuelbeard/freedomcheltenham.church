@@ -28,7 +28,7 @@ export default function Page() {
           </p>
           <p className="mx-auto lg:w-8/12">We are Freedom Church Cheltenham.</p>
           <p className="bg-brand-red mx-auto py-4 text-center text-white lg:w-8/12">
-            EVERY&nbsp;SUNDAY | 9:45AM and 11:15AM | ST EDWARD&apos;S SCHOOL
+            EVERY&nbsp;SUNDAY | 11:15AM | ST EDWARD&apos;S SCHOOL
           </p>
         </div>
       </div>
